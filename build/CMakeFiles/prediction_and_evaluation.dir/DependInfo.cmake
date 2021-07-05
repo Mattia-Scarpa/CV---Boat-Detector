@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/src/main.cpp" "CMakeFiles/labeling_Augmentation.dir/src/main.cpp.o" "gcc" "CMakeFiles/labeling_Augmentation.dir/src/main.cpp.o.d"
+  "/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/src/predict.cpp" "CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.o" "gcc" "CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.o.d"
   )
 
 # Targets to which this target links.

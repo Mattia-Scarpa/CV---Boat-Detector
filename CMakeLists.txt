@@ -13,17 +13,13 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OPENCV_LIB_DIR})
 
 # Generate the executable
-add_executable ("labeling_Augmentation" "src/main.cpp")
+add_executable ("datasetPreprocessing" "src/preprocess.cpp")
+add_executable ("prediction_and_evaluation" "src/predict.cpp")
 
 
 add_subdirectory(include)
 
-#if(FOO_USE_EXTERNAL_JSON)
-#  find_package(nlohmann_json 3.2.0 REQUIRED)
-#else()
-#  set(JSON_BuildTests OFF CACHE INTERNAL "")
-#  add_subdirectory(include/nlohmann_json)
-#endif()
 
-target_link_libraries("labeling_Augmentation" ${OpenCV_LIBS} include) #nlohmann_json
+target_link_libraries("datasetPreprocessing" ${OpenCV_LIBS} include) 
+target_link_libraries("prediction_and_evaluation" ${OpenCV_LIBS} include) 
 
