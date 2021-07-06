@@ -154,7 +154,7 @@ int main(int argc, char const *argv[]) {
   string imgPath = "../" + parser.get<string>("@imagePath");
 
   vector<string> imagesPath;
-  vector<string> dataFormat = {imgPath+".*jpg", imgPath+"*.png"};
+  vector<string> dataFormat = {imgPath+"*.jpg", imgPath+"*.png"};
   for (size_t i = 0; i < dataFormat.size(); i++) {
     vector<string> temp;
     glob(dataFormat[i], temp);
@@ -162,7 +162,7 @@ int main(int argc, char const *argv[]) {
       imagesPath.push_back(temp[j]);
     }
   }
-  cout << "A total of " << imagesPath.size() << " images to test has been found!";
+  cout << "A total of " << imagesPath.size() << " images to test has been found!" << endl;
 
 
   cout << "Loading darknet models configuration file and trained weights..." << endl;

@@ -117,6 +117,52 @@ Total Detection Time: 45 Seconds
  mean average precision (mAP@0.50) = 0.994111, or 99.41 % 
 Total Detection Time: 46 Seconds
 
+# --------------------------------------------------------------------------
+
+### 12000 iterations
+
+ for conf_thresh = 0.25, precision = 0.91, recall = 0.99, F1-score = 0.95 
+ for conf_thresh = 0.25, TP = 1457, FP = 142, FN = 15, average IoU = 84.86 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.993711, or 99.37 % 
+Total Detection Time: 45 Seconds
+
+# --------------------------------------------------------------------------
+
+### 13000 iterations
+
+ for conf_thresh = 0.25, precision = 0.92, recall = 0.99, F1-score = 0.95 
+ for conf_thresh = 0.25, TP = 1457, FP = 130, FN = 15, average IoU = 86.41 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.994037, or 99.40 % 
+Total Detection Time: 43 Seconds
+
+# --------------------------------------------------------------------------
+
+### 14000 iterations
+
+ for conf_thresh = 0.25, precision = 0.92, recall = 0.99, F1-score = 0.95 
+ for conf_thresh = 0.25, TP = 1455, FP = 125, FN = 17, average IoU = 86.72 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.990304, or 99.03 % 
+Total Detection Time: 43 Seconds
+
+# --------------------------------------------------------------------------
+
+### 15000 iterations
+
+ for conf_thresh = 0.25, precision = 0.92, recall = 0.99, F1-score = 0.96 
+ for conf_thresh = 0.25, TP = 1457, FP = 121, FN = 15, average IoU = 87.09 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.993399, or 99.34 % 
+Total Detection Time: 43 Seconds
+
+
+
 
 
 
