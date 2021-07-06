@@ -12,6 +12,26 @@ using namespace std;
 using namespace cv;
 using namespace dnn;
 
+// structuring elements
+
+struct bbox {
+  vector<string> labels;
+  vector<Point> minP;
+  vector<Point> maxP;
+};
+
+void addBox(struct bbox& lab, string class, Point min, Point max) {
+    labels.push_back(class);
+    minP.push_back(min);
+    maxP.push_back(max);
+}
+
+void clearBox(struct bbox& lab) {
+  labels.clear();
+  minP.clear();
+  maxP.clear();
+}
+
 
 // Initialize the parameters
 float objectnessThreshold = 0.5; // Objectness threshold
@@ -20,6 +40,8 @@ float nmsThreshold = 0.4;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
 vector<string> classes;
+vector<bbox> predictedBoxes;
+vector<bbox> groundtruthBoxes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
@@ -32,9 +54,7 @@ const string keys = {
 };
 
 
-// structuring elements
 
-struct bbox
 
 
 // Utilities functions
@@ -112,7 +132,6 @@ void postPocess(Mat& img, const vector<Mat>& outs) {
         classIds.push_back(classIdPoint.x);
         confidences.push_back(confidence);
         boxes.push_back(Rect(xmin, ymin, width, height));
-
       }
     }
   }
@@ -125,6 +144,8 @@ void postPocess(Mat& img, const vector<Mat>& outs) {
   for (size_t i = 0; i < indices.size(); i++) {
     int index = indices[i];
     Rect box = boxes[index];
+
+    addBox(predictedBoxes, classes[classIds[index]], Point(box.x, box.y), Point(box.x + box.width, box.y + box.height));
     drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
   }
 }
