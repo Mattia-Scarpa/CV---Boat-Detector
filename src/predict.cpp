@@ -144,9 +144,42 @@ int main(int argc, char const *argv[]) {
   String nnConfiguration = MODEL_PATH + parser.get<string>("@ConfigName");
   String nnWeights = MODEL_PATH + parser.get<string>("@WeightsName");
 
+  string imgPath = "../" + parser.get<string>("@imagePath");
+
+  vector<string> imagesPath;
+  vector<string> dataFormat = {imgPath+".*jpg", imgPath+"*.png"};
+  for (size_t i = 0; i < dataFormat.size(); i++) {
+    vector<string> temp;
+    glob(dataFormat[i], temp);
+    for (size_t j(0); j < temp.size(); ++j) {
+      imagesPath.push_back(temp[j]);
+    }
+  }
+  cout << "A total of " << imagesPath.size() << " images to test has been found!";
+
 
   cout << "Loading darknet models configuration file and trained weights..." << endl;
   Net net = readNetFromDarknet(nnConfiguration, nnWeights);
+
+  for (size_t i = 0; i < imagesPath.size(); i++) {
+
+    Mat img = imread(imagesPath[i]);
+
+    Mat blob;
+    blobFromImage(img, blob, 1/255.0, Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
+
+    //Sets the input to the network
+    net.setInput(blob);
+
+    vector<Mat> outs;
+    net.forward(outs, getOutputsNames(net));
+
+    postPocess(img, outs);
+
+    imshow("test", img);
+    waitKey();
+  }
+
 
 
 

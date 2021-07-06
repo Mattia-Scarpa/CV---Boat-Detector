@@ -1,0 +1,15 @@
+### 1000 iterations
+
+ for conf_thresh = 0.25, precision = 0.88, recall = 0.99, F1-score = 0.93 
+ for conf_thresh = 0.25, TP = 1454, FP = 201, FN = 18, average IoU = 67.28 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.986659, or 98.67 % 
+Total Detection Time: 44 Seconds
+
+# --------------------------------------------------------------------------
+
+### 2000 iterations
+
+
+
