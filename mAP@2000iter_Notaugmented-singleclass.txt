@@ -95,6 +95,61 @@ Total Detection Time: 45 Seconds
  mean average precision (mAP@0.50) = 0.991151, or 99.12 % 
 Total Detection Time: 44 Seconds
 
+# --------------------------------------------------------------------------
+
+### 10000 iterations
+
+ for conf_thresh = 0.25, precision = 0.90, recall = 1.00, F1-score = 0.94 
+ for conf_thresh = 0.25, TP = 1466, FP = 166, FN = 6, average IoU = 83.40 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.996007, or 99.60 % 
+Total Detection Time: 45 Seconds
+
+# --------------------------------------------------------------------------
+
+### 11000 iterations
+
+ for conf_thresh = 0.25, precision = 0.92, recall = 0.99, F1-score = 0.95 
+ for conf_thresh = 0.25, TP = 1457, FP = 131, FN = 15, average IoU = 85.90 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.994111, or 99.41 % 
+Total Detection Time: 46 Seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,12 +14,14 @@ link_directories(${OPENCV_LIB_DIR})
 
 # Generate the executable
 add_executable ("datasetPreprocessing" "src/preprocess.cpp")
-add_executable ("prediction_and_evaluation" "src/predict.cpp")
+add_executable ("yoloPrediction" "src/yoloPredictor.cpp")
+add_executable ("hogPredictor" "src/bowPredictor.cpp")
 
 
 add_subdirectory(include)
 
 
 target_link_libraries("datasetPreprocessing" ${OpenCV_LIBS} include) 
-target_link_libraries("prediction_and_evaluation" ${OpenCV_LIBS} include) 
+target_link_libraries("yoloPrediction" ${OpenCV_LIBS} include) 
+target_link_libraries("hogPredictor" ${OpenCV_LIBS} include) 
 

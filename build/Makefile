@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named prediction_and_evaluation
+# Target rules for targets named hogPredictor
 
 # Build rule for target.
-prediction_and_evaluation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prediction_and_evaluation
-.PHONY : prediction_and_evaluation
+hogPredictor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hogPredictor
+.PHONY : hogPredictor
 
 # fast build rule for target.
-prediction_and_evaluation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prediction_and_evaluation.dir/build.make CMakeFiles/prediction_and_evaluation.dir/build
-.PHONY : prediction_and_evaluation/fast
+hogPredictor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/build
+.PHONY : hogPredictor/fast
+
+#=============================================================================
+# Target rules for targets named yoloPrediction
+
+# Build rule for target.
+yoloPrediction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yoloPrediction
+.PHONY : yoloPrediction
+
+# fast build rule for target.
+yoloPrediction/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/build
+.PHONY : yoloPrediction/fast
 
 #=============================================================================
 # Target rules for targets named datasetPreprocessing
@@ -155,29 +168,29 @@ include/fast:
 	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/include.dir/build.make include/CMakeFiles/include.dir/build
 .PHONY : include/fast
 
-src/predict.o: src/predict.cpp.o
-.PHONY : src/predict.o
+src/bowPredictor.o: src/bowPredictor.cpp.o
+.PHONY : src/bowPredictor.o
 
 # target to build an object file
-src/predict.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prediction_and_evaluation.dir/build.make CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.o
-.PHONY : src/predict.cpp.o
+src/bowPredictor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.o
+.PHONY : src/bowPredictor.cpp.o
 
-src/predict.i: src/predict.cpp.i
-.PHONY : src/predict.i
+src/bowPredictor.i: src/bowPredictor.cpp.i
+.PHONY : src/bowPredictor.i
 
 # target to preprocess a source file
-src/predict.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prediction_and_evaluation.dir/build.make CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.i
-.PHONY : src/predict.cpp.i
+src/bowPredictor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.i
+.PHONY : src/bowPredictor.cpp.i
 
-src/predict.s: src/predict.cpp.s
-.PHONY : src/predict.s
+src/bowPredictor.s: src/bowPredictor.cpp.s
+.PHONY : src/bowPredictor.s
 
 # target to generate assembly for a file
-src/predict.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prediction_and_evaluation.dir/build.make CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.s
-.PHONY : src/predict.cpp.s
+src/bowPredictor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.s
+.PHONY : src/bowPredictor.cpp.s
 
 src/preprocess.o: src/preprocess.cpp.o
 .PHONY : src/preprocess.o
@@ -203,6 +216,30 @@ src/preprocess.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/datasetPreprocessing.dir/build.make CMakeFiles/datasetPreprocessing.dir/src/preprocess.cpp.s
 .PHONY : src/preprocess.cpp.s
 
+src/yoloPredictor.o: src/yoloPredictor.cpp.o
+.PHONY : src/yoloPredictor.o
+
+# target to build an object file
+src/yoloPredictor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/src/yoloPredictor.cpp.o
+.PHONY : src/yoloPredictor.cpp.o
+
+src/yoloPredictor.i: src/yoloPredictor.cpp.i
+.PHONY : src/yoloPredictor.i
+
+# target to preprocess a source file
+src/yoloPredictor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/src/yoloPredictor.cpp.i
+.PHONY : src/yoloPredictor.cpp.i
+
+src/yoloPredictor.s: src/yoloPredictor.cpp.s
+.PHONY : src/yoloPredictor.s
+
+# target to generate assembly for a file
+src/yoloPredictor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/src/yoloPredictor.cpp.s
+.PHONY : src/yoloPredictor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,14 +249,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... datasetPreprocessing"
+	@echo "... hogPredictor"
 	@echo "... include"
-	@echo "... prediction_and_evaluation"
-	@echo "... src/predict.o"
-	@echo "... src/predict.i"
-	@echo "... src/predict.s"
+	@echo "... yoloPrediction"
+	@echo "... src/bowPredictor.o"
+	@echo "... src/bowPredictor.i"
+	@echo "... src/bowPredictor.s"
 	@echo "... src/preprocess.o"
 	@echo "... src/preprocess.i"
 	@echo "... src/preprocess.s"
+	@echo "... src/yoloPredictor.o"
+	@echo "... src/yoloPredictor.i"
+	@echo "... src/yoloPredictor.s"
 .PHONY : help
 
 

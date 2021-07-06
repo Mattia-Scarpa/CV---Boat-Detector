@@ -1,5 +1,5 @@
-CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.o: \
- /media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/src/predict.cpp \
+CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.o: \
+ /media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/src/bowPredictor.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/fstream \
  /usr/include/c++/9/istream /usr/include/c++/9/ios \
  /usr/include/c++/9/iosfwd \
@@ -226,18 +226,11 @@ CMakeFiles/prediction_and_evaluation.dir/src/predict.cpp.o: \
  /usr/local/include/opencv4/opencv2/core/optim.hpp \
  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
- /usr/local/include/opencv4/opencv2/dnn.hpp \
- /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
- /usr/local/include/opencv4/opencv2/core/async.hpp \
- /usr/local/include/opencv4/opencv2/dnn/version.hpp \
- /usr/local/include/opencv4/opencv2/dnn/dict.hpp /usr/include/c++/9/map \
+ /usr/local/include/opencv4/opencv2/ml.hpp /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
  /usr/include/c++/9/bits/erase_if.h \
- /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
- /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
- /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
- /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
  /usr/local/include/opencv4/opencv2/imgproc.hpp \
  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
  /usr/local/include/opencv4/opencv2/highgui.hpp \

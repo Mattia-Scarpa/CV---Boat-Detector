@@ -30,7 +30,7 @@ const string keys = {
   "{@valSubdir vdir v             |test/      |   -t --tdir     \n\t\tSet up the train subdirectory from data/ (e.g., 'train/')\n}"
   "{@formatLabel label l          |true       |   -l --label    \n\t\tExtract YOLO-Darknet txt files from standard JSON boats annotation\n}"
   "{@setEmptyClass empty e        |water      |   -e --empty    \n\t\tSet label class name for image without objects of interest\n}"
-  "{@doAugmentation aug a         |true       |   -a --aug      \n\t\tSet true to perform data augmentation on the train dataset\n}"
+  "{@doAugmentation aug a         |false      |   -a --aug      \n\t\tSet true to perform data augmentation on the train dataset\n}"
   "{@Classification class c       |false      |   -c --class    \n\t\tSet true also to classify the images as well as to identify the generic objects (e.g., boats)\n}"
   "{@Object obj o                 |boat       |   -o --obj      \n\t\tDefine the generic object name (needed if Classification=false)\n}"
   "{@Perspective ptransf p        |3          |   -p --ptransf  \n\t\tDefine the number of increasing perspective transformation\n}"
@@ -85,24 +85,7 @@ int main(int argc, char const *argv[]) {
   glob(DATAPATH_TRAIN+"*.json", labelsPath);
   cout << "A total of " << labelsPath.size() << " labels has been found" << endl;
 
-/*for (size_t i = 0; i < labelsPath.size(); i++) {
-    ifstream uLabel(labelsPath[i]);
-    json raw;
-    uLabel >> raw;
-
-    for (size_t j = 0; j < raw["annotations"].size(); j++) {
-      cout << (raw["annotations"][j]["label"] == "lanciafino" || raw["annotations"][j]["label"] == "lanciafino marrone" || raw["annotations"][j]["label"] == "lanciamaggiore") << endl;
-      if (raw["annotations"][j]["label"] == "lanciafino" || raw["annotations"][j]["label"] == "lanciafino marrone" || raw["annotations"][j]["label"] == "lanciamaggiore") {
-        json labelmodified = R"({"label":"lancia"})"_json;
-        raw["annotations"][j].update(labelmodified);
-        cout << raw["annotations"][j]["label"] << endl;
-        std::ofstream out(labelsPath[i]);
-        out << std::setw(4) << raw << endl;
-      }
-    }
-  }*/
-
-
+  
 
   // Set up the validation size if dataset split is required otherwise get path infos
   vector<string> imagesPathVal, labelsPathVal;

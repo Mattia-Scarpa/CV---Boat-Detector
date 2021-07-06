@@ -12,25 +12,6 @@ using namespace std;
 using namespace cv;
 using namespace dnn;
 
-// structuring elements
-
-struct bbox {
-  vector<string> labels;
-  vector<Point> minP;
-  vector<Point> maxP;
-};
-
-void addBox(struct bbox& lab, string class, Point min, Point max) {
-    labels.push_back(class);
-    minP.push_back(min);
-    maxP.push_back(max);
-}
-
-void clearBox(struct bbox& lab) {
-  labels.clear();
-  minP.clear();
-  maxP.clear();
-}
 
 
 // Initialize the parameters
@@ -40,21 +21,16 @@ float nmsThreshold = 0.4;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
 vector<string> classes;
-vector<bbox> predictedBoxes;
-vector<bbox> groundtruthBoxes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
-  "{help h usage ?                |                 |   Boat detection and bounding box refinement}"
-  "{@modelPath nnPath p           |darknet_cfg/     |   -p --nnPath     \n\t\tSet up the model configuration files path}"
-  "{@ConfigName cfg c             |yolo-obj.cfg     |   -c --cfg        \n\t\tDefine the configuration file name}"
-  "{@WeightsName weights w        |yolo-obj.weights |   -w --weights    \n\t\tDefine the weights file name}"
-  "{@ObjClasses obj o             |obj.names        |   -o --obj        \n\t\tDefine the file path containing classes names}"
-  "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images}"
+  "{help h usage ?                |                 |   Boat detection using YOLO algorithm}"
+  "{@modelPath nnPath p           |darknet_cfg/     |   -p --nnPath     \n\t\tSet up the model configuration files path\n}"
+  "{@ConfigName cfg c             |yolo-obj.cfg     |   -c --cfg        \n\t\tDefine the configuration file name\n}"
+  "{@WeightsName weights w        |yolo-obj.weights |   -w --weights    \n\t\tDefine the weights file name\n}"
+  "{@ObjClasses obj o             |obj.names        |   -o --obj        \n\t\tDefine the file path containing classes names\n}"
+  "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images\n}"
 };
-
-
-
 
 
 // Utilities functions
@@ -145,7 +121,6 @@ void postPocess(Mat& img, const vector<Mat>& outs) {
     int index = indices[i];
     Rect box = boxes[index];
 
-    addBox(predictedBoxes, classes[classIds[index]], Point(box.x, box.y), Point(box.x + box.width, box.y + box.height));
     drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
   }
 }
