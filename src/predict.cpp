@@ -23,12 +23,18 @@ vector<string> classes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
-  "{help h usage ?                |                 |   Label formatting from a standard JSON annotation to a YOLO-Darknet txt files &  data augmentation preprocess}"
+  "{help h usage ?                |                 |   Boat detection and bounding box refinement}"
   "{@modelPath nnPath p           |darknet_cfg/     |   -p --nnPath     \n\t\tSet up the model configuration files path}"
   "{@ConfigName cfg c             |yolo-obj.cfg     |   -c --cfg        \n\t\tDefine the configuration file name}"
   "{@WeightsName weights w        |yolo-obj.weights |   -w --weights    \n\t\tDefine the weights file name}"
+  "{@ObjClasses obj o             |obj.names        |   -o --obj        \n\t\tDefine the file path containing classes names}"
   "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images}"
 };
+
+
+// structuring elements
+
+struct bbox
 
 
 // Utilities functions
@@ -143,6 +149,11 @@ int main(int argc, char const *argv[]) {
 
   String nnConfiguration = MODEL_PATH + parser.get<string>("@ConfigName");
   String nnWeights = MODEL_PATH + parser.get<string>("@WeightsName");
+
+  string classesFile = MODEL_PATH + parser.get<string>("@ObjClasses");
+  ifstream ifs(classesFile.c_str());
+  string line;
+  while (getline(ifs, line)) classes.push_back(line);
 
   string imgPath = "../" + parser.get<string>("@imagePath");
 

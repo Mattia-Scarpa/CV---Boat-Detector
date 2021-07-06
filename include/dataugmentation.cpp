@@ -55,7 +55,7 @@ void dataugmentation::saveAndWritetxt(Mat img, string imgPath, vector<int> class
 
         Point2f center(xmin+(xmax-xmin)/2, ymin+(ymax-ymin)/2);
         Point2f absoluteCenter(center.x/img.cols, center.y/img.rows);
-        objLabelsFiles << classNumber[i] << " " << absoluteCenter.x << " " << absoluteCenter.y << " " << (xmax-xmin)/img.cols << " " << (ymax-ymin)/img.rows;
+        objLabelsFiles << classNumber[i] << " " << absoluteCenter.x << " " << absoluteCenter.y << " " << (xmax-xmin)/img.cols << " " << (ymax-ymin)/img.rows << endl;
       }
     }
     objLabelsFiles.close();
@@ -65,24 +65,6 @@ void dataugmentation::saveAndWritetxt(Mat img, string imgPath, vector<int> class
     waitKey();
     augmentedImagePath.clear();
   }
-
-
-  ofstream objLabelsFiles;
-  objLabelsFiles.open(imgPath.substr(0, imgPath.length()-4)+"_"+augType+"-"+c+".txt");
-
-  if (!classNumber.empty()) {
-    for (size_t i = 0; i < classNumber.size(); i++) {
-      float xmin = boxCorners[i][0].x;
-      float ymin = boxCorners[i][0].y;
-      float xmax = boxCorners[i][2].x;
-      float ymax = boxCorners[i][2].y;
-
-      Point2f center(xmin+(xmax-xmin)/2, ymin+(ymax-ymin)/2);
-      Point2f absoluteCenter(center.x/img.cols, center.y/img.rows);
-      objLabelsFiles << classNumber[i] << " " << absoluteCenter.x << " " << absoluteCenter.y << " " << (xmax-xmin)/img.cols << " " << (ymax-ymin)/img.rows;
-    }
-  }
-  objLabelsFiles.close();
 
 }
 
