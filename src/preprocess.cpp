@@ -85,7 +85,7 @@ int main(int argc, char const *argv[]) {
   glob(DATAPATH_TRAIN+"*.json", labelsPath);
   cout << "A total of " << labelsPath.size() << " labels has been found" << endl;
 
-  
+
 
   // Set up the validation size if dataset split is required otherwise get path infos
   vector<string> imagesPathVal, labelsPathVal;
@@ -189,7 +189,7 @@ int main(int argc, char const *argv[]) {
   // ----------------------------------------------------------------------------
 
 
-  // Creating the validation dataset (1000 items as default)
+  // Creating the validation dataset (25% items as default)
 
   cout << "Writing conf datafiles" << endl;
 

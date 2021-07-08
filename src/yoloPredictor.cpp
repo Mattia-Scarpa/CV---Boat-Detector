@@ -8,6 +8,7 @@ using namespace std;
 #include <opencv2/dnn.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
+#include <opencv2/video.hpp>
 
 using namespace cv;
 using namespace dnn;
@@ -21,6 +22,8 @@ float nmsThreshold = 0.4;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
 vector<string> classes;
+vector<Rect> predictedBoxes;
+vector<Rect> groundTruthBoxes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
@@ -32,8 +35,6 @@ const string keys = {
   "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images\n}"
 };
 
-
-// Utilities functions
 
 
 // Last layer identification
@@ -57,9 +58,9 @@ auto getOutputsNames(const Net& net) {
 
 
 // Draw the predicted bounding box
-void drawBox(int classId, float confidence, int xmin, int ymin, int xmax, int ymax, Mat& img) {
+void drawBox(int classId, float confidence, int xmin, int ymin, int xmax, int ymax, Mat& img, Scalar colorBox = Scalar(0,0,255)) {
 
-  rectangle(img, Point(xmin, ymin), Point(xmax, ymax), Scalar(0,50,255), 2);
+  rectangle(img, Point(xmin, ymin), Point(xmax, ymax), colorBox, 2);
 
   string labelConfidence = format("%.2f", confidence);
 
@@ -78,7 +79,7 @@ void drawBox(int classId, float confidence, int xmin, int ymin, int xmax, int ym
 
 // Remove low confidence labels
 
-void postPocess(Mat& img, const vector<Mat>& outs) {
+auto postPocess(Mat& img, const vector<Mat>& outs) {
   vector<int> classIds;
   vector<float> confidences;
   vector<Rect> boxes;
@@ -121,7 +122,16 @@ void postPocess(Mat& img, const vector<Mat>& outs) {
     int index = indices[i];
     Rect box = boxes[index];
 
-    drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
+    // Filter all the boxes that are outside the image and that has null area
+
+    if (0 < box.width && 0 < box.height) {
+      drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
+
+      predictedBoxes.push_back(box);
+    }
+
+
+
   }
 }
 
@@ -183,6 +193,7 @@ int main(int argc, char const *argv[]) {
 
     postPocess(img, outs);
 
+    namedWindow("test", WINDOW_NORMAL);
     imshow("test", img);
     waitKey();
   }

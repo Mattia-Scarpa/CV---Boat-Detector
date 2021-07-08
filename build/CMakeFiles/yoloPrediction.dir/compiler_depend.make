@@ -299,8 +299,17 @@ CMakeFiles/yoloPrediction.dir/src/yoloPredictor.cpp.o: ../src/yoloPredictor.cpp 
   /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /usr/local/include/opencv4/opencv2/highgui.hpp \
   /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
-  /usr/local/include/opencv4/opencv2/videoio.hpp
+  /usr/local/include/opencv4/opencv2/videoio.hpp \
+  /usr/local/include/opencv4/opencv2/video.hpp \
+  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
+  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
 
+
+/usr/local/include/opencv4/opencv2/video/background_segm.hpp:
+
+/usr/local/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/local/include/opencv4/opencv2/video.hpp:
 
 /usr/local/include/opencv4/opencv2/videoio.hpp:
 

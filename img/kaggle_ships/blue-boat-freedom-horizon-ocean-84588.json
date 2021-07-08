@@ -1,0 +1,98 @@
+{
+  "id": "60e6e97092fcd053c424e4ad",
+  "datasetId": "60e6e8710d0797194ff95541",
+  "createdAt": "2021-07-08T12:02:56.000Z",
+  "dir": "/kaggle_ships",
+  "filename": "/kaggle_ships/blue-boat-freedom-horizon-ocean-84588.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "blue-boat-freedom-horizon-ocean-84588.jpg",
+      "size": 236274,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e6e97085ec7753725a25b1": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 719,
+      "thumbnailAnnotationsId": "60e6e974703f4b14c2345aab",
+      "thumbnailId": "60e6e9730961d57f95ef5a6d",
+      "width": 1280
+    }
+  },
+  "name": "blue-boat-freedom-horizon-ocean-84588.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e6e97092fcd053c424e4ad",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e6e97092fcd053c424e4ad/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e6e97092fcd053c424e4ad/thumbnail",
+  "annotations": [
+    {
+      "id": "60e6ec2dca16ccb0ad8e912d",
+      "datasetId": "60e6e8710d0797194ff95541",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 725,
+          "y": 163.91999999999976,
+          "z": 0
+        },
+        {
+          "x": 975.6300000000001,
+          "y": 482.9113924050586,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "a2ba9a4e-c8ac-479c-903b-87ea450e6672",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e6e871a3e263829128c944"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-08T12:14:37.337Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-08T12:14:37.337Z",
+      "itemId": "60e6e97092fcd053c424e4ad",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e6ec2dca16ccb0ad8e912d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e6e97092fcd053c424e4ad",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+      "hash": "a91051e2444b0f67b68ed6bc67ec94efb4bb205a"
+    }
+  ]
+}
