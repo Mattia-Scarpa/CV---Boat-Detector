@@ -1,6 +1,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <numeric>
 
 using namespace std;
 
@@ -15,15 +16,28 @@ using namespace dnn;
 
 
 
-// Initialize the parameters
+// Auxiliary structure
+
+struct bbox {
+  Point center;       // boundingBox center Point
+  float IoU;          // intersection over union
+};
+
+struct element {
+  int i;
+  int j;
+};
+
+
+// Parameters initialization
 float objectnessThreshold = 0.5; // Objectness threshold
-float confThreshold = 0.5; // Confidence threshold
-float nmsThreshold = 0.4;  // Non-maximum suppression threshold
+float confThreshold = .2f; // Confidence threshold
+float nmsThreshold = .4f;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
 vector<string> classes;
-vector<Rect> predictedBoxes;
-vector<Rect> groundTruthBoxes;
+vector<Rect> predBoxes;
+vector<Rect> trueBoxes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
@@ -35,6 +49,75 @@ const string keys = {
   "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images\n}"
 };
 
+
+
+
+// Utility function
+
+template <typename T>
+void remove_element(vector<vector<T>>&v, int i, int j) {
+  v.erase(v.begin()+i);
+  for (size_t i = 0; i < v.size(); i++) {
+    v[i].erase(v[i].begin()+j);
+  }
+}
+
+void setBox(struct bbox& b, Point pts, float iou) {
+  b.center = pts;
+  b.IoU = iou;
+}
+
+void maximaHighlight(vector<bbox>& b) {
+  float max = 0;
+  for (size_t i = 0; i < b.size(); i++) {
+    if (max < b[i].IoU) {
+      max = b[i].IoU;
+    }
+  }
+  for (size_t i = 0; i < b.size(); i++) {
+    if (max != b[i].IoU) {
+      b[i].IoU = 0;
+    }
+  }
+}
+
+bbox findMaxIoU(vector<vector<bbox>>& b) {
+  float maxIoU = 0;
+  bbox maxIoUBox;
+  element el;
+  for (size_t i = 0; i < b.size(); i++) {
+    for (size_t j = 0; j < b[i].size(); j++) {
+      if (maxIoU < b[i][j].IoU) {
+        maxIoU = b[i][j].IoU;
+        setBox(maxIoUBox, b[i][j].center, b[i][j].IoU);
+        el.i = i;
+        el.j = j;
+      }
+    }
+  }
+  if (0 < maxIoU) {
+    remove_element(b, el.i, el.j);
+  }
+  return maxIoUBox;
+}
+
+int countFalseNegative(vector<vector<bbox>> m) {
+  assert(m.size() > 0);
+  int count = 0;
+  vector<float> cumulative(m[0].size(), 0.0f);
+
+  for (size_t i = 0; i < m.size(); i++) {
+    for (size_t j = 0; j < m[i].size(); j++) {
+      cumulative[j] += m[i][j].IoU;
+    }
+  }
+  for (size_t i = 0; i < cumulative.size(); i++) {
+    if (cumulative[i] == 0) {
+      count++;
+    }
+  }
+  return count;
+}
 
 
 // Last layer identification
@@ -127,11 +210,8 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
     if (0 < box.width && 0 < box.height) {
       drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
 
-      predictedBoxes.push_back(box);
+      predBoxes.push_back(box);
     }
-
-
-
   }
 }
 
@@ -180,6 +260,9 @@ int main(int argc, char const *argv[]) {
 
   for (size_t i = 0; i < imagesPath.size(); i++) {
 
+    predBoxes.clear();
+    trueBoxes.clear();
+
     Mat img = imread(imagesPath[i]);
 
     Mat blob;
@@ -193,21 +276,81 @@ int main(int argc, char const *argv[]) {
 
     postPocess(img, outs);
 
+    // Look for txt file
+    ifstream gTruth;
+    gTruth.open(imagesPath[i].substr(0, imagesPath[i].length()-4)+".txt");
+    if(!gTruth) {
+      cout << "No labels files found for image: " << imagesPath[i] << endl;
+    }
+
+    float w;
+    vector<float> absoluteCoordinates;
+
+    while (gTruth >> w) {
+      int i = 0;
+      absoluteCoordinates.clear();
+      while (i < 4) {
+        gTruth >> w;
+        absoluteCoordinates.push_back(w);
+        i++;
+      }
+      int centerX = (int)(absoluteCoordinates[0] * img.cols);
+      int centerY = (int)(absoluteCoordinates[1] * img.rows);
+      int width = (int)(absoluteCoordinates[2] * img.cols);
+      int height = (int)(absoluteCoordinates[3] * img.rows);
+      int xmin = centerX - width / 2;
+      int ymin = centerY - height / 2;
+      trueBoxes.push_back(Rect(xmin, ymin, width, height));
+    }
+
+    // Calculate Intersection over Union
+
+    vector<vector<bbox>> boxInfo;
+    vector<vector<float>> IoUvalue;
+    vector<bbox> boxInfoTemp;
+    vector<vector<float>> IoUvalueTemp;
+
+    for (size_t i = 0; i < predBoxes.size(); i++) {
+      boxInfoTemp.clear();
+      IoUvalueTemp.clear();
+      bbox boxIoU;
+
+      for (size_t j = 0; j < trueBoxes.size(); j++) {
+        // calculating Intersection between true and predicted boxes
+        Rect intersect = predBoxes[i] & trueBoxes[j];
+        float intersectArea = intersect.width * intersect.height;
+        float unionArea = (predBoxes[i].width * predBoxes[i].height) + (trueBoxes[j].width * trueBoxes[j].height) - intersectArea;
+        float IoU = intersectArea / unionArea;
+        setBox(boxIoU, Point(predBoxes[i].x+(predBoxes[i].width/2), predBoxes[i].y+(predBoxes[i].height/2)), IoU);
+        boxInfoTemp.push_back(boxIoU);
+      }
+      maximaHighlight(boxInfoTemp);
+      boxInfo.push_back(boxInfoTemp);
+    }
+
+    int falseNegative = countFalseNegative(boxInfo);
+    int falsePositive = 0;
+    if (0 < boxInfo.size() && boxInfo.size() > boxInfo[0].size()) {
+      falsePositive = boxInfo.size() - boxInfo[0].size() + falseNegative;
+    }
+
+
+
+    int ln = min(boxInfo.size(), boxInfo[0].size());
+
+    cout << "\n-----------------------------------------------------------------" << endl;
+    cout << "Image: " << imagesPath[i] << endl;
+    for (size_t k = 0; k < ln; k++) {
+      bbox testBox = findMaxIoU(boxInfo);
+      std::cout << "Boat found in position at: " << testBox.center << "\t IoU = " << testBox.IoU << '\n';
+    }
+    cout << "False Negative: " << falseNegative << endl;
+    cout << "False Positive: " << falsePositive << endl;
+
     namedWindow("test", WINDOW_NORMAL);
     imshow("test", img);
     waitKey();
   }
-
-
-
-
-
-
-
-
-
-
-
   return 0;
 }
 

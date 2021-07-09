@@ -1,3 +1,2 @@
-data/../test/images.jpg
-data/../test/cruise_ships_images.jpg
-data/../test/20110722_Venice_Canal_Grande_4072.jpg
+data/../test/A-life-in-boats-image1-hero.jpg
+data/../test/maxresdefault.jpg

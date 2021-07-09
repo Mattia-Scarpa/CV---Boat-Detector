@@ -133,33 +133,3 @@ vector<string> labeltxt::getLabelsList() {
 vector<int> labeltxt::getClassNumber() {
   return label.objectClass;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------------------------------------------------------

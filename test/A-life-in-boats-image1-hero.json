@@ -1,0 +1,98 @@
+{
+  "id": "60e810cc06e77435531ed625",
+  "datasetId": "60e6e8710d0797194ff95541",
+  "createdAt": "2021-07-09T09:03:08.000Z",
+  "dir": "/test",
+  "filename": "/test/A-life-in-boats-image1-hero.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "A-life-in-boats-image1-hero.jpg",
+      "size": 525156,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e810cc43e3bcf6645357a6": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1800,
+      "thumbnailAnnotationsId": "60e810cc703f4b8692349291",
+      "thumbnailId": "60e810cc1dd408769e5d9b4d",
+      "width": 2400
+    }
+  },
+  "name": "A-life-in-boats-image1-hero.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e810cc06e77435531ed625",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e810cc06e77435531ed625/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e810cc06e77435531ed625/thumbnail",
+  "annotations": [
+    {
+      "id": "60e8116787b953b10f03ff86",
+      "datasetId": "60e6e8710d0797194ff95541",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 97.87,
+          "y": 187.23,
+          "z": 0
+        },
+        {
+          "x": 2100,
+          "y": 1563.83,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "8c919c24-f089-4d95-ba85-194a73237703",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e6e871a3e263829128c944"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-09T09:05:43.828Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-09T09:05:43.828Z",
+      "itemId": "60e810cc06e77435531ed625",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e8116787b953b10f03ff86",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e810cc06e77435531ed625",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+      "hash": "88398373b59a243a55f6f1575da5c3f91a50256d"
+    }
+  ]
+}

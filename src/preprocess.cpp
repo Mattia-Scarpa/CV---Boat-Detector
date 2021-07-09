@@ -34,6 +34,7 @@ const string keys = {
   "{@Classification class c       |false      |   -c --class    \n\t\tSet true also to classify the images as well as to identify the generic objects (e.g., boats)\n}"
   "{@Object obj o                 |boat       |   -o --obj      \n\t\tDefine the generic object name (needed if Classification=false)\n}"
   "{@Perspective ptransf p        |3          |   -p --ptransf  \n\t\tDefine the number of increasing perspective transformation\n}"
+  "{@useGradient grad g           |false      |   -g --grad     \n\t\tReplace all the image in the train set and in the test set with its 3channel gradients}"
 };
 
 
@@ -72,6 +73,7 @@ int main(int argc, char const *argv[]) {
   int PERSPECTIVE_COUNT = parser.get<int>("@Perspective");
   string DATAPATH_TRAIN = "../data/"+parser.get<string>("@trainSubdir");
   string DATAPATH_TEST = "../data/"+parser.get<string>("@valSubdir");
+  bool USE_GRADIENT = parser.get<bool>("@useGradient");
 
 
   // ----------------------------------------------------------------------------
@@ -178,8 +180,6 @@ int main(int argc, char const *argv[]) {
         }
       }
     }
-
-
   }
 
 
@@ -225,9 +225,7 @@ int main(int argc, char const *argv[]) {
   }
   cout << "Exporting augmented images path: " << augmentedPath.size() << " images..." << endl;
   for (size_t i = 0; i < augmentedPath.size(); i++) {
-    //cout << augmentedPath[i].substr(j, imagesPath[i].length()) << endl;
     testFile << augmentedPath[i].substr(j, augmentedPath[i].length()) << endl;
-    //cout << augmentedPath[i].substr(j, augmentedPath[i].length()) << endl;
     usleep(5 * microsecond);//sleeps for 5 milliseconds
   }
 

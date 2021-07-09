@@ -1,9 +1,8 @@
 data/../test/1-VVAG66PR.jpg
-data/../test/download.jpg
-data/../test/CRUISE_Charming.jpg
-data/../test/Gondolas-regatta-Venice-Grand-Canal.jpg
-data/../test/K-SHIPS-1-1920x1280.jpg
-data/../test/MarkAlbertazzi-1-4_3museumShips.jpg
-data/../test/Sailing-well-boat-Jehu-visitaland2017-DE.jpg
+data/../test/147967180-yachts-and-boats-in-the-harbor-on-mediterranean-sea-coast-travel-and-leisure-scene.jpg
+data/../test/65714535999d19f854e7ac5861469a7d8d18ca67.jpg
 data/../test/id360-motoscafo-canal-grande-full.jpg
+data/../test/CRUISE_Charming.jpg
+data/../test/Sailing-well-boat-Jehu-visitaland2017-DE.jpg
+data/../test/c87845acfc9dd6777a374f33121f7640.jpg
 data/../test/default.jpg
