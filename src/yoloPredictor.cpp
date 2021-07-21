@@ -17,12 +17,13 @@ using namespace dnn;
 
 
 // Auxiliary structure
-
+//Bounding box structuring element
 struct bbox {
   Point center;       // boundingBox center Point
   float IoU;          // intersection over union
 };
 
+// Element defined by its Row and column in the boundingBos-IoU matrix
 struct element {
   int i;
   int j;
@@ -31,7 +32,7 @@ struct element {
 
 // Parameters initialization
 float objectnessThreshold = 0.5; // Objectness threshold
-float confThreshold = .2f; // Confidence threshold
+float confThreshold = .5f; // Confidence threshold
 float nmsThreshold = .4f;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
@@ -41,19 +42,19 @@ vector<Rect> trueBoxes;
 
 // Command line parser function, keys accepted by command line parser
 const string keys = {
-  "{help h usage ?                |                 |   Boat detection using YOLO algorithm}"
-  "{@modelPath nnPath p           |darknet_cfg/     |   -p --nnPath     \n\t\tSet up the model configuration files path\n}"
-  "{@ConfigName cfg c             |yolo-obj.cfg     |   -c --cfg        \n\t\tDefine the configuration file name\n}"
-  "{@WeightsName weights w        |yolo-obj.weights |   -w --weights    \n\t\tDefine the weights file name\n}"
-  "{@ObjClasses obj o             |obj.names        |   -o --obj        \n\t\tDefine the file path containing classes names\n}"
-  "{@imagePath image i            |img/             |   -i --images     \n\t\tDefine the path to the test images\n}"
+  "{help h usage ?                |                   |   Boat detection using YOLO algorithm}"
+  "{@modelPath nnPath p           |cfg/               |   -p --nnPath     \n\t\tSet up the model configuration files path\n}"
+  "{@WeightsPath weights w        |cfg/               |   -w --weights    \n\t\tDefine the weights files paths\n}"
+  "{@ConfigName cfg c             |yolo-obj.cfg       |   -c --cfg        \n\t\tDefine the configuration file name\n}"
+  "{@ObjClasses obj o             |obj.names          |   -o --obj        \n\t\tDefine the file path containing classes names\n}"
+  "{@imagePath image i            |test_result/kaggle/|   -i --images     \n\t\tDefine the path to the test images\n}"
+  "{@falseMatchCount match m      |false              |   -m --match      \n\t\tDisplay the False Negative and False Positive count}"
 };
-
-
 
 
 // Utility function
 
+// Remove the row and column of a vector of vector matrix
 template <typename T>
 void remove_element(vector<vector<T>>&v, int i, int j) {
   v.erase(v.begin()+i);
@@ -62,25 +63,13 @@ void remove_element(vector<vector<T>>&v, int i, int j) {
   }
 }
 
+// struct bbox function
 void setBox(struct bbox& b, Point pts, float iou) {
   b.center = pts;
   b.IoU = iou;
 }
 
-void maximaHighlight(vector<bbox>& b) {
-  float max = 0;
-  for (size_t i = 0; i < b.size(); i++) {
-    if (max < b[i].IoU) {
-      max = b[i].IoU;
-    }
-  }
-  for (size_t i = 0; i < b.size(); i++) {
-    if (max != b[i].IoU) {
-      b[i].IoU = 0;
-    }
-  }
-}
-
+// return the boundingBox with the highiest IoU over all the matrix and remove the corresponding row and column
 bbox findMaxIoU(vector<vector<bbox>>& b) {
   float maxIoU = 0;
   bbox maxIoUBox;
@@ -98,22 +87,27 @@ bbox findMaxIoU(vector<vector<bbox>>& b) {
   if (0 < maxIoU) {
     remove_element(b, el.i, el.j);
   }
+  else {
+    setBox(maxIoUBox, Point(-1,-1), 0);
+  }
   return maxIoUBox;
 }
 
+//Find the False negative quantinty depending on the null intersection remained
 int countFalseNegative(vector<vector<bbox>> m) {
-  assert(m.size() > 0);
   int count = 0;
-  vector<float> cumulative(m[0].size(), 0.0f);
+  if (0 < m.size()) {
+    vector<float> cumulative(m[0].size(), 0.0f);
 
-  for (size_t i = 0; i < m.size(); i++) {
-    for (size_t j = 0; j < m[i].size(); j++) {
-      cumulative[j] += m[i][j].IoU;
+    for (size_t i = 0; i < m.size(); i++) {
+      for (size_t j = 0; j < m[i].size(); j++) {
+        cumulative[j] += m[i][j].IoU;
+      }
     }
-  }
-  for (size_t i = 0; i < cumulative.size(); i++) {
-    if (cumulative[i] == 0) {
-      count++;
+    for (size_t i = 0; i < cumulative.size(); i++) {
+      if (cumulative[i] == 0) {
+        count++;
+      }
     }
   }
   return count;
@@ -145,18 +139,17 @@ void drawBox(int classId, float confidence, int xmin, int ymin, int xmax, int ym
 
   rectangle(img, Point(xmin, ymin), Point(xmax, ymax), colorBox, 2);
 
-  string labelConfidence = format("%.2f", confidence);
+  string labelConfidence = format("%.2f", confidence*100);
 
   if (!classes.empty() && classId < (int)classes.size()) {
-    labelConfidence = classes[classId] + ": " + labelConfidence;
+    labelConfidence = classes[classId] + ": " + labelConfidence + (char)37;
   }
 
   // Displaying the label at the top of its bounding box
   int baseLine;
   Size labelSize = getTextSize(labelConfidence, FONT_HERSHEY_SCRIPT_SIMPLEX, 0.5, 1, &baseLine);
   ymin = max(ymin, labelSize.height);
-  rectangle(img, Point(xmin, ymin - round(1.5*labelSize.height)), Point(xmin + round(1.5*labelSize.width), ymin + baseLine), Scalar(255, 255, 255), FILLED);
-    putText(img, labelConfidence, Point(xmin, ymin), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0,0,0),1);
+  putText(img, labelConfidence, Point(xmin, ymin), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0,255,255),1);
 }
 
 
@@ -168,6 +161,7 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
   vector<Rect> boxes;
 
   for (size_t i = 0; i < outs.size(); i++) {
+
     // Scan through all the bounding boxes output from the network and keep only the
     // ones with high confidence scores. Assign the box's class label as the class
     // with the highest score for the box.
@@ -181,7 +175,7 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
 
       minMaxLoc(scores, 0, &confidence, 0, &classIdPoint);
 
-      if (confidence > confThreshold) {
+      if (confidence > confThreshold) { // Filtering the detection below a certain confidence
         int centerX = (int)(data[0] * img.cols);
         int centerY = (int)(data[1] * img.rows);
         int width = (int)(data[2] * img.cols);
@@ -197,7 +191,6 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
   }
 
   // Non Maxima Suppression (NMS)
-
   vector<int> indices;
   NMSBoxes(boxes, confidences, confThreshold, nmsThreshold, indices);
 
@@ -206,10 +199,9 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
     Rect box = boxes[index];
 
     // Filter all the boxes that are outside the image and that has null area
-
     if (0 < box.width && 0 < box.height) {
       drawBox(classIds[index], confidences[index], box.x, box.y, box.x + box.width, box.y + box.height, img);
-
+      // Save all the remaining drawn boxes
       predBoxes.push_back(box);
     }
   }
@@ -220,21 +212,21 @@ auto postPocess(Mat& img, const vector<Mat>& outs) {
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
-
+// Main function
 int main(int argc, char const *argv[]) {
 
   CommandLineParser parser(argc, argv, keys);
-  parser.about("Boat detector pre-process");
+  parser.about("Boat detector with YOLO algorithm");
   if (parser.has("help")) {
     parser.printMessage();
     return 0;
   }
 
-
+  // Extraing command line informations and specifications
   string MODEL_PATH = "../" + parser.get<string>("@modelPath");
 
   String nnConfiguration = MODEL_PATH + parser.get<string>("@ConfigName");
-  String nnWeights = MODEL_PATH + parser.get<string>("@WeightsName");
+  String nnWeightsPath = "../" + parser.get<string>("@WeightsPath");
 
   string classesFile = MODEL_PATH + parser.get<string>("@ObjClasses");
   ifstream ifs(classesFile.c_str());
@@ -253,30 +245,88 @@ int main(int argc, char const *argv[]) {
     }
   }
   cout << "A total of " << imagesPath.size() << " images to test has been found!" << endl;
+  if (imagesPath.size() == 0) {
+    cout << "No Images found, please check the folder: " << (char)126 << imgPath.substr(2, imgPath.length()) << endl;
+    return 0;
+  }
+
+  vector<String> nnWeights;
+  glob(nnWeightsPath+"*.weights", nnWeights);
+  cout << "A total of " << nnWeights.size() << " weights files has been found!" << endl;
+  if (nnWeights.size() == 0) {
+    cout << "No weights found, please check the folder: " << (char)126 << nnWeightsPath.substr(2, nnWeightsPath.length()) << endl;
+    cout << "Download the weights from: \nhttps://drive.google.com/drive/folders/1l9XJYxJBKEy6aWem1EERb68zj5qSdiZU?usp=sharing" << endl;
+    return 0;
+  }
+  for (size_t i = 0; i < nnWeights.size(); i++) {
+    cout << i << ": " << nnWeights[i] << endl;
+  }
+  cout << "Please select the wieghts file to use (type a number): ";
+  int selection;
+  cin >> selection;
 
 
-  cout << "Loading darknet models configuration file and trained weights..." << endl;
-  Net net = readNetFromDarknet(nnConfiguration, nnWeights);
+  cout << "Loading darknet model configuration files and trained weights..." << endl;
+  Net net = readNetFromDarknet(nnConfiguration, nnWeights[selection]);
+
+  bool USE_GRADIENT;
+  char grad;
+  cout << "Do you want to perform detection from the gradient magnitude image? (y/n) ";
+  cin >> grad;
+  switch (grad) {
+    case 'y':
+      USE_GRADIENT = true;
+    break;
+    case 'Y':
+      USE_GRADIENT = true;
+    break;
+    case 'n':
+      USE_GRADIENT = false;
+    break;
+    case 'N':
+      USE_GRADIENT = false;
+    break;
+    default:
+      USE_GRADIENT = false;
+    break;
+  }
 
   for (size_t i = 0; i < imagesPath.size(); i++) {
-
+    // clearing the vector of prediction and true boxes
     predBoxes.clear();
     trueBoxes.clear();
-
+    // reading the image
     Mat img = imread(imagesPath[i]);
 
-    Mat blob;
-    blobFromImage(img, blob, 1/255.0, Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
+    Mat blob, src;
+
+    if (USE_GRADIENT) {
+      src = img.clone();
+      src.convertTo(src, CV_32F, 1/255.0);
+      Mat gx, gy;
+      Sobel(src, gx, CV_32F, 1, 0, 1);
+      Sobel(src, gy, CV_32F, 0, 1, 1);
+
+      magnitude(gx, gy, src);
+      src.convertTo(src, CV_8UC3, 255);
+    }
+    else {
+      src = img.clone();
+    }
+
+    blobFromImage(src, blob, 1/255.0, Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
 
     //Sets the input to the network
     net.setInput(blob);
 
     vector<Mat> outs;
+    // Detection
     net.forward(outs, getOutputsNames(net));
 
+    // Filter below a certain confidence and merge the overlapping box, then draw the rectangle
     postPocess(img, outs);
 
-    // Look for txt file
+    // Look for ground truth txt file
     ifstream gTruth;
     gTruth.open(imagesPath[i].substr(0, imagesPath[i].length()-4)+".txt");
     if(!gTruth) {
@@ -285,8 +335,8 @@ int main(int argc, char const *argv[]) {
 
     float w;
     vector<float> absoluteCoordinates;
-
-    while (gTruth >> w) {
+    // Extracting the ground truth bounding boxes
+    while (gTruth >> w) { //Ignoring the label informations
       int i = 0;
       absoluteCoordinates.clear();
       while (i < 4) {
@@ -294,6 +344,7 @@ int main(int argc, char const *argv[]) {
         absoluteCoordinates.push_back(w);
         i++;
       }
+      // extracting the boxes coordinates
       int centerX = (int)(absoluteCoordinates[0] * img.cols);
       int centerY = (int)(absoluteCoordinates[1] * img.rows);
       int width = (int)(absoluteCoordinates[2] * img.cols);
@@ -304,95 +355,58 @@ int main(int argc, char const *argv[]) {
     }
 
     // Calculate Intersection over Union
-
     vector<vector<bbox>> boxInfo;
     vector<vector<float>> IoUvalue;
     vector<bbox> boxInfoTemp;
-    vector<vector<float>> IoUvalueTemp;
 
     for (size_t i = 0; i < predBoxes.size(); i++) {
       boxInfoTemp.clear();
-      IoUvalueTemp.clear();
       bbox boxIoU;
-
       for (size_t j = 0; j < trueBoxes.size(); j++) {
         // calculating Intersection between true and predicted boxes
         Rect intersect = predBoxes[i] & trueBoxes[j];
         float intersectArea = intersect.width * intersect.height;
-        float unionArea = (predBoxes[i].width * predBoxes[i].height) + (trueBoxes[j].width * trueBoxes[j].height) - intersectArea;
+        float unionArea = (predBoxes[i].width * predBoxes[i].height)
+         + (trueBoxes[j].width * trueBoxes[j].height) - intersectArea;
         float IoU = intersectArea / unionArea;
-        setBox(boxIoU, Point(predBoxes[i].x+(predBoxes[i].width/2), predBoxes[i].y+(predBoxes[i].height/2)), IoU);
+        setBox(boxIoU, Point(predBoxes[i].x+(predBoxes[i].width/2),
+         predBoxes[i].y+(predBoxes[i].height/2)), IoU);
         boxInfoTemp.push_back(boxIoU);
       }
-      maximaHighlight(boxInfoTemp);
       boxInfo.push_back(boxInfoTemp);
     }
 
+    // count false Negative
     int falseNegative = countFalseNegative(boxInfo);
+    if (predBoxes.size() == 0) {
+      falseNegative = trueBoxes.size(); // All the true boxes are false negative (if nothing has been detected)
+    }
     int falsePositive = 0;
-    if (0 < boxInfo.size() && boxInfo.size() > boxInfo[0].size()) {
+    int ln = 0;
+
+    // count False positive (extra functions not complete)
+    if (0 < boxInfo.size()) {
       falsePositive = boxInfo.size() - boxInfo[0].size() + falseNegative;
+      if (falsePositive < 0) {  // reset if false positive is Negative
+        falsePositive= 0;
+      }
+      ln = min(boxInfo.size(), boxInfo[0].size());
     }
 
-
-
-    int ln = min(boxInfo.size(), boxInfo[0].size());
-
     cout << "\n-----------------------------------------------------------------" << endl;
-    cout << "Image: " << imagesPath[i] << endl;
+    cout << "Image: " << imagesPath[i].substr(imgPath.length(), imagesPath[i].length()) << endl;
     for (size_t k = 0; k < ln; k++) {
-      bbox testBox = findMaxIoU(boxInfo);
-      std::cout << "Boat found in position at: " << testBox.center << "\t IoU = " << testBox.IoU << '\n';
+      bbox maxBox = findMaxIoU(boxInfo);
+      if (0 < maxBox.IoU) {
+        std::cout << "Boat found in position at: " << maxBox.center << "\t IoU = " << maxBox.IoU << '\n';
+      }
     }
     cout << "False Negative: " << falseNegative << endl;
     cout << "False Positive: " << falsePositive << endl;
 
-    namedWindow("test", WINDOW_NORMAL);
-    imshow("test", img);
+    namedWindow("Detection", WINDOW_NORMAL);
+    imshow("Detection", img);
     waitKey();
   }
   return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------------------------------------------------------

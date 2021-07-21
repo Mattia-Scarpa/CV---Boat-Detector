@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /media/mattiascarpa/Archivio/Programming_Workspace/Computer_V
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hogPredictor.dir/all
 all: CMakeFiles/yoloPrediction.dir/all
 all: CMakeFiles/datasetPreprocessing.dir/all
 all: include/all
@@ -74,7 +73,6 @@ preinstall: include/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hogPredictor.dir/clean
 clean: CMakeFiles/yoloPrediction.dir/clean
 clean: CMakeFiles/datasetPreprocessing.dir/clean
 clean: include/clean
@@ -96,39 +94,13 @@ include/clean: include/CMakeFiles/include.dir/clean
 .PHONY : include/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hogPredictor.dir
-
-# All Build rule for target.
-CMakeFiles/hogPredictor.dir/all: include/CMakeFiles/include.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles --progress-num=3,4 "Built target hogPredictor"
-.PHONY : CMakeFiles/hogPredictor.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/hogPredictor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hogPredictor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles 0
-.PHONY : CMakeFiles/hogPredictor.dir/rule
-
-# Convenience name for target.
-hogPredictor: CMakeFiles/hogPredictor.dir/rule
-.PHONY : hogPredictor
-
-# clean rule for target.
-CMakeFiles/hogPredictor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/clean
-.PHONY : CMakeFiles/hogPredictor.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/yoloPrediction.dir
 
 # All Build rule for target.
 CMakeFiles/yoloPrediction.dir/all: include/CMakeFiles/include.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yoloPrediction.dir/build.make CMakeFiles/yoloPrediction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles --progress-num=8,9 "Built target yoloPrediction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles --progress-num=6,7 "Built target yoloPrediction"
 .PHONY : CMakeFiles/yoloPrediction.dir/all
 
 # Build rule for subdir invocation for target.
@@ -180,7 +152,7 @@ CMakeFiles/datasetPreprocessing.dir/clean:
 include/CMakeFiles/include.dir/all:
 	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/include.dir/build.make include/CMakeFiles/include.dir/depend
 	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/include.dir/build.make include/CMakeFiles/include.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles --progress-num=5,6,7 "Built target include"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles --progress-num=3,4,5 "Built target include"
 .PHONY : include/CMakeFiles/include.dir/all
 
 # Build rule for subdir invocation for target.

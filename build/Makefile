@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hogPredictor
-
-# Build rule for target.
-hogPredictor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hogPredictor
-.PHONY : hogPredictor
-
-# fast build rule for target.
-hogPredictor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/build
-.PHONY : hogPredictor/fast
-
-#=============================================================================
 # Target rules for targets named yoloPrediction
 
 # Build rule for target.
@@ -167,30 +154,6 @@ include: cmake_check_build_system
 include/fast:
 	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/include.dir/build.make include/CMakeFiles/include.dir/build
 .PHONY : include/fast
-
-src/bowPredictor.o: src/bowPredictor.cpp.o
-.PHONY : src/bowPredictor.o
-
-# target to build an object file
-src/bowPredictor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.o
-.PHONY : src/bowPredictor.cpp.o
-
-src/bowPredictor.i: src/bowPredictor.cpp.i
-.PHONY : src/bowPredictor.i
-
-# target to preprocess a source file
-src/bowPredictor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.i
-.PHONY : src/bowPredictor.cpp.i
-
-src/bowPredictor.s: src/bowPredictor.cpp.s
-.PHONY : src/bowPredictor.s
-
-# target to generate assembly for a file
-src/bowPredictor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hogPredictor.dir/build.make CMakeFiles/hogPredictor.dir/src/bowPredictor.cpp.s
-.PHONY : src/bowPredictor.cpp.s
 
 src/preprocess.o: src/preprocess.cpp.o
 .PHONY : src/preprocess.o
@@ -249,12 +212,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... datasetPreprocessing"
-	@echo "... hogPredictor"
 	@echo "... include"
 	@echo "... yoloPrediction"
-	@echo "... src/bowPredictor.o"
-	@echo "... src/bowPredictor.i"
-	@echo "... src/bowPredictor.s"
 	@echo "... src/preprocess.o"
 	@echo "... src/preprocess.i"
 	@echo "... src/preprocess.s"

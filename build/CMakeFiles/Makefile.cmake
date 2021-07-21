@@ -134,7 +134,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/hogPredictor.dir/DependInfo.cmake"
   "CMakeFiles/yoloPrediction.dir/DependInfo.cmake"
   "CMakeFiles/datasetPreprocessing.dir/DependInfo.cmake"
   "include/CMakeFiles/include.dir/DependInfo.cmake"

@@ -1,6 +1,7 @@
-data/train/
-data/test/
 data.zip
 data_backup(original)/
 TBP/
 darknet_cfg/
+*Report*
+IoU*
+dataset/

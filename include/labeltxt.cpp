@@ -40,9 +40,9 @@ labeltxt::labeltxt() {}
 // Public functions
 
 void labeltxt::setJsonPath(string path) {
-
   ifstream uLabel(path);
   uLabel >> rawLabels;
+  // extracting JSON dictionary
   imgName = string(rawLabels["name"]);
   rootPath = path.substr(0, path.length() - imgName.length()-1);
   imgName = imgName.substr(0, imgName.length()-4);
@@ -67,11 +67,12 @@ Mat labeltxt::getImage() {
 void labeltxt::extractLabelsCoordinates(string emptyClass, bool wtxt, bool classify, string obj) {
   clearObjClass(label);
   corners.clear();
-  //cout << "Extracting labels coordinates from image " << rawLabels["name"] << endl;
 
+  // Check if there is labels or if the image has been classified as negative image (water class)
   if (int(rawLabels["annotationsCount"]) != 0 && string(rawLabels["annotations"][0]["label"]) != emptyClass) {
     for (size_t i(0); i < rawLabels["annotations"].size(); i++) {
 
+      // Extracting coordinates of each label in the image
       if (rawLabels["annotations"][i]["type"] == "box") {
         float xmin = rawLabels["annotations"][i]["coordinates"][0]["x"];
         float ymin = rawLabels["annotations"][i]["coordinates"][0]["y"];
@@ -81,6 +82,7 @@ void labeltxt::extractLabelsCoordinates(string emptyClass, bool wtxt, bool class
         vector<Point2f> cornerstemp = {Point2f(xmin, ymin), Point2f(xmin,ymax), Point2f(xmax,ymax), Point2f(xmax, ymin)};
         corners.push_back(cornerstemp);
 
+        // che the center of each bounding box
         Point2f center(xmin+(xmax-xmin)/2, ymin+(ymax-ymin)/2);
         Point2f absoluteCenter(center.x/img.cols, center.y/img.rows);
 
@@ -93,13 +95,11 @@ void labeltxt::extractLabelsCoordinates(string emptyClass, bool wtxt, bool class
           usedLabels = {obj};
         }
 
-
         label.objectClass.push_back(numClass);
         label.absCenter.push_back(absoluteCenter);
         label.width.push_back((xmax-xmin)/img.cols);
         label.height.push_back((ymax-ymin)/img.rows);
       }
-
     }
 
     if (wtxt) {

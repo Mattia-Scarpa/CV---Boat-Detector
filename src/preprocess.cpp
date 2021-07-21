@@ -15,26 +15,20 @@ using namespace cv;
 #include <labeltxt.h>
 #include <dataugmentation.h>
 
-/*
-#include <json.hpp>
-#include <iomanip>
-
-using json = nlohmann::json;*/
-
 // Command line parser function, keys accepted by command line parser
 const string keys = {
   "{help h usage ?                |           |   Implementation of the label formatting from a standard JSON annotation to a YOLO-Darknet txt files & implementation of a data augmentation pre process}"
   "{@useValidation useval v       |false      |   -u --useval   \n\t\tSpecify if the validation images has to be taken form a different folder than that of the train set\n}"
   "{@validationRatio vratio r     |.25        |   -r --vratio   \n\t\tSet up the train-validation images ratio\n}"
   "{@trainSubdir tdir t           |train/     |   -t --tdir     \n\t\tSet up the train subdirectory from data/ (e.g., 'train/')\n}"
-  "{@valSubdir vdir v             |test/      |   -t --tdir     \n\t\tSet up the train subdirectory from data/ (e.g., 'train/')\n}"
+  "{@valSubdir vdir v             |test/      |   -t --tdir     \n\t\tSet up the train subdirectory from data/ (e.g., 'test/')\n}"
   "{@formatLabel label l          |true       |   -l --label    \n\t\tExtract YOLO-Darknet txt files from standard JSON boats annotation\n}"
   "{@setEmptyClass empty e        |water      |   -e --empty    \n\t\tSet label class name for image without objects of interest\n}"
   "{@doAugmentation aug a         |false      |   -a --aug      \n\t\tSet true to perform data augmentation on the train dataset\n}"
   "{@Classification class c       |false      |   -c --class    \n\t\tSet true also to classify the images as well as to identify the generic objects (e.g., boats)\n}"
   "{@Object obj o                 |boat       |   -o --obj      \n\t\tDefine the generic object name (needed if Classification=false)\n}"
   "{@Perspective ptransf p        |3          |   -p --ptransf  \n\t\tDefine the number of increasing perspective transformation\n}"
-  "{@useGradient grad g           |false      |   -g --grad     \n\t\tReplace all the image in the train set and in the test set with its 3channel gradients}"
+  "{@useGradient grad g           |false      |   -g --grad     \n\t\tReplace all the image in the train set and in the test set with its 3-channel gradients}"
 };
 
 
@@ -59,12 +53,13 @@ int main(int argc, char const *argv[]) {
     return 0;
   }
 
+  // if useVal is false, extract validation images from the given dataset
   bool useVal = parser.get<bool>("@useValidation");
   if (!useVal) {
      VAL_RATIO = parser.get<float>("@validationRatio");
   }
 
-  // Get labeling requirement
+  // Get labeling requirement and informations
   string emptyClass = parser.get<string>("@setEmptyClass");
   bool DO_LABEL = parser.get<bool>("@formatLabel");
   bool DO_AUGMENTATION = parser.get<bool>("@doAugmentation");
@@ -86,6 +81,11 @@ int main(int argc, char const *argv[]) {
   // Reading labels path
   glob(DATAPATH_TRAIN+"*.json", labelsPath);
   cout << "A total of " << labelsPath.size() << " labels has been found" << endl;
+  if (imagesPath.size() == 0 || labelsPath.size() == 0) {
+    cout << "No images or labes annotations found!" << endl;
+    cout << "Download images with JSON annotations here: \nhttps://drive.google.com/drive/folders/1Zq0Vbe_tU4rKuLtER2zkrtGN3OKmVj9W?usp=sharing" << endl;
+    return 0;
+  }
 
 
 
@@ -102,6 +102,11 @@ int main(int argc, char const *argv[]) {
     glob(DATAPATH_TEST+"*.json", labelsPathVal);
     cout << "A total of " << labelsPathVal.size() << " labels has been found" << endl;
   }
+  if (imagesPathVal.size() == 0 || labelsPathVal.size() == 0) {
+    cout << "No validation images or labes annotations found..." << endl;
+    cout << "Extracting validation from train images!" << endl;
+    useVal = false;
+  }
 
 
   // Manipulating boats labels annotation from JSON format to YOLO-darknet txt file (if required)
@@ -115,7 +120,7 @@ int main(int argc, char const *argv[]) {
 
 
   if (!useVal) {
-    cout << "Extracting validation images: " << VAL_SIZE << " images..." << endl;
+    cout << "Extracting and parsing validation images: " << VAL_SIZE << " images..." << endl;
     for (size_t i = 0; i < VAL_SIZE; i++) {
       srand(time(0));
       int index = rand() % imagesPath.size() + 1;
@@ -130,7 +135,7 @@ int main(int argc, char const *argv[]) {
     }
   }
   else {
-    cout << "getting validation images: " << labelsPathVal.size() << "images..." << endl;
+    cout << "Parsing validation dataset: " << labelsPathVal.size() << "images..." << endl;
     for (size_t i = 0; i < labelsPathVal.size(); i++) {
       labelParser->setJsonPath(labelsPathVal[i]);
       labelParser->setImg(imagesPathVal[i]);
@@ -140,7 +145,7 @@ int main(int argc, char const *argv[]) {
 
 
 
-  cout << "Performing labeling formatting and data augmentation..." << endl;
+  cout << "Annotations parsing and augment images..." << endl;
 
   for (size_t i(0); i < labelsPath.size(); i++) {
     labelParser->setJsonPath(labelsPath[i]);
@@ -182,6 +187,56 @@ int main(int argc, char const *argv[]) {
     }
   }
 
+  if (USE_GRADIENT) {
+    vector<string> path;
+    if (!useVal) {
+      glob(DATAPATH_TRAIN+"*.jpg",path);
+      cout << "Converting " << path.size() << " images..." << endl;
+      for (size_t i = 0; i < path.size(); i++) {
+        Mat gradImg = imread(path[i]);
+        gradImg.convertTo(gradImg, CV_32F, 1/255.0);
+        Mat gx, gy;
+        Sobel(gradImg, gx, CV_32F, 1, 0, 1);
+        Sobel(gradImg, gy, CV_32F, 0, 1, 1);
+
+        magnitude(gx, gy, gradImg);
+        gradImg.convertTo(gradImg, CV_8UC3, 255);
+        imwrite(path[i], gradImg);
+      }
+    }
+    else {
+      glob(DATAPATH_TRAIN+"*.jpg",path);
+      cout << "Converting " << path.size() << " images..." << endl;
+      for (size_t i = 0; i < path.size(); i++) {
+        Mat gradImg = imread(path[i]);
+        gradImg.convertTo(gradImg, CV_32F, 1/255.0);
+        Mat gx, gy;
+        Sobel(gradImg, gx, CV_32F, 1, 0, 1);
+        Sobel(gradImg, gy, CV_32F, 0, 1, 1);
+
+        magnitude(gx, gy, gradImg);
+        gradImg.convertTo(gradImg, CV_8UC3, 255);
+        imwrite(path[i], gradImg);
+        //waitKey();
+      }
+      glob(DATAPATH_TEST+"*.jpg",path);
+      cout << "Converting " << path.size() << " images..." << endl;
+      for (size_t i = 0; i < path.size(); i++) {
+        Mat gradImg = imread(path[i]);
+        gradImg.convertTo(gradImg, CV_32F, 1/255.0);
+        Mat gx, gy;
+        Sobel(gradImg, gx, CV_32F, 1, 0, 1);
+        Sobel(gradImg, gy, CV_32F, 0, 1, 1);
+
+        magnitude(gx, gy, gradImg);
+        gradImg.convertTo(gradImg, CV_8UC3, 255);
+        imwrite(path[i], gradImg);
+        //waitKey();
+      }
+
+    }
+  }
+
 
 
   // ----------------------------------------------------------------------------
@@ -195,7 +250,8 @@ int main(int argc, char const *argv[]) {
 
   ofstream valFile, testFile, objNamesFile, objDataFile;
   int j = imagesPath[0].find("data/");
-
+  // extracting path from data/ folder
+  // Removing old configuration files
   remove((imagesPath[0].substr(0, j+5)+"test.txt").c_str());
   remove((imagesPath[0].substr(0, j+5)+"train.txt").c_str());
   remove((imagesPath[0].substr(0, j+5)+"obj.names").c_str());
@@ -213,20 +269,22 @@ int main(int argc, char const *argv[]) {
     }
   }
   else {
-    cout << "Exporting validation images path: " << imagesPathVal.size() << " images..." << endl;
+    cout << "Exporting validation images paths: " << imagesPathVal.size() << " images..." << endl;
     for (size_t i = 0; i < labelsPathVal.size(); i++) {
       valFile << imagesPathVal[i].substr(j, imagesPathVal[i].length()) << endl;
     }
   }
 
-  cout << "Exporting train images path: " << imagesPath.size() << " images..." << endl;
+  cout << "Exporting train paths: " << imagesPath.size() << " images..." << endl;
   for (size_t i = 0; i < imagesPath.size(); i++) {
     testFile << imagesPath[i].substr(j, imagesPath[i].length()) << endl;
   }
-  cout << "Exporting augmented images path: " << augmentedPath.size() << " images..." << endl;
+  if (augmentedPath.size() == 0) {
+    cout << "Exporting augmented paths: " << augmentedPath.size() << " images..." << endl;
+  }
   for (size_t i = 0; i < augmentedPath.size(); i++) {
     testFile << augmentedPath[i].substr(j, augmentedPath[i].length()) << endl;
-    usleep(5 * microsecond);//sleeps for 5 milliseconds
+    usleep(5 * microsecond);//sleeps for 5 milliseconds (to avoid segmentation fault)
   }
 
   valFile.close();
@@ -249,7 +307,5 @@ int main(int argc, char const *argv[]) {
   objDataFile.close();
 
   cout << "DONE!" << endl;
-
-
   return 0;
 }

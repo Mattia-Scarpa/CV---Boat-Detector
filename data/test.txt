@@ -1,2 +1,0 @@
-data/../test/A-life-in-boats-image1-hero.jpg
-data/../test/maxresdefault.jpg

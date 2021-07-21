@@ -16,8 +16,6 @@ using namespace cv;
 
 // Utility functions
 
-unsigned int microsecond = 1000;
-
 void dataugmentation::allignAnnotation(vector<vector<Point2f>>& boxCorners) {
   for (size_t i = 0; i < bbox.size(); i++) {
     vector<float> x = {bbox[i][0].x, bbox[i][1].x, bbox[i][2].x, bbox[i][3].x};
@@ -115,87 +113,6 @@ void dataugmentation::equalize(int count) {
   }
 }
 
-void dataugmentation::changePerspective(Mat& dst, float sigma, int count) {
-
-  int H = img.rows-1;
-  int W = img.cols-1;
-  vector<Point2f> imgPts = {Point2f(0, 0), Point2f(0, H), Point2f(W, H), Point2f(W, 0)};
-  srand(time(0));
-  float hyp = 0.3*sigma;          // hyperparameter definition
-
-  vector<Point2f> dstPts = {Point2f(rand()%int(W*hyp), rand()%int(H*hyp)), Point2f(rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), rand()%int(H*hyp))};
-
-  Mat warp = findHomography(imgPts, dstPts);
-  dst = Mat::zeros( img.rows, img.cols, img.type() );
-  warpPerspective(img, dst, warp, dst.size());
-
-  if (!bbox.empty()) {
-    for (size_t i = 0; i < bbox.size(); i++) {
-      perspectiveTransform(bbox[i], bbox[i], warp);
-    }
-
-    vector<vector<Point2f>> allignedBox;
-    allignAnnotation(allignedBox);
-
-    if (annotate) {
-      saveAndWritetxt(dst, path, classNumber, allignedBox, "perspectiveAug", count);
-    }
-  }
-  else {
-    if (annotate) {
-      saveAndWritetxt(dst, path, classNumber, bbox, "perspectiveAug", count);
-    }
-  }
-
-}
-
-void dataugmentation::changePerspective(float sigma, int count) {
-  // Point2f imgPts[4], dstPts[4];
-
-  int H = img.rows-1;
-  int W = img.cols-1;
-  vector<Point2f> imgPts = {Point2f(0, 0), Point2f(0, H), Point2f(W, H), Point2f(W, 0)};
-  srand(time(0));
-  float hyp = 0.3*sigma;          // hyperparameter definition
-
-  vector<Point2f> dstPts = {Point2f(rand()%int(W*hyp), rand()%int(H*hyp)), Point2f(rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), rand()%int(H*hyp))};
-
-  Mat warp = findHomography(imgPts, dstPts);
-  Mat dst = Mat::zeros( img.rows, img.cols, img.type() );
-  warpPerspective(img, dst, warp, dst.size());
-
-  if (!bbox.empty()) {
-
-    for (size_t i = 0; i < bbox.size(); i++) {
-      vector<Point2f> bboxTemp;
-      perspectiveTransform(bbox, bboxTemp, warp);
-    }
-
-    /*line(dst, bbox[0], bbox[1], Scalar(0,255,0));
-    line(dst, bbox[1], bbox[2], Scalar(0,255,0));
-    line(dst, bbox[2], bbox[3], Scalar(0,255,0));
-    line(dst, bbox[3], bbox[0], Scalar(0,255,0));*/
-
-    vector<vector<Point2f>> allignedBox;
-    allignAnnotation(allignedBox);
-
-    /*line(dst, allignedBox[0], Point2f(allignedBox[0].x,allignedBox[1].y), Scalar(0,0,255));
-    line(dst, Point2f(allignedBox[0].x,allignedBox[1].y), Point2f(allignedBox[1].x,allignedBox[1].y), Scalar(0,0,255));
-    line(dst, Point2f(allignedBox[1].x,allignedBox[1].y), Point2f(allignedBox[1].x,allignedBox[0].y), Scalar(0,0,255));
-    line(dst, Point2f(allignedBox[1].x,allignedBox[0].y), allignedBox[0], Scalar(0,0,255));*/
-
-    if (annotate) {
-      saveAndWritetxt(dst, path, classNumber, allignedBox, "perspectiveAug", count);
-    }
-  }
-  else {
-    if (annotate) {
-      saveAndWritetxt(dst, path, classNumber, bbox, "perspectiveAug", count);
-    }
-  }
-
-}
-
 void dataugmentation::changeContrast(Mat& dst, int count) {
   srand(time(0));
   double contrastPercentage = (rand()%500)/10.0;
@@ -250,7 +167,6 @@ void dataugmentation::changeBrightness(int count) {
   for (size_t i = 0; i < 3; i++) {
     add(dstCh[i], brightnessoffset, dstCh[i]);
   }
-
   merge(dstCh,3,dst);
 
   if (annotate) {
@@ -270,5 +186,77 @@ void dataugmentation::gaussianSmooth(double sigma, int count) {
   GaussianBlur(img, dst, Size(0,0), sigma);
   if (annotate) {
     saveAndWritetxt(dst, path, classNumber, bbox, "gaussianAug", count);
+  }
+}
+
+void dataugmentation::changePerspective(Mat& dst, float sigma, int count) {
+
+  int H = img.rows-1;
+  int W = img.cols-1;
+  vector<Point2f> imgPts = {Point2f(0, 0), Point2f(0, H), Point2f(W, H), Point2f(W, 0)};
+  srand(time(0));
+  float hyp = 0.3*sigma;          // hyperparameter definition
+
+  // chosing randomly destination points
+  vector<Point2f> dstPts = {Point2f(rand()%int(W*hyp), rand()%int(H*hyp)), Point2f(rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), rand()%int(H*hyp))};
+
+  Mat warp = findHomography(imgPts, dstPts);    // Transformation matrix estimation
+  dst = Mat::zeros( img.rows, img.cols, img.type() );
+  warpPerspective(img, dst, warp, dst.size());  // Image transformation
+
+  if (!bbox.empty()) {
+    for (size_t i = 0; i < bbox.size(); i++) {
+      perspectiveTransform(bbox[i], bbox[i], warp);
+    }
+    // annotations allignment
+    vector<vector<Point2f>> allignedBox;
+    allignAnnotation(allignedBox);
+  // save image and write label
+    if (annotate) {
+      saveAndWritetxt(dst, path, classNumber, allignedBox, "perspectiveAug", count);
+    }
+  }
+  else {
+    // save image and write label
+    if (annotate) {
+      saveAndWritetxt(dst, path, classNumber, bbox, "perspectiveAug", count);
+    }
+  }
+}
+
+void dataugmentation::changePerspective(float sigma, int count) {
+  // Point2f imgPts[4], dstPts[4];
+
+  int H = img.rows-1;
+  int W = img.cols-1;
+  vector<Point2f> imgPts = {Point2f(0, 0), Point2f(0, H), Point2f(W, H), Point2f(W, 0)}; // initial points coordinates (image vertex)
+  srand(time(0));
+  float hyp = 0.3*sigma;          // hyperparameter definition
+
+  // chosing randomly destination points
+  vector<Point2f> dstPts = {Point2f(rand()%int(W*hyp), rand()%int(H*hyp)), Point2f(rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), H-rand()%int(H*hyp)), Point2f(W-rand()%int(W*hyp), rand()%int(H*hyp))};
+
+  Mat warp = findHomography(imgPts, dstPts);    // Transformation matrix estimation
+  Mat dst = Mat::zeros( img.rows, img.cols, img.type());
+  warpPerspective(img, dst, warp, dst.size());  // Image transformation
+
+  if (!bbox.empty()) {
+    for (size_t i = 0; i < bbox.size(); i++) {
+      vector<Point2f> bboxTemp;
+      perspectiveTransform(bbox, bboxTemp, warp);
+    }
+    // annotations allignment
+    vector<vector<Point2f>> allignedBox;
+    allignAnnotation(allignedBox);
+  // save image and write label
+  if (annotate) {
+      saveAndWritetxt(dst, path, classNumber, allignedBox, "perspectiveAug", count);
+    }
+  }
+  else {
+    // save image and write label
+    if (annotate) {
+      saveAndWritetxt(dst, path, classNumber, bbox, "perspectiveAug", count);
+    }
   }
 }
