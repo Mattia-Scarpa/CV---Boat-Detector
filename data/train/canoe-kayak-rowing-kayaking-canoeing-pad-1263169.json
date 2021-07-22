@@ -1,0 +1,98 @@
+{
+  "id": "60e2deb44920d66ec83cc9d0",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:04.000Z",
+  "dir": "/",
+  "filename": "/canoe-kayak-rowing-kayaking-canoeing-pad-1263169.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "canoe-kayak-rowing-kayaking-canoeing-pad-1263169.jpg",
+      "size": 360723,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2deb4d471135594a706e3": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2deb62ac472cf40a0f989",
+      "thumbnailId": "60e2deb644a2261c2956b0e4",
+      "width": 1280
+    }
+  },
+  "name": "canoe-kayak-rowing-kayaking-canoeing-pad-1263169.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2deb44920d66ec83cc9d0",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2deb44920d66ec83cc9d0/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2deb44920d66ec83cc9d0/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45ae674b4f06e500f40d5",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 444.6,
+          "y": 316.91,
+          "z": 0
+        },
+        {
+          "x": 537.4100000000001,
+          "y": 603.24,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "04772a6c-dc9d-4c7d-819d-a4a05537ef56",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:30:14.472Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:30:14.472Z",
+      "itemId": "60e2deb44920d66ec83cc9d0",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45ae674b4f06e500f40d5",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2deb44920d66ec83cc9d0",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "64bf18ed7d84e308c74875e158cc1fc0fda1a5fa"
+    }
+  ]
+}

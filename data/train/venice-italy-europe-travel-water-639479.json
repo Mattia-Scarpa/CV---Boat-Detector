@@ -1,0 +1,68 @@
+{
+  "id": "60e2db65de859ec9183eef67",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:13:57.000Z",
+  "dir": "/",
+  "filename": "/venice-italy-europe-travel-water-639479.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "venice-italy-europe-travel-water-639479.jpg",
+      "size": 544153,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db653a148c5c8b7151a7": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2db662ac472397fa0f68a",
+      "thumbnailId": "60e2db6544a2269bd556ad98",
+      "width": 1280
+    }
+  },
+  "name": "venice-italy-europe-travel-water-639479.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db65de859ec9183eef67",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db65de859ec9183eef67/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db65de859ec9183eef67/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b3237b1b10604fd37",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.191Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.191Z",
+      "itemId": "60e2db65de859ec9183eef67",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b3237b1b10604fd37",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db65de859ec9183eef67",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "949ca68a3016420c2cc68ceac84769cedccd72c9"
+    }
+  ]
+}

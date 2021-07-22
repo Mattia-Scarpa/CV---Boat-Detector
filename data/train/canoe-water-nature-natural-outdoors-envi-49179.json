@@ -1,0 +1,98 @@
+{
+  "id": "60e2dea6cdec2e6c3ea940b7",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:50.000Z",
+  "dir": "/",
+  "filename": "/canoe-water-nature-natural-outdoors-envi-49179.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "canoe-water-nature-natural-outdoors-envi-49179.jpg",
+      "size": 439534,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dea6d47113589da706d2": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dea77c0d6f98b61ac4dd",
+      "thumbnailId": "60e2dea62ac4726deea0f97b",
+      "width": 1280
+    }
+  },
+  "name": "canoe-water-nature-natural-outdoors-envi-49179.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dea6cdec2e6c3ea940b7",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dea6cdec2e6c3ea940b7/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dea6cdec2e6c3ea940b7/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45a6ed8f45e34c8afdda9",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 591.46,
+          "y": 424.39,
+          "z": 0
+        },
+        {
+          "x": 962.19,
+          "y": 773.98,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "aaedd274-7fdc-4e15-8c28-46e4e1ae8f67",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:28:14.968Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:28:14.968Z",
+      "itemId": "60e2dea6cdec2e6c3ea940b7",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45a6ed8f45e34c8afdda9",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dea6cdec2e6c3ea940b7",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e5c001f691845f5d7d6550db6b66147c9ccaa12a"
+    }
+  ]
+}

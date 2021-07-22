@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcf24920d6d9813cc82e",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:34.000Z",
+  "dir": "/",
+  "filename": "/paper-boat-origami-2570218.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "paper-boat-origami-2570218.jpg",
+      "size": 158197,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcf23a148c25a57153b7": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 720,
+      "thumbnailAnnotationsId": "60e2dcf3c734a840d8b75ff9",
+      "thumbnailId": "60e2dcf344a2261d1956af4c",
+      "width": 1280
+    }
+  },
+  "name": "paper-boat-origami-2570218.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcf24920d6d9813cc82e",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcf24920d6d9813cc82e/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcf24920d6d9813cc82e/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42453d8f45e79d6afb49a",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 312.97,
+          "y": 269.3,
+          "z": 0
+        },
+        {
+          "x": 954.11,
+          "y": 502.21000000000004,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "99fbd30c-482e-45e3-96a7-1eb05f4a20d5",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:37:23.733Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:37:23.733Z",
+      "itemId": "60e2dcf24920d6d9813cc82e",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42453d8f45e79d6afb49a",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcf24920d6d9813cc82e",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "8d885b8efddd552536cefe67cd31bd76cf260bfc"
+    }
+  ]
+}

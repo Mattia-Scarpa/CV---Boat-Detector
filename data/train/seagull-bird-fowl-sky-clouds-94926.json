@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc45de859e39803ef01b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:41.000Z",
+  "dir": "/",
+  "filename": "/seagull-bird-fowl-sky-clouds-94926.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "seagull-bird-fowl-sky-clouds-94926.jpg",
+      "size": 258955,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc45d471137117a7037f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dc464920d68ab53cc762",
+      "thumbnailId": "60e2dc4544a2266d9b56ae6e",
+      "width": 1280
+    }
+  },
+  "name": "seagull-bird-fowl-sky-clouds-94926.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc45de859e39803ef01b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc45de859e39803ef01b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc45de859e39803ef01b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e418b9e05eba3e5474f91d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 0,
+          "y": 553.66,
+          "z": 0
+        },
+        {
+          "x": 1277.64,
+          "y": 850.41,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f82ace33-1aab-4548-8863-0e9b0866e970",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T08:47:53.009Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T08:47:53.009Z",
+      "itemId": "60e2dc45de859e39803ef01b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e418b9e05eba3e5474f91d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc45de859e39803ef01b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "a9121acbea6b41180985f6404e39d142dc2dfa84"
+    }
+  ]
+}

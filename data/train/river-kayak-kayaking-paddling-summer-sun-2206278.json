@@ -1,0 +1,68 @@
+{
+  "id": "60e2dcc6e80402c4e4ac44bb",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:19:50.000Z",
+  "dir": "/",
+  "filename": "/river-kayak-kayaking-paddling-summer-sun-2206278.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "river-kayak-kayaking-paddling-summer-sun-2206278.jpg",
+      "size": 245439,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcc6bae255531acf1665": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2dcc6e80402d29bac44bf",
+      "thumbnailId": "60e2dcc62ac472229ea0f7f1",
+      "width": 853
+    }
+  },
+  "name": "river-kayak-kayaking-paddling-summer-sun-2206278.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcc6e80402c4e4ac44bb",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcc6e80402c4e4ac44bb/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcc6e80402c4e4ac44bb/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b4b02143fb88728c9",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.164Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.164Z",
+      "itemId": "60e2dcc6e80402c4e4ac44bb",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b4b02143fb88728c9",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcc6e80402c4e4ac44bb",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d848f13a1deb1c9db5f4cf5f9c12cbed86610b60"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd2ade859ea6733ef103",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:30.000Z",
+  "dir": "/",
+  "filename": "/lake-sunset-abendstimmung-evening-3452510.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "lake-sunset-abendstimmung-evening-3452510.jpg",
+      "size": 294173,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd2b9850797b1279be6f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd2bc734a8517ab76041",
+      "thumbnailId": "60e2dd2bfc56164ee88d71af",
+      "width": 1280
+    }
+  },
+  "name": "lake-sunset-abendstimmung-evening-3452510.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd2ade859ea6733ef103",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd2ade859ea6733ef103/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd2ade859ea6733ef103/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42a89d8f45ec562afbb3c",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 885.61,
+          "y": 125.54,
+          "z": 0
+        },
+        {
+          "x": 975.54,
+          "y": 401.08000000000004,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "92fbe157-396f-444f-b741-093a275e9b15",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:03:53.779Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:03:53.779Z",
+      "itemId": "60e2dd2ade859ea6733ef103",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42a89d8f45ec562afbb3c",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd2ade859ea6733ef103",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "a5fadc96c195d058ce5135d7b243fa9d78c8c7d7"
+    }
+  ]
+}

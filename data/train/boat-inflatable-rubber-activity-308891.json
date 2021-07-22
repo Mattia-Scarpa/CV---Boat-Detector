@@ -1,0 +1,98 @@
+{
+  "id": "60e2df1144a226406756b13e",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:37.000Z",
+  "dir": "/",
+  "filename": "/boat-inflatable-rubber-activity-308891.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "boat-inflatable-rubber-activity-308891.jpg",
+      "size": 75340,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df1119e9330eff9f5890": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2df11cdec2eb9d7a9412d",
+      "thumbnailId": "60e2df1133e5ad8b1638f447",
+      "width": 1280
+    }
+  },
+  "name": "boat-inflatable-rubber-activity-308891.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df1144a226406756b13e",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df1144a226406756b13e/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df1144a226406756b13e/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45f91cd76b08e95955c00",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 45.65,
+          "y": 294.02,
+          "z": 0
+        },
+        {
+          "x": 1202.17,
+          "y": 988.59,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f9636e1b-477e-47ad-aade-d949fa00e163",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:50:09.495Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:50:09.495Z",
+      "itemId": "60e2df1144a226406756b13e",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45f91cd76b08e95955c00",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df1144a226406756b13e",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "7418dec4ca7207c0cb606a643b61cb735b56f496"
+    }
+  ]
+}

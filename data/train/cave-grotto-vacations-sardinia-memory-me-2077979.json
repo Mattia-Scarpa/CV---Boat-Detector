@@ -1,0 +1,98 @@
+{
+  "id": "60e2de9ce80402510cac462d",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:40.000Z",
+  "dir": "/",
+  "filename": "/cave-grotto-vacations-sardinia-memory-me-2077979.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "cave-grotto-vacations-sardinia-memory-me-2077979.jpg",
+      "size": 215362,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de9cd47113e8a3a706c0": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 805,
+      "thumbnailAnnotationsId": "60e2de9c7c0d6fa4b51ac4d3",
+      "thumbnailId": "60e2de9c33e5ad313238f3d3",
+      "width": 1280
+    }
+  },
+  "name": "cave-grotto-vacations-sardinia-memory-me-2077979.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de9ce80402510cac462d",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de9ce80402510cac462d/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de9ce80402510cac462d/thumbnail",
+  "annotations": [
+    {
+      "id": "60e459ec74b4f0d18c0f4064",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 777.55,
+          "y": 377.21,
+          "z": 0
+        },
+        {
+          "x": 855.0999999999999,
+          "y": 498.29999999999995,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "cc78f848-eb20-4b00-a36b-89a58730d86c",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:26:04.854Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:26:04.854Z",
+      "itemId": "60e2de9ce80402510cac462d",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e459ec74b4f0d18c0f4064",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de9ce80402510cac462d",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d17392cc0beae9b1a9eeac018971508dfe003ab7"
+    }
+  ]
+}

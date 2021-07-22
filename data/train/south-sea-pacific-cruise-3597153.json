@@ -1,0 +1,98 @@
+{
+  "id": "60e2dbe87c0d6f02121ac20b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:16:08.000Z",
+  "dir": "/",
+  "filename": "/south-sea-pacific-cruise-3597153.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "south-sea-pacific-cruise-3597153.jpg",
+      "size": 370026,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dbe83a148cd96671522c": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dbe82ac47236b0a0f711",
+      "thumbnailId": "60e2dbe82ac472e062a0f70e",
+      "width": 1280
+    }
+  },
+  "name": "south-sea-pacific-cruise-3597153.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dbe87c0d6f02121ac20b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dbe87c0d6f02121ac20b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dbe87c0d6f02121ac20b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e33f1cd8f45e26bcaf51b8",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 551.8,
+          "y": 638.49,
+          "z": 0
+        },
+        {
+          "x": 735.25,
+          "y": 750,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "785360c9-b6ec-4a72-ae99-8c04efec5cc1",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:19:24.182Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:19:24.182Z",
+      "itemId": "60e2dbe87c0d6f02121ac20b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33f1cd8f45e26bcaf51b8",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbe87c0d6f02121ac20b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "bb830b485089068ff133693f0626fd3025b289c7"
+    }
+  ]
+}

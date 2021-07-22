@@ -1,0 +1,68 @@
+{
+  "id": "60e2dc2f7c0d6fe96f1ac26b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:19.000Z",
+  "dir": "/",
+  "filename": "/ship-away-boat-vase-water-red-315309.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ship-away-boat-vase-water-red-315309.jpg",
+      "size": 47594,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc2fd471132aaca7035d": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 847,
+      "thumbnailAnnotationsId": "60e2dc307c0d6f1f6f1ac26d",
+      "thumbnailId": "60e2dc2f33e5adac6a38f14f",
+      "width": 1280
+    }
+  },
+  "name": "ship-away-boat-vase-water-red-315309.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc2f7c0d6fe96f1ac26b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc2f7c0d6fe96f1ac26b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc2f7c0d6fe96f1ac26b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b86995489bbfa6b0a",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.150Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.150Z",
+      "itemId": "60e2dc2f7c0d6fe96f1ac26b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b86995489bbfa6b0a",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc2f7c0d6fe96f1ac26b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "b3589494ff30375796664fa90004c5963078f7ab"
+    }
+  ]
+}

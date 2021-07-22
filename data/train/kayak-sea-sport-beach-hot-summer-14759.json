@@ -1,0 +1,100 @@
+{
+  "id": "60e2dd5bc734a8152fb76077",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:19.000Z",
+  "dir": "/",
+  "filename": "/kayak-sea-sport-beach-hot-summer-14759.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-sea-sport-beach-hot-summer-14759.jpg",
+      "size": 215782,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd5cbae2552d3ecf1738": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {
+        "Orientation": 1
+      },
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dd5cfc56167f768d71d7",
+      "thumbnailId": "60e2dd5cfc561635098d71d5",
+      "width": 1280
+    }
+  },
+  "name": "kayak-sea-sport-beach-hot-summer-14759.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd5bc734a8152fb76077",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd5bc734a8152fb76077/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd5bc734a8152fb76077/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42d13cf2468a2fd99dc3c",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 227.24,
+          "y": 413.01,
+          "z": 0
+        },
+        {
+          "x": 1280,
+          "y": 749.5999999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "bf533fe9-d321-4d0d-a224-ba96a52ec7c8",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:14:43.959Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:14:43.959Z",
+      "itemId": "60e2dd5bc734a8152fb76077",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42d13cf2468a2fd99dc3c",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd5bc734a8152fb76077",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "96eb324d1764845d98af1cd628adc46e6dc1171a"
+    }
+  ]
+}

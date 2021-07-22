@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc167c0d6f09821ac24f",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:16:54.000Z",
+  "dir": "/",
+  "filename": "/ship-elbe-hamburg-port-port-city-3526712.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ship-elbe-hamburg-port-port-city-3526712.jpg",
+      "size": 287533,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc16bae255b392cf157b": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 851,
+      "thumbnailAnnotationsId": "60e2dc16c734a879c6b75f2d",
+      "thumbnailId": "60e2dc16c734a89c54b75f2b",
+      "width": 1280
+    }
+  },
+  "name": "ship-elbe-hamburg-port-port-city-3526712.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc167c0d6f09821ac24f",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc167c0d6f09821ac24f/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc167c0d6f09821ac24f/thumbnail",
+  "annotations": [
+    {
+      "id": "60e344cfcf246816f39974a5",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 48.2,
+          "y": 212.95,
+          "z": 0
+        },
+        {
+          "x": 1202.88,
+          "y": 722.3,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "52d6fcdd-e977-49e2-87f9-8d63e7ad0dd9",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:43:43.171Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:43:43.171Z",
+      "itemId": "60e2dc167c0d6f09821ac24f",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e344cfcf246816f39974a5",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc167c0d6f09821ac24f",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "306c880b2e81b32d4c21fee6095ea7fcfeb0e625"
+    }
+  ]
+}

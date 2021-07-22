@@ -1,0 +1,98 @@
+{
+  "id": "60e2de9133e5ad970038f3c5",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:29.000Z",
+  "dir": "/",
+  "filename": "/clipper-ship-sea-boat-ocean-sky-989030.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "clipper-ship-sea-boat-ocean-sky-989030.jpg",
+      "size": 304200,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de913a148c0c267155da": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 898,
+      "thumbnailAnnotationsId": "60e2de914920d658a53cc9b8",
+      "thumbnailId": "60e2de91e8040244ccac4625",
+      "width": 1280
+    }
+  },
+  "name": "clipper-ship-sea-boat-ocean-sky-989030.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de9133e5ad970038f3c5",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de9133e5ad970038f3c5/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de9133e5ad970038f3c5/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4593b0c758bdaa5fe3112",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 440.15,
+          "y": 509.47,
+          "z": 0
+        },
+        {
+          "x": 642.42,
+          "y": 697.35,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "5a0486ef-e886-48a3-bf1c-b83495502a7e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:23:07.430Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:23:07.430Z",
+      "itemId": "60e2de9133e5ad970038f3c5",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4593b0c758bdaa5fe3112",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de9133e5ad970038f3c5",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "71489ebd4f918020d1b7dc38cbe5858dfa70d790"
+    }
+  ]
+}

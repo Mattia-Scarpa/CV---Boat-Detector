@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd054920d615513cc84c",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:53.000Z",
+  "dir": "/",
+  "filename": "/norway-post-ship-hurtigruten-ship-3587449.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "norway-post-ship-hurtigruten-ship-3587449.jpg",
+      "size": 298920,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd05bae2551c2ecf16c7": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd07fc5616cf178d7189",
+      "thumbnailId": "60e2dd072ac4721770a0f823",
+      "width": 1280
+    }
+  },
+  "name": "norway-post-ship-hurtigruten-ship-3587449.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd054920d615513cc84c",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd054920d615513cc84c/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd054920d615513cc84c/thumbnail",
+  "annotations": [
+    {
+      "id": "60e425ec4c4109174cf00d82",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 35.25,
+          "y": 213.31,
+          "z": 0
+        },
+        {
+          "x": 1227.34,
+          "y": 506.12,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "debb1916-8e62-4d52-bfcb-127ae3a5c63f",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:44:12.896Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:44:12.896Z",
+      "itemId": "60e2dd054920d615513cc84c",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e425ec4c4109174cf00d82",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd054920d615513cc84c",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "606f5acd67e84aabf0eb6729b6157e2f2954e479"
+    }
+  ]
+}

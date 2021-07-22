@@ -1,0 +1,68 @@
+{
+  "id": "60e2dcff33e5ad727a38f251",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:47.000Z",
+  "dir": "/",
+  "filename": "/ocean-water-nature-boat-horizon-3762815.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ocean-water-nature-boat-horizon-3762815.jpg",
+      "size": 236770,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcff19e9330b619f562d": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dcff4920d649043cc848",
+      "thumbnailId": "60e2dcff33e5ad552438f255",
+      "width": 1280
+    }
+  },
+  "name": "ocean-water-nature-boat-horizon-3762815.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcff33e5ad727a38f251",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcff33e5ad727a38f251/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcff33e5ad727a38f251/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b417ad7cdf3679120",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.161Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.161Z",
+      "itemId": "60e2dcff33e5ad727a38f251",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b417ad7cdf3679120",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcff33e5ad727a38f251",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "0613e625a2dcb495aac1cf4952ab5638e0ada87a"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "60e2dcb633e5ad410838f203",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:19:34.000Z",
+  "dir": "/",
+  "filename": "/sailboat-go-wind-marine-wave-3622248.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sailboat-go-wind-marine-wave-3622248.jpg",
+      "size": 236772,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcb6bae2556946cf1654": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dcbae804029478ac44b5",
+      "thumbnailId": "60e2dcbac734a82956b75fb9",
+      "width": 1280
+    }
+  },
+  "name": "sailboat-go-wind-marine-wave-3622248.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcb633e5ad410838f203",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcb633e5ad410838f203/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcb633e5ad410838f203/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628bff02ebeaae07cf67",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.129Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.129Z",
+      "itemId": "60e2dcb633e5ad410838f203",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628bff02ebeaae07cf67",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcb633e5ad410838f203",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "0d3a765418c25327bfcdc11f2f28e8175ab7bb61"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dbcec734a8496eb75edf",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:15:42.000Z",
+  "dir": "/",
+  "filename": "/sydney-australia-sydney-opera-house-sydn-296027.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sydney-australia-sydney-opera-house-sydn-296027.jpg",
+      "size": 401463,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dbce98507906cd79bc5e": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 854,
+      "thumbnailAnnotationsId": "60e2dbd24920d662b43cc708",
+      "thumbnailId": "60e2dbd22ac4720f11a0f6f5",
+      "width": 1280
+    }
+  },
+  "name": "sydney-australia-sydney-opera-house-sydn-296027.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dbcec734a8496eb75edf",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dbcec734a8496eb75edf/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dbcec734a8496eb75edf/thumbnail",
+  "annotations": [
+    {
+      "id": "60e33d8ed8f45e5012af4ea7",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 201.44000000000005,
+          "y": 459.3213640033632,
+          "z": 0
+        },
+        {
+          "x": 546.762617625044,
+          "y": 556.48,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "a7c0f645-6b85-4bac-a338-db39eb482006",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:12:46.022Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:12:46.022Z",
+      "itemId": "60e2dbcec734a8496eb75edf",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33d8ed8f45e5012af4ea7",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbcec734a8496eb75edf",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "8d6c517ca1ccf8df24ad950ba58eacd3c96d5a3b"
+    }
+  ]
+}

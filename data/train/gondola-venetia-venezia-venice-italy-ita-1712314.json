@@ -1,0 +1,98 @@
+{
+  "id": "60e2ddec33e5ada15138f329",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:44.000Z",
+  "dir": "/",
+  "filename": "/gondola-venetia-venezia-venice-italy-ita-1712314.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "gondola-venetia-venezia-venice-italy-ita-1712314.jpg",
+      "size": 326900,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2ddec3a148c7f957154eb": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 795,
+      "thumbnailAnnotationsId": "60e2ddefcdec2e7702a9400f",
+      "thumbnailId": "60e2ddef33e5ad311b38f32b",
+      "width": 1280
+    }
+  },
+  "name": "gondola-venetia-venezia-venice-italy-ita-1712314.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2ddec33e5ada15138f329",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2ddec33e5ada15138f329/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2ddec33e5ada15138f329/thumbnail",
+  "annotations": [
+    {
+      "id": "60e43746d8f45e0a57afc347",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 267.11,
+          "y": 251.01,
+          "z": 0
+        },
+        {
+          "x": 862.41,
+          "y": 749,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "4c983267-e526-4c2c-afbf-566c33b19283",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:58:14.770Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:58:14.770Z",
+      "itemId": "60e2ddec33e5ada15138f329",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e43746d8f45e0a57afc347",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ddec33e5ada15138f329",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "19179373b0425399e739aaa4da227fc73ab451f6"
+    }
+  ]
+}

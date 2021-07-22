@@ -1,0 +1,98 @@
+{
+  "id": "60e2de287c0d6f621e1ac46f",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:44.000Z",
+  "dir": "/",
+  "filename": "/ferry-cargo-ship-carrier-the-barge-venic-2081778.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ferry-cargo-ship-carrier-the-barge-venic-2081778.jpg",
+      "size": 315132,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de2919e9330bd59f577e": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2de2933e5ad7ab438f361",
+      "thumbnailId": "60e2de297c0d6fe0171ac471",
+      "width": 1280
+    }
+  },
+  "name": "ferry-cargo-ship-carrier-the-barge-venic-2081778.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de287c0d6f621e1ac46f",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de287c0d6f621e1ac46f/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de287c0d6f621e1ac46f/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4473bcd76b032df954d31",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 323.74,
+          "y": 132.73,
+          "z": 0
+        },
+        {
+          "x": 1046.04,
+          "y": 706.11,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "4a3d0b9d-586c-4c77-aa4e-5fe09447e141",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:06:19.946Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:06:19.946Z",
+      "itemId": "60e2de287c0d6f621e1ac46f",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4473bcd76b032df954d31",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de287c0d6f621e1ac46f",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e5ac616685589162ab42681fa124340216b391ee"
+    }
+  ]
+}

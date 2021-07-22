@@ -1,0 +1,98 @@
+{
+  "id": "60e2de8fde859e626d3ef255",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:27.000Z",
+  "dir": "/",
+  "filename": "/clipper-ship-tall-masts-sailing-812699.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "clipper-ship-tall-masts-sailing-812699.jpg",
+      "size": 328634,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de8f19e933662a9f57f9": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2de8ffc561666b98d7318",
+      "thumbnailId": "60e2de8fe804021d37ac4623",
+      "width": 856
+    }
+  },
+  "name": "clipper-ship-tall-masts-sailing-812699.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de8fde859e626d3ef255",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de8fde859e626d3ef255/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de8fde859e626d3ef255/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4592436a954383e40934b",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 132.61,
+          "y": 79.89,
+          "z": 0
+        },
+        {
+          "x": 839.13,
+          "y": 1044.02,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "715821f8-7612-42ed-99f7-8c4a6bb9fc56",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:22:44.759Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:22:44.759Z",
+      "itemId": "60e2de8fde859e626d3ef255",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4592436a954383e40934b",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de8fde859e626d3ef255",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "315b6ba639890cb051d0d7d27a929722d1cdd376"
+    }
+  ]
+}

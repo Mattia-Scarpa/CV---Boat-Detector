@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcf044a226816656af40",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:32.000Z",
+  "dir": "/",
+  "filename": "/paperboat-water-voyage-paper-boat-toy-fl-1014962.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "paperboat-water-voyage-paper-boat-toy-fl-1014962.jpg",
+      "size": 218595,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcf09850791b3b79be1a": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 837,
+      "thumbnailAnnotationsId": "60e2dcf144a22613b756af48",
+      "thumbnailId": "60e2dcf1cdec2e27f2a93f23",
+      "width": 1280
+    }
+  },
+  "name": "paperboat-water-voyage-paper-boat-toy-fl-1014962.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcf044a226816656af40",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcf044a226816656af40/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcf044a226816656af40/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42429cd76b05e9a952fea",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 852.82,
+          "y": 543.66,
+          "z": 0
+        },
+        {
+          "x": 1145.78,
+          "y": 686.62,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "2ca8249c-f3b3-4284-b641-b9b98d8f2f1a",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:36:41.023Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:36:41.023Z",
+      "itemId": "60e2dcf044a226816656af40",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42429cd76b05e9a952fea",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcf044a226816656af40",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "4d69774f4a86c98dfd3583dde466659a2798087a"
+    }
+  ]
+}

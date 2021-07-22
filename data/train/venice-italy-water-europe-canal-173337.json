@@ -1,0 +1,68 @@
+{
+  "id": "60e2db38fc561655cf8d6f9f",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:13:12.000Z",
+  "dir": "/",
+  "filename": "/venice-italy-water-europe-canal-173337.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "venice-italy-water-europe-canal-173337.jpg",
+      "size": 422427,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db389850794e2c79bbb3": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2db382ac4722891a0f658",
+      "thumbnailId": "60e2db3833e5ad3b8838f097",
+      "width": 848
+    }
+  },
+  "name": "venice-italy-water-europe-canal-173337.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db38fc561655cf8d6f9f",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db38fc561655cf8d6f9f/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db38fc561655cf8d6f9f/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b619f0fdee5585a55",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.146Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.146Z",
+      "itemId": "60e2db38fc561655cf8d6f9f",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b619f0fdee5585a55",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db38fc561655cf8d6f9f",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "37df1d8755b72935884f06f6e9d82211bb238803"
+    }
+  ]
+}

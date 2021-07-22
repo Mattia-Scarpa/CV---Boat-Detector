@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd127c0d6f78e21ac367",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:06.000Z",
+  "dir": "/",
+  "filename": "/montral-chteauguay-water-kayak-sport-w-1427172.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "montral-chteauguay-water-kayak-sport-w-1427172.jpg",
+      "size": 453991,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd12bae2559d9acf16dc": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2dd1233e5add40a38f26d",
+      "thumbnailId": "60e2dd122ac47221dfa0f831",
+      "width": 853
+    }
+  },
+  "name": "montral-chteauguay-water-kayak-sport-w-1427172.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd127c0d6f78e21ac367",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd127c0d6f78e21ac367/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd127c0d6f78e21ac367/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42714d8f45e410eafb772",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 302.72,
+          "y": 342.93,
+          "z": 0
+        },
+        {
+          "x": 485.33000000000004,
+          "y": 894.02,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "a7072037-2fa6-47ef-9700-0076625d1416",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:49:08.481Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:49:08.481Z",
+      "itemId": "60e2dd127c0d6f78e21ac367",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42714d8f45e410eafb772",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd127c0d6f78e21ac367",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "a9cf589d6d58b83ad2f2ae3228106f1b42e0a09f"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2de7dcdec2ec641a94097",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:09.000Z",
+  "dir": "/",
+  "filename": "/cruise-hamburg-aida-prima-port-elbe-crui-1624522.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "cruise-hamburg-aida-prima-port-elbe-crui-1624522.jpg",
+      "size": 260352,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de7dbae255d5ffcf1893": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 532,
+      "thumbnailAnnotationsId": "60e2de7f33e5ad09ea38f3b6",
+      "thumbnailId": "60e2de7ecdec2e57b5a94099",
+      "width": 1280
+    }
+  },
+  "name": "cruise-hamburg-aida-prima-port-elbe-crui-1624522.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de7dcdec2ec641a94097",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de7dcdec2ec641a94097/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de7dcdec2ec641a94097/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45855cf2468bb3c99ff7f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 85.13,
+          "y": 67.72,
+          "z": 0
+        },
+        {
+          "x": 1137.6599999999999,
+          "y": 455.69000000000005,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "78d1a977-0d56-419e-b689-cd20b71898ed",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:19:17.140Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:19:17.140Z",
+      "itemId": "60e2de7dcdec2ec641a94097",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45855cf2468bb3c99ff7f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de7dcdec2ec641a94097",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "06fd2aada7859a5528c11e847a2e8921a9cf5f59"
+    }
+  ]
+}

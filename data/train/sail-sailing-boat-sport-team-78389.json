@@ -1,0 +1,149 @@
+{
+  "id": "60e2dc5544a226f96d56ae84",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:57.000Z",
+  "dir": "/",
+  "filename": "/sail-sailing-boat-sport-team-78389.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sail-sailing-boat-sport-team-78389.jpg",
+      "size": 104850,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc55d4711366c2a7039c": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 904,
+      "thumbnailAnnotationsId": "60e2dc56c734a816f2b75f65",
+      "thumbnailId": "60e2dc56fc561637208d70d9",
+      "width": 1280
+    }
+  },
+  "name": "sail-sailing-boat-sport-team-78389.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc5544a226f96d56ae84",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc5544a226f96d56ae84/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc5544a226f96d56ae84/thumbnail",
+  "annotations": [
+    {
+      "id": "60e419a9e7d83ad2ec1cbacd",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 117.18,
+          "y": 87.02,
+          "z": 0
+        },
+        {
+          "x": 1196.5700000000002,
+          "y": 837.4,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f1794ecc-829a-4996-a7f8-d0d4b01f200e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T08:51:53.074Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T08:51:53.074Z",
+      "itemId": "60e2dc5544a226f96d56ae84",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e419a9e7d83ad2ec1cbacd",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc5544a226f96d56ae84",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "581ae472040af2f7ee6b4e99a18c1cc1f3e7d7e1"
+    },
+    {
+      "id": "60e419a9e7d83ae9ee1cbacf",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 431.68,
+          "y": 125.19,
+          "z": 0
+        },
+        {
+          "x": 1173.66,
+          "y": 723.6600000000001,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "6357b346-fdc6-4c35-aada-802a3e4a698b",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T08:51:53.114Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T08:51:53.114Z",
+      "itemId": "60e2dc5544a226f96d56ae84",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e419a9e7d83ae9ee1cbacf",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc5544a226f96d56ae84",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "6795d2344d6e36c0b0658e05677c2a71d8332d1c"
+    }
+  ]
+}

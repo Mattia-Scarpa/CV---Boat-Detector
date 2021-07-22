@@ -1,0 +1,98 @@
+{
+  "id": "60e2df3933e5add9f938f461",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:30:17.000Z",
+  "dir": "/",
+  "filename": "/alaska-fjord-ship-cruise-landscape-2666217.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "alaska-fjord-ship-cruise-landscape-2666217.jpg",
+      "size": 286298,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df3a3a148c52567156a0": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2df3a33e5ad47f238f463",
+      "thumbnailId": "60e2df3ae80402fef9ac46cb",
+      "width": 1280
+    }
+  },
+  "name": "alaska-fjord-ship-cruise-landscape-2666217.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df3933e5add9f938f461",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df3933e5add9f938f461/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df3933e5add9f938f461/thumbnail",
+  "annotations": [
+    {
+      "id": "60e46152e05eba7e84752fe8",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 510.98,
+          "y": 595.12,
+          "z": 0
+        },
+        {
+          "x": 552.44,
+          "y": 638.21,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "048a3c18-07d5-48da-a295-064b696caac6",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:57:38.092Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:57:38.092Z",
+      "itemId": "60e2df3933e5add9f938f461",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e46152e05eba7e84752fe8",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df3933e5add9f938f461",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "507692a38ef0376ef148ab92abda3e78e4f418e5"
+    }
+  ]
+}

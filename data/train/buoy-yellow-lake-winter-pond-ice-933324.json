@@ -1,0 +1,68 @@
+{
+  "id": "60e2decd2ac4729fc9a0f999",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:29.000Z",
+  "dir": "/",
+  "filename": "/buoy-yellow-lake-winter-pond-ice-933324.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "buoy-yellow-lake-winter-pond-ice-933324.jpg",
+      "size": 362135,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2decd3a148c1a85715613": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dece4920d6392f3cc9e8",
+      "thumbnailId": "60e2decede859ea7463ef281",
+      "width": 1280
+    }
+  },
+  "name": "buoy-yellow-lake-winter-pond-ice-933324.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2decd2ac4729fc9a0f999",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2decd2ac4729fc9a0f999/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2decd2ac4729fc9a0f999/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc417ad79f20679134",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.801Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.801Z",
+      "itemId": "60e2decd2ac4729fc9a0f999",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc417ad79f20679134",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2decd2ac4729fc9a0f999",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d90ff14d51f3e09dcbe3568c9a1236a23251d9a8"
+    }
+  ]
+}

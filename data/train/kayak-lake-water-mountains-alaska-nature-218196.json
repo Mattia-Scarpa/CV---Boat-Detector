@@ -1,0 +1,68 @@
+{
+  "id": "60e2dd74de859e59de3ef15f",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:44.000Z",
+  "dir": "/",
+  "filename": "/kayak-lake-water-mountains-alaska-nature-218196.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-lake-water-mountains-alaska-nature-218196.jpg",
+      "size": 385889,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd74d471131735a70556": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dd76cdec2ea5c6a93f9f",
+      "thumbnailId": "60e2dd754920d68ae23cc8b8",
+      "width": 1280
+    }
+  },
+  "name": "kayak-lake-water-mountains-alaska-nature-218196.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd74de859e59de3ef15f",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd74de859e59de3ef15f/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd74de859e59de3ef15f/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc8699546da4fa6b2b",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.862Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.862Z",
+      "itemId": "60e2dd74de859e59de3ef15f",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc8699546da4fa6b2b",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd74de859e59de3ef15f",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "46d63a99913647297fc57f3eabca38d4dd8dd07f"
+    }
+  ]
+}

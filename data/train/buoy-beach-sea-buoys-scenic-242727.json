@@ -1,0 +1,68 @@
+{
+  "id": "60e2dedfde859edcfc3ef297",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:47.000Z",
+  "dir": "/",
+  "filename": "/buoy-beach-sea-buoys-scenic-242727.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "buoy-beach-sea-buoys-scenic-242727.jpg",
+      "size": 183753,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dedfd471136e5ba7071c": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 809,
+      "thumbnailAnnotationsId": "60e2dee233e5ad02db38f40f",
+      "thumbnailId": "60e2dee2cdec2e298ba940e7",
+      "width": 1280
+    }
+  },
+  "name": "buoy-beach-sea-buoys-scenic-242727.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dedfde859edcfc3ef297",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dedfde859edcfc3ef297/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dedfde859edcfc3ef297/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc63a7ba4d356a8c5f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.775Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.775Z",
+      "itemId": "60e2dedfde859edcfc3ef297",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc63a7ba4d356a8c5f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dedfde859edcfc3ef297",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "5a52c34309d0912feaed2bc9843072ffa06392eb"
+    }
+  ]
+}

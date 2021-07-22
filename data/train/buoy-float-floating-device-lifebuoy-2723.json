@@ -1,0 +1,70 @@
+{
+  "id": "60e2dedec734a84681b761b1",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:46.000Z",
+  "dir": "/",
+  "filename": "/buoy-float-floating-device-lifebuoy-2723.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "buoy-float-floating-device-lifebuoy-2723.jpg",
+      "size": 520010,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dede3a148c18d9715632": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {
+        "Orientation": 1
+      },
+      "height": 900,
+      "thumbnailAnnotationsId": "60e2dedf33e5ad1b2938f40b",
+      "thumbnailId": "60e2dedf44a2262c8a56b10a",
+      "width": 1280
+    }
+  },
+  "name": "buoy-float-floating-device-lifebuoy-2723.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dedec734a84681b761b1",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dedec734a84681b761b1/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dedec734a84681b761b1/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc63a7ba41386a8c63",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.777Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.777Z",
+      "itemId": "60e2dedec734a84681b761b1",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc63a7ba41386a8c63",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dedec734a84681b761b1",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e73baf69cff5562b273c9ac99e74a56ddc69d624"
+    }
+  ]
+}

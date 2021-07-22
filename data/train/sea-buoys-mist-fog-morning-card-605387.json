@@ -1,0 +1,68 @@
+{
+  "id": "60e2dc48cdec2e1c43a93e65",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:44.000Z",
+  "dir": "/",
+  "filename": "/sea-buoys-mist-fog-morning-card-605387.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sea-buoys-mist-fog-morning-card-605387.jpg",
+      "size": 52214,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc48d471138556a70387": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 862,
+      "thumbnailAnnotationsId": "60e2dc4c33e5ad0b5b38f177",
+      "thumbnailId": "60e2dc4bfc56160de58d70c1",
+      "width": 1280
+    }
+  },
+  "name": "sea-buoys-mist-fog-morning-card-605387.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc48cdec2e1c43a93e65",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc48cdec2e1c43a93e65/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc48cdec2e1c43a93e65/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b8699548b96fa6b0b",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.150Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.150Z",
+      "itemId": "60e2dc48cdec2e1c43a93e65",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b8699548b96fa6b0b",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc48cdec2e1c43a93e65",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "da73ca5f1948ac8427bdf23de81dfd7dc752fd32"
+    }
+  ]
+}

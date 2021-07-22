@@ -1,0 +1,149 @@
+{
+  "id": "60e2db1b7c0d6fb98a1ac15d",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:12:43.000Z",
+  "dir": "/",
+  "filename": "/waterfall-i-with-kayaks-rafting-water-ka-1549639.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "waterfall-i-with-kayaks-rafting-water-ka-1549639.jpg",
+      "size": 455064,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db1b19e9333b7e9f538b": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 986,
+      "thumbnailAnnotationsId": "60e2db1bde859e63393eef33",
+      "thumbnailId": "60e2db1be8040208e5ac4325",
+      "width": 1280
+    }
+  },
+  "name": "waterfall-i-with-kayaks-rafting-water-ka-1549639.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db1b7c0d6fb98a1ac15d",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db1b7c0d6fb98a1ac15d/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db1b7c0d6fb98a1ac15d/thumbnail",
+  "annotations": [
+    {
+      "id": "60e330778950767c24e994f9",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 327.5,
+          "y": 206.25,
+          "z": 0
+        },
+        {
+          "x": 535,
+          "y": 251.25,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "20881b24-929b-4768-ac5a-334987f3c7be",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T16:16:55.035Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T16:16:55.035Z",
+      "itemId": "60e2db1b7c0d6fb98a1ac15d",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e330778950767c24e994f9",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db1b7c0d6fb98a1ac15d",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "5f5bfc5c2f9c4dbc48ef604a0dbfb3a7cc7c0087"
+    },
+    {
+      "id": "60e33077895076e50ce994fb",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 698.33,
+          "y": 199.58,
+          "z": 0
+        },
+        {
+          "x": 847.5,
+          "y": 252.08,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "9f72c602-a0fb-49ae-9585-4c3eb85871bb",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T16:16:55.081Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T16:16:55.081Z",
+      "itemId": "60e2db1b7c0d6fb98a1ac15d",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33077895076e50ce994fb",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db1b7c0d6fb98a1ac15d",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "7919fe62c82659c95aabfa3243ade6b08d429497"
+    }
+  ]
+}

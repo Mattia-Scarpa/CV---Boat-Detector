@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcfc2ac4720b12a0f81d",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:44.000Z",
+  "dir": "/",
+  "filename": "/oslo-aida-norway-port-oslofjord-963483.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "oslo-aida-norway-port-oslofjord-963483.jpg",
+      "size": 257098,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcfcbae25595cacf16b1": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dcfcfc561684778d7177",
+      "thumbnailId": "60e2dcfc2ac47274dfa0f81f",
+      "width": 1280
+    }
+  },
+  "name": "oslo-aida-norway-port-oslofjord-963483.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcfc2ac4720b12a0f81d",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcfc2ac4720b12a0f81d/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcfc2ac4720b12a0f81d/thumbnail",
+  "annotations": [
+    {
+      "id": "60e424f70c758b2438fe0991",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 664.75,
+          "y": 73.02,
+          "z": 0
+        },
+        {
+          "x": 1162.59,
+          "y": 668.6999999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "e871d79e-7c4c-44bf-bee6-7516da43178f",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:40:07.611Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:40:07.611Z",
+      "itemId": "60e2dcfc2ac4720b12a0f81d",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e424f70c758b2438fe0991",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcfc2ac4720b12a0f81d",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "cffe6d1b70c21f1be3881549c67439934540e953"
+    }
+  ]
+}

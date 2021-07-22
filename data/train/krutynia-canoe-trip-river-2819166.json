@@ -1,0 +1,68 @@
+{
+  "id": "60e2dd48de859e3dd63ef11b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:00.000Z",
+  "dir": "/",
+  "filename": "/krutynia-canoe-trip-river-2819166.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "krutynia-canoe-trip-river-2819166.jpg",
+      "size": 533542,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd48bae255e214cf1724": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dd4933e5adda6b38f2a1",
+      "thumbnailId": "60e2dd49de859e50c13ef11d",
+      "width": 1280
+    }
+  },
+  "name": "krutynia-canoe-trip-river-2819166.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd48de859e3dd63ef11b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd48de859e3dd63ef11b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd48de859e3dd63ef11b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628ba335640d4606e515",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.139Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.139Z",
+      "itemId": "60e2dd48de859e3dd63ef11b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628ba335640d4606e515",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd48de859e3dd63ef11b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "a1ef29205208e7525aeecbdd51df798e32a903fc"
+    }
+  ]
+}

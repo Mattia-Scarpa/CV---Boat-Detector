@@ -1,0 +1,68 @@
+{
+  "id": "60e2dd50cdec2ea0c3a93f81",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:08.000Z",
+  "dir": "/",
+  "filename": "/kayak-whitewater-action-helmet-936191.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-whitewater-action-helmet-936191.jpg",
+      "size": 457314,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd503a148c5395715433": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd50de859e36313ef12b",
+      "thumbnailId": "60e2dd50de859e25e83ef127",
+      "width": 1280
+    }
+  },
+  "name": "kayak-whitewater-action-helmet-936191.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd50cdec2ea0c3a93f81",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd50cdec2ea0c3a93f81/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd50cdec2ea0c3a93f81/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b63a7baf5a56a8c4d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.138Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.138Z",
+      "itemId": "60e2dd50cdec2ea0c3a93f81",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b63a7baf5a56a8c4d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd50cdec2ea0c3a93f81",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "7f58810e554bfc265a9a9a14512e0229052dd0ca"
+    }
+  ]
+}

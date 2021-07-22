@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcc6de859e52383ef0a7",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:19:50.000Z",
+  "dir": "/",
+  "filename": "/river-nile-egypt-sailboat-dhow-felucca-s-378495.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "river-nile-egypt-sailboat-dhow-felucca-s-378495.jpg",
+      "size": 259006,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcc63a148cb09f715385": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 603,
+      "thumbnailAnnotationsId": "60e2dcc6de859e7f203ef0a9",
+      "thumbnailId": "60e2dcc6e80402a69dac44bd",
+      "width": 1280
+    }
+  },
+  "name": "river-nile-egypt-sailboat-dhow-felucca-s-378495.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcc6de859e52383ef0a7",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcc6de859e52383ef0a7/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcc6de859e52383ef0a7/thumbnail",
+  "annotations": [
+    {
+      "id": "60e421344d15a97b3bf00578",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 762.97,
+          "y": 171.52,
+          "z": 0
+        },
+        {
+          "x": 876.89,
+          "y": 390.51,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f6bb0198-a96f-48f9-a0be-1fe06c5db0ad",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:24:04.372Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:24:04.372Z",
+      "itemId": "60e2dcc6de859e52383ef0a7",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e421344d15a97b3bf00578",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcc6de859e52383ef0a7",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "6a2082420fda17661a19ed97e2faf13280c7ee0a"
+    }
+  ]
+}

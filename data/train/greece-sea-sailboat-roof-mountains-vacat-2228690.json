@@ -1,0 +1,149 @@
+{
+  "id": "60e2ddd3cdec2e9e91a94001",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:19.000Z",
+  "dir": "/",
+  "filename": "/greece-sea-sailboat-roof-mountains-vacat-2228690.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "greece-sea-sailboat-roof-mountains-vacat-2228690.jpg",
+      "size": 342740,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2ddd319e93382d09f571b": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 856,
+      "thumbnailAnnotationsId": "60e2ddd344a226a49d56b024",
+      "thumbnailId": "60e2ddd32ac472820aa0f8db",
+      "width": 1280
+    }
+  },
+  "name": "greece-sea-sailboat-roof-mountains-vacat-2228690.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2ddd3cdec2e9e91a94001",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2ddd3cdec2e9e91a94001/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2ddd3cdec2e9e91a94001/thumbnail",
+  "annotations": [
+    {
+      "id": "60e436132ac54f1bb9eb43ed",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 831.52,
+          "y": 232.97,
+          "z": 0
+        },
+        {
+          "x": 862.68,
+          "y": 275,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "7923d785-c683-4bf3-8048-ecc655b03363",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:53:07.794Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:53:07.794Z",
+      "itemId": "60e2ddd3cdec2e9e91a94001",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e436132ac54f1bb9eb43ed",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ddd3cdec2e9e91a94001",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "55bf6209ca780dc137c7e8401a61139eb14a5521"
+    },
+    {
+      "id": "60e436132ac54f6282eb43eb",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 351.81,
+          "y": 301.81,
+          "z": 0
+        },
+        {
+          "x": 430.8,
+          "y": 424.27,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "c6b8c61a-beb9-444b-a74d-1df3ab32b050",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:53:07.750Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:53:07.750Z",
+      "itemId": "60e2ddd3cdec2e9e91a94001",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e436132ac54f6282eb43eb",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ddd3cdec2e9e91a94001",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "5a0de13cace294b28e6a530739b7c0af41d66e0f"
+    }
+  ]
+}

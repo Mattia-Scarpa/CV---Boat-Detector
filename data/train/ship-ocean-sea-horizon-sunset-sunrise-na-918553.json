@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc0efc561669428d7087",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:16:46.000Z",
+  "dir": "/",
+  "filename": "/ship-ocean-sea-horizon-sunset-sunrise-na-918553.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ship-ocean-sea-horizon-sunset-sunrise-na-918553.jpg",
+      "size": 191709,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc0e98507968ef79bcc5": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 823,
+      "thumbnailAnnotationsId": "60e2dc0e7c0d6f925f1ac245",
+      "thumbnailId": "60e2dc0e4920d6da3b3cc734",
+      "width": 1280
+    }
+  },
+  "name": "ship-ocean-sea-horizon-sunset-sunrise-na-918553.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc0efc561669428d7087",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc0efc561669428d7087/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc0efc561669428d7087/thumbnail",
+  "annotations": [
+    {
+      "id": "60e3447238850c7d678902a9",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 241.67,
+          "y": 369.7776850869741,
+          "z": 0
+        },
+        {
+          "x": 331.25,
+          "y": 470.49000000000007,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "cbcb3c54-e97e-4d00-94ec-09cc409b1e20",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:42:10.127Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:42:10.127Z",
+      "itemId": "60e2dc0efc561669428d7087",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e3447238850c7d678902a9",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc0efc561669428d7087",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "ba45c5a9f996502baee8d99b4b45bd288729f837"
+    }
+  ]
+}

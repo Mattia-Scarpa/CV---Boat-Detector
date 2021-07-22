@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcb233e5adbe6138f1fd",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:19:30.000Z",
+  "dir": "/",
+  "filename": "/sailboat-marseille-port-944747.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sailboat-marseille-port-944747.jpg",
+      "size": 126500,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcb2bae2551fbacf164f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 851,
+      "thumbnailAnnotationsId": "60e2dcb3fc5616fdce8d713d",
+      "thumbnailId": "60e2dcb3c734a827feb75fb1",
+      "width": 1280
+    }
+  },
+  "name": "sailboat-marseille-port-944747.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcb233e5adbe6138f1fd",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcb233e5adbe6138f1fd/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcb233e5adbe6138f1fd/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4200dcd76b01435952c8f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 283.45,
+          "y": 210.79,
+          "z": 0
+        },
+        {
+          "x": 888.49,
+          "y": 690.65,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "b582e9ab-969c-4161-ab91-aaf240cffae3",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:19:09.404Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:19:09.404Z",
+      "itemId": "60e2dcb233e5adbe6138f1fd",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4200dcd76b01435952c8f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcb233e5adbe6138f1fd",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "48a4536f744baf626203cdcb3cabc9a1ab8a7765"
+    }
+  ]
+}

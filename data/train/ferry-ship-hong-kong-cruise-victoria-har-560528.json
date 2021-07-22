@@ -1,0 +1,98 @@
+{
+  "id": "60e2de19fc5616ec4c8d7283",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:29.000Z",
+  "dir": "/",
+  "filename": "/ferry-ship-hong-kong-cruise-victoria-har-560528.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ferry-ship-hong-kong-cruise-victoria-har-560528.jpg",
+      "size": 157319,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de19d47113ea35a7061f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2de1be80402079fac45bf",
+      "thumbnailId": "60e2de1b2ac4723929a0f911",
+      "width": 1280
+    }
+  },
+  "name": "ferry-ship-hong-kong-cruise-victoria-har-560528.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de19fc5616ec4c8d7283",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de19fc5616ec4c8d7283/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de19fc5616ec4c8d7283/thumbnail",
+  "annotations": [
+    {
+      "id": "60e446660c758b7726fe21d6",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 671.94,
+          "y": 396.76,
+          "z": 0
+        },
+        {
+          "x": 1048.2,
+          "y": 797.48,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "07b9f433-a6f4-43dd-9e6e-1cc234a459dd",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:02:46.614Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:02:46.614Z",
+      "itemId": "60e2de19fc5616ec4c8d7283",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e446660c758b7726fe21d6",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de19fc5616ec4c8d7283",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e60be4e45900a2f1cb9707af719538a1ef7206dc"
+    }
+  ]
+}

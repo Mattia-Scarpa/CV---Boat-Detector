@@ -1,0 +1,98 @@
+{
+  "id": "60e2ddd7fc561653838d724b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:23.000Z",
+  "dir": "/",
+  "filename": "/greece-olympia-sea-cruise-boat-ship-medi-106246.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "greece-olympia-sea-cruise-boat-ship-medi-106246.jpg",
+      "size": 284172,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2ddd7d471134203a705dc": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2ddd97c0d6f36b81ac42f",
+      "thumbnailId": "60e2ddd944a226471056b028",
+      "width": 1280
+    }
+  },
+  "name": "greece-olympia-sea-cruise-boat-ship-medi-106246.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2ddd7fc561653838d724b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2ddd7fc561653838d724b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2ddd7fc561653838d724b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e436812ac54f063feb4461",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 47.56,
+          "y": 235.77,
+          "z": 0
+        },
+        {
+          "x": 1244.31,
+          "y": 710.57,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "6e6b7923-f693-4218-b067-c0737d6f5e4b",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:54:57.161Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:54:57.161Z",
+      "itemId": "60e2ddd7fc561653838d724b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e436812ac54f063feb4461",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ddd7fc561653838d724b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "edc9de509f30052d7676fa3ded590e2364ec422c"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2ddfbc734a8707eb760ef",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:59.000Z",
+  "dir": "/",
+  "filename": "/gondola-gondolier-grand-canal-528783.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "gondola-gondolier-grand-canal-528783.jpg",
+      "size": 304905,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2ddfbd471139509a705fd": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2ddfc2ac472d647a0f8fb",
+      "thumbnailId": "60e2ddfcfc56169a898d726b",
+      "width": 851
+    }
+  },
+  "name": "gondola-gondolier-grand-canal-528783.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2ddfbc734a8707eb760ef",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2ddfbc734a8707eb760ef/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2ddfbc734a8707eb760ef/thumbnail",
+  "annotations": [
+    {
+      "id": "60e444ce5143445c053508df",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 173.37,
+          "y": 166.85,
+          "z": 0
+        },
+        {
+          "x": 478.8,
+          "y": 816.85,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f43a9366-6d4d-4899-97cd-83c1b8ea5d1d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T11:55:58.955Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T11:55:58.955Z",
+      "itemId": "60e2ddfbc734a8707eb760ef",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e444ce5143445c053508df",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ddfbc734a8707eb760ef",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "0c9fb29f1b8e88bb4d84dc12303a40ebbe1f9784"
+    }
+  ]
+}

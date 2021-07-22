@@ -1,0 +1,68 @@
+{
+  "id": "60e2dde32ac4721deaa0f8ed",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:35.000Z",
+  "dir": "/",
+  "filename": "/gondola-venice-italy-water-canal-venice--175880.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "gondola-venice-italy-water-canal-venice--175880.jpg",
+      "size": 358798,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dde3bae25567becf17c5": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2dde44920d651533cc90c",
+      "thumbnailId": "60e2dde44920d69f123cc909",
+      "width": 853
+    }
+  },
+  "name": "gondola-venice-italy-water-canal-venice--175880.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dde32ac4721deaa0f8ed",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dde32ac4721deaa0f8ed/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dde32ac4721deaa0f8ed/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc4b021466a28728d8",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.800Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.800Z",
+      "itemId": "60e2dde32ac4721deaa0f8ed",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc4b021466a28728d8",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dde32ac4721deaa0f8ed",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "f0596d37c49891e144d82bc92c070744ca64cc67"
+    }
+  ]
+}

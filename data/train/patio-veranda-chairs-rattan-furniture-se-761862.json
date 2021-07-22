@@ -1,0 +1,98 @@
+{
+  "id": "60e2dce844a2267c1856af36",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:24.000Z",
+  "dir": "/",
+  "filename": "/patio-veranda-chairs-rattan-furniture-se-761862.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "patio-veranda-chairs-rattan-furniture-se-761862.jpg",
+      "size": 488040,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dce8985079b5a579be0b": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2dce933e5ad140738f23b",
+      "thumbnailId": "60e2dce944a226073856af3a",
+      "width": 1280
+    }
+  },
+  "name": "patio-veranda-chairs-rattan-furniture-se-761862.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dce844a2267c1856af36",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dce844a2267c1856af36/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dce844a2267c1856af36/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42375e05eba6ae5750296",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 1066.3,
+          "y": 377.72,
+          "z": 0
+        },
+        {
+          "x": 1255.4299999999998,
+          "y": 665.76,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "621cb47a-1304-46cd-8fcb-67294e841bf3",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:33:41.531Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:33:41.531Z",
+      "itemId": "60e2dce844a2267c1856af36",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42375e05eba6ae5750296",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dce844a2267c1856af36",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "b8266f6fae47ff173028c3da81a74cf00034b02e"
+    }
+  ]
+}

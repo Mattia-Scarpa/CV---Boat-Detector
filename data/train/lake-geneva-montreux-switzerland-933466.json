@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd37c734a8404eb76051",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:43.000Z",
+  "dir": "/",
+  "filename": "/lake-geneva-montreux-switzerland-933466.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "lake-geneva-montreux-switzerland-933466.jpg",
+      "size": 317045,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd373a148c4648715409": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dd37c734a8793db76053",
+      "thumbnailId": "60e2dd37cdec2e0955a93f6f",
+      "width": 1280
+    }
+  },
+  "name": "lake-geneva-montreux-switzerland-933466.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd37c734a8404eb76051",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd37c734a8404eb76051/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd37c734a8404eb76051/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42ad936a95481b94070fc",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 394.72,
+          "y": 16.26,
+          "z": 0
+        },
+        {
+          "x": 910.98,
+          "y": 894.31,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "2bcacfdf-d931-47a6-b5a6-94506de91865",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:05:13.082Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:05:13.082Z",
+      "itemId": "60e2dd37c734a8404eb76051",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42ad936a95481b94070fc",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd37c734a8404eb76051",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "84b2a901e0b5de6d16b43954f96e26ba4734e223"
+    }
+  ]
+}

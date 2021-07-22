@@ -1,0 +1,149 @@
+{
+  "id": "60e2dcf5c734a85848b75ffd",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:37.000Z",
+  "dir": "/",
+  "filename": "/panorama-chiemsee-landscape-nature-2702126.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "panorama-chiemsee-landscape-nature-2702126.jpg",
+      "size": 165113,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcf519e933843e9f5621": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 653,
+      "thumbnailAnnotationsId": "60e2dcf6cdec2e0117a93f31",
+      "thumbnailId": "60e2dcf6c734a8992db75fff",
+      "width": 1280
+    }
+  },
+  "name": "panorama-chiemsee-landscape-nature-2702126.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcf5c734a85848b75ffd",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcf5c734a85848b75ffd/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcf5c734a85848b75ffd/thumbnail",
+  "annotations": [
+    {
+      "id": "60e424b1cd76b02534953036",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 679.43,
+          "y": 287.66,
+          "z": 0
+        },
+        {
+          "x": 785.13,
+          "y": 473.1,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "1763f3dc-0fb9-4506-930f-c2ab5879ed32",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:38:57.236Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:38:57.236Z",
+      "itemId": "60e2dcf5c734a85848b75ffd",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e424b1cd76b02534953036",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcf5c734a85848b75ffd",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "006993bdffd0c9d85ee1adcb4ea5f065c0aca8b4"
+    },
+    {
+      "id": "60e424b1cd76b05d27953038",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 249.05,
+          "y": 403.48,
+          "z": 0
+        },
+        {
+          "x": 262.97,
+          "y": 429.43,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "50a6c22d-7215-4dfe-a9ad-a6bdafa4a097",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:38:57.284Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:38:57.284Z",
+      "itemId": "60e2dcf5c734a85848b75ffd",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e424b1cd76b05d27953038",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcf5c734a85848b75ffd",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "ad56aaa3654f73c82637594639abe92d3ed789ca"
+    }
+  ]
+}

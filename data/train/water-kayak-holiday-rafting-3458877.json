@@ -1,0 +1,68 @@
+{
+  "id": "60e2db1afc5616e7d48d6f89",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:12:42.000Z",
+  "dir": "/",
+  "filename": "/water-kayak-holiday-rafting-3458877.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "water-kayak-holiday-rafting-3458877.jpg",
+      "size": 373855,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db1a985079800f79bb98": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 808,
+      "thumbnailAnnotationsId": "60e2db1acdec2e53d8a93d81",
+      "thumbnailId": "60e2db1a2ac47221d5a0f638",
+      "width": 1280
+    }
+  },
+  "name": "water-kayak-holiday-rafting-3458877.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db1afc5616e7d48d6f89",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db1afc5616e7d48d6f89/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db1afc5616e7d48d6f89/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b619f0fc0c6585a5d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.158Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.158Z",
+      "itemId": "60e2db1afc5616e7d48d6f89",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b619f0fc0c6585a5d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db1afc5616e7d48d6f89",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "be23d788e14b09fca3fe2482aa2ddde61c9bba13"
+    }
+  ]
+}

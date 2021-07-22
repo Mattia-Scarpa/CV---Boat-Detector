@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd0844a226060256af5e",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:56.000Z",
+  "dir": "/",
+  "filename": "/new-zealand-queenstown-fjord-2492599.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "new-zealand-queenstown-fjord-2492599.jpg",
+      "size": 307233,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd0898507961b979be37": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd082ac47252f2a0f825",
+      "thumbnailId": "60e2dd08de859eb2b13ef0db",
+      "width": 1280
+    }
+  },
+  "name": "new-zealand-queenstown-fjord-2492599.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd0844a226060256af5e",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd0844a226060256af5e/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd0844a226060256af5e/thumbnail",
+  "annotations": [
+    {
+      "id": "60e425f7d8f45e2cd4afb645",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 73.38,
+          "y": 119.06,
+          "z": 0
+        },
+        {
+          "x": 1115.1100000000001,
+          "y": 749.28,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f044f6b1-312a-4598-ad7f-1ea1c85ff66d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:44:23.404Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:44:23.404Z",
+      "itemId": "60e2dd0844a226060256af5e",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e425f7d8f45e2cd4afb645",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd0844a226060256af5e",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "dfa8bac7218adbb2536356026bc2e915573e6f08"
+    }
+  ]
+}

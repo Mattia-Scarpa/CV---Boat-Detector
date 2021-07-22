@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd3f44a226687156af9e",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:51.000Z",
+  "dir": "/",
+  "filename": "/lake-boat-summer-idyll-water-sky-3617526.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "lake-boat-summer-idyll-water-sky-3617526.jpg",
+      "size": 305506,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd3f3a148ce75e71541c": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd404920d63bdb3cc87e",
+      "thumbnailId": "60e2dd40cdec2ec6f4a93f79",
+      "width": 1280
+    }
+  },
+  "name": "lake-boat-summer-idyll-water-sky-3617526.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd3f44a226687156af9e",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd3f44a226687156af9e/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd3f44a226687156af9e/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42c02d8f45e03e3afbca7",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 438.13,
+          "y": 291.73,
+          "z": 0
+        },
+        {
+          "x": 599.28,
+          "y": 515.47,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "5ff672bd-b181-4f8a-8176-d4f473362fac",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:10:10.252Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:10:10.252Z",
+      "itemId": "60e2dd3f44a226687156af9e",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42c02d8f45e03e3afbca7",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd3f44a226687156af9e",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "0b04dc188808c9b06e76cb704bda6f8cc7c1aa43"
+    }
+  ]
+}

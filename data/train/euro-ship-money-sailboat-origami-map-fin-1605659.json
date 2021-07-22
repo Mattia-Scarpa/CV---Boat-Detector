@@ -1,0 +1,98 @@
+{
+  "id": "60e2de3544a226e20e56b068",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:57.000Z",
+  "dir": "/",
+  "filename": "/euro-ship-money-sailboat-origami-map-fin-1605659.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "euro-ship-money-sailboat-origami-map-fin-1605659.jpg",
+      "size": 250283,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de35d47113eefea70643": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 918,
+      "thumbnailAnnotationsId": "60e2de36e804021d8cac45d9",
+      "thumbnailId": "60e2de364920d6e12d3cc95c",
+      "width": 1280
+    }
+  },
+  "name": "euro-ship-money-sailboat-origami-map-fin-1605659.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de3544a226e20e56b068",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de3544a226e20e56b068/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de3544a226e20e56b068/thumbnail",
+  "annotations": [
+    {
+      "id": "60e453b0d8f45e8f2aafdab6",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 55.81,
+          "y": 223.26,
+          "z": 0
+        },
+        {
+          "x": 1201.55,
+          "y": 760.47,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f896a863-951c-47be-87df-df80b057d223",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:59:28.256Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:59:28.256Z",
+      "itemId": "60e2de3544a226e20e56b068",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e453b0d8f45e8f2aafdab6",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de3544a226e20e56b068",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "2e24f81e6a7dde888c481b5aeda16a37f969c224"
+    }
+  ]
+}

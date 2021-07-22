@@ -1,0 +1,105 @@
+{
+  "id": "60e2de0c4920d6fb413cc922",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:16.000Z",
+  "dir": "/",
+  "filename": "/freight-liner-ship-liner-shipping-2736640.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "freight-liner-ship-liner-shipping-2736640.jpg",
+      "size": 417728,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de0c3a148c71ed715520": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2de0d4920d656383cc926",
+      "thumbnailId": "60e2de0c44a226012c56b04c",
+      "width": 960
+    },
+    "user": {
+      "location": {
+        "altitude": "\u0001",
+        "latitude": 42.98777777777778,
+        "longitude": -82.4175
+      }
+    }
+  },
+  "name": "freight-liner-ship-liner-shipping-2736640.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de0c4920d6fb413cc922",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de0c4920d6fb413cc922/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de0c4920d6fb413cc922/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4458fcf2468d0dc99ee2f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 0,
+          "y": 225.54,
+          "z": 0
+        },
+        {
+          "x": 920.65,
+          "y": 885.3199999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "95592bd8-b4e5-47d3-b0ce-7d1b1929d592",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T11:59:11.551Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T11:59:11.551Z",
+      "itemId": "60e2de0c4920d6fb413cc922",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4458fcf2468d0dc99ee2f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de0c4920d6fb413cc922",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "97eb3f3a397c0b7f1090517cef40604ae7b38a80"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2de184920d66fae3cc938",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:28.000Z",
+  "dir": "/",
+  "filename": "/ferry-staten-island-new-york-manhattan-b-799428.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ferry-staten-island-new-york-manhattan-b-799428.jpg",
+      "size": 505339,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de18985079532879bfb2": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 886,
+      "thumbnailAnnotationsId": "60e2de1bc734a86da6b7610d",
+      "thumbnailId": "60e2de1b4920d6505b3cc93c",
+      "width": 1280
+    }
+  },
+  "name": "ferry-staten-island-new-york-manhattan-b-799428.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de184920d66fae3cc938",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de184920d66fae3cc938/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de184920d66fae3cc938/thumbnail",
+  "annotations": [
+    {
+      "id": "60e446552ac54f73d1eb507d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 227.61,
+          "y": 165.3,
+          "z": 0
+        },
+        {
+          "x": 1047.01,
+          "y": 760.8199999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "991e2652-f7a2-49f9-b8aa-168aefa01556",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:02:29.969Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:02:29.969Z",
+      "itemId": "60e2de184920d66fae3cc938",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e446552ac54f73d1eb507d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de184920d66fae3cc938",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e3553ad3b5288078f29d34157f04413d0150c243"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dbd6c734a827f0b75ee7",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:15:50.000Z",
+  "dir": "/",
+  "filename": "/sunset-mountains-kayak-oar-water-2831769.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sunset-mountains-kayak-oar-water-2831769.jpg",
+      "size": 240591,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dbd6bae2551e43cf152e": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dbd7fc561668c58d7049",
+      "thumbnailId": "60e2dbd77c0d6f22fb1ac1f7",
+      "width": 1280
+    }
+  },
+  "name": "sunset-mountains-kayak-oar-water-2831769.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dbd6c734a827f0b75ee7",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dbd6c734a827f0b75ee7/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dbd6c734a827f0b75ee7/thumbnail",
+  "annotations": [
+    {
+      "id": "60e33e2ccf24686cd1996f52",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 425.18,
+          "y": 523.38,
+          "z": 0
+        },
+        {
+          "x": 817.27,
+          "y": 556.47,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "248886c7-bfe0-485a-9fd7-d9ec6053961a",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:15:24.964Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:15:24.964Z",
+      "itemId": "60e2dbd6c734a827f0b75ee7",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33e2ccf24686cd1996f52",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbd6c734a827f0b75ee7",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e2215fde890b4d1819cb9f5e8e7dfcf926f4c911"
+    }
+  ]
+}

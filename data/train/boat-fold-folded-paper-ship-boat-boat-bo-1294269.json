@@ -1,0 +1,68 @@
+{
+  "id": "60e2df16cdec2e589aa94133",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:42.000Z",
+  "dir": "/",
+  "filename": "/boat-fold-folded-paper-ship-boat-boat-bo-1294269.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "boat-fold-folded-paper-ship-boat-boat-bo-1294269.jpg",
+      "size": 35219,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df1719e933dd799f5895": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 687,
+      "thumbnailAnnotationsId": "60e2df19de859e8f8a3ef2d6",
+      "thumbnailId": "60e2df19de859ee7783ef2d3",
+      "width": 1280
+    }
+  },
+  "name": "boat-fold-folded-paper-ship-boat-boat-bo-1294269.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df16cdec2e589aa94133",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df16cdec2e589aa94133/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df16cdec2e589aa94133/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc619f0fced0585a6f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.795Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.795Z",
+      "itemId": "60e2df16cdec2e589aa94133",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc619f0fced0585a6f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df16cdec2e589aa94133",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "25259fcb10c60a18b720adf91b76ae47c75e7de1"
+    }
+  ]
+}

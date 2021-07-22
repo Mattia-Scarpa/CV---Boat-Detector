@@ -1,0 +1,108 @@
+{
+  "id": "60e2daf3c734a886a1b75e43",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:12:03.000Z",
+  "dir": "/",
+  "filename": "/zrich-river-kayak-water-centre-zurich-s-300301.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "zrich-river-kayak-water-centre-zurich-s-300301.jpg",
+      "size": 308439,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2daf39850790f7b79bb55": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        },
+        "model-annotation-yolov3": {
+          "default_module": {
+            "run": {
+              "60e31f5f1dc918ed98f6bfe1": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 850,
+      "thumbnailAnnotationsId": "60e2daf433e5adf6fb38f063",
+      "thumbnailId": "60e2daf4e804021792ac42fd",
+      "width": 1280
+    }
+  },
+  "name": "zrich-river-kayak-water-centre-zurich-s-300301.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2daf3c734a886a1b75e43",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2daf3c734a886a1b75e43/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2daf3c734a886a1b75e43/thumbnail",
+  "annotations": [
+    {
+      "id": "60e31f6abe8a752c10b481d2",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 691.84,
+          "y": 663.83,
+          "z": 0
+        },
+        {
+          "x": 762.76,
+          "y": 704.96,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "3fb22eec-6ed8-4270-a663-94c32196e216",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T15:04:10.156Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T15:04:10.156Z",
+      "itemId": "60e2daf3c734a886a1b75e43",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e31f6abe8a752c10b481d2",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2daf3c734a886a1b75e43",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "19255f4babb778dba039a7a0b9948d77f17ce559"
+    }
+  ]
+}

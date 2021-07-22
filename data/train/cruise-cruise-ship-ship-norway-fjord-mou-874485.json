@@ -1,0 +1,98 @@
+{
+  "id": "60e2de7f33e5ad6da438f3b9",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:11.000Z",
+  "dir": "/",
+  "filename": "/cruise-cruise-ship-ship-norway-fjord-mou-874485.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "cruise-cruise-ship-ship-norway-fjord-mou-874485.jpg",
+      "size": 260140,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de7fd471133900a7069e": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2de7f2ac4727d87a0f95f",
+      "thumbnailId": "60e2de7f33e5ad2b9238f3bb",
+      "width": 1280
+    }
+  },
+  "name": "cruise-cruise-ship-ship-norway-fjord-mou-874485.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de7f33e5ad6da438f3b9",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de7f33e5ad6da438f3b9/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de7f33e5ad6da438f3b9/thumbnail",
+  "annotations": [
+    {
+      "id": "60e458652ac54fd1d3eb5e76",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 607.91,
+          "y": 562.95,
+          "z": 0
+        },
+        {
+          "x": 1185.6100000000001,
+          "y": 716.9100000000001,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "3d0ff773-3e90-464c-96b8-8a70e80e2280",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:19:33.103Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:19:33.103Z",
+      "itemId": "60e2de7f33e5ad6da438f3b9",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e458652ac54fd1d3eb5e76",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de7f33e5ad6da438f3b9",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "5d9d2c146e5b2e2307ddd50b8f74ed06051e1028"
+    }
+  ]
+}

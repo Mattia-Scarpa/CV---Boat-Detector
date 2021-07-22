@@ -1,0 +1,149 @@
+{
+  "id": "60e2de324920d6194b3cc958",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:54.000Z",
+  "dir": "/",
+  "filename": "/ferries-shipping-transport-cross-53121.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ferries-shipping-transport-cross-53121.jpg",
+      "size": 285914,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de3219e933cfd69f578a": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2de33de859e5d973ef201",
+      "thumbnailId": "60e2de32fc5616f5528d72a9",
+      "width": 1280
+    }
+  },
+  "name": "ferries-shipping-transport-cross-53121.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de324920d6194b3cc958",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de324920d6194b3cc958/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de324920d6194b3cc958/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45383d8f45e3a57afda97",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 185.77,
+          "y": 405.69,
+          "z": 0
+        },
+        {
+          "x": 549.1800000000001,
+          "y": 485.36,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "bc3632ca-e396-46f3-be29-4b791edc32e7",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:58:43.689Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:58:43.689Z",
+      "itemId": "60e2de324920d6194b3cc958",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45383d8f45e3a57afda97",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de324920d6194b3cc958",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e95ba2bbd199a4a7761f1a74fa94a5b8c9ab8ed1"
+    },
+    {
+      "id": "60e453a236a9542855408fc0",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 618.29,
+          "y": 404.07,
+          "z": 0
+        },
+        {
+          "x": 961.3799999999999,
+          "y": 481.31,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "12ed2127-5dd4-4e62-84da-9d34e61f7661",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:59:14.770Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:59:14.770Z",
+      "itemId": "60e2de324920d6194b3cc958",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e453a236a9542855408fc0",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de324920d6194b3cc958",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "780bf1c5d97afa11f5983a3cddeda93aa75152b0"
+    }
+  ]
+}

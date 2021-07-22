@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc89c734a834e4b75f93",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:18:49.000Z",
+  "dir": "/",
+  "filename": "/sail-horizon-orange-gloss-water-3760717.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sail-horizon-orange-gloss-water-3760717.jpg",
+      "size": 235665,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc8919e933e97e9f5577": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 771,
+      "thumbnailAnnotationsId": "60e2dc8afc561603da8d7113",
+      "thumbnailId": "60e2dc8a2ac472f544a0f7a9",
+      "width": 1280
+    }
+  },
+  "name": "sail-horizon-orange-gloss-water-3760717.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc89c734a834e4b75f93",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc89c734a834e4b75f93/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc89c734a834e4b75f93/thumbnail",
+  "annotations": [
+    {
+      "id": "60e41d16e7d83a17131cbcb3",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 662.99,
+          "y": 529.55,
+          "z": 0
+        },
+        {
+          "x": 691.5600000000001,
+          "y": 568.51,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "c84190be-7162-4327-b632-8d708eede162",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:06:30.622Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:06:30.622Z",
+      "itemId": "60e2dc89c734a834e4b75f93",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e41d16e7d83a17131cbcb3",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc89c734a834e4b75f93",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "aaca2077451a99b9a9020cd0c5afa32d11abbf27"
+    }
+  ]
+}

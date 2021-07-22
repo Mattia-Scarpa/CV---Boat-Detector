@@ -1,0 +1,98 @@
+{
+  "id": "60e2de364920d63ece3cc95a",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:58.000Z",
+  "dir": "/",
+  "filename": "/europa-sailboat-fs-senator-brockes-1185800.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "europa-sailboat-fs-senator-brockes-1185800.jpg",
+      "size": 291607,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de3619e93368419f578f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2de36de859e70ee3ef205",
+      "thumbnailId": "60e2de36fc5616fc398d72af",
+      "width": 1280
+    }
+  },
+  "name": "europa-sailboat-fs-senator-brockes-1185800.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de364920d63ece3cc95a",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de364920d63ece3cc95a/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de364920d63ece3cc95a/thumbnail",
+  "annotations": [
+    {
+      "id": "60e453c474b4f02e2d0f3d88",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 202.03,
+          "y": 60.16,
+          "z": 0
+        },
+        {
+          "x": 1096.34,
+          "y": 782.92,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "8d691091-d300-41f2-84de-68f22db52bd8",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T12:59:48.918Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T12:59:48.918Z",
+      "itemId": "60e2de364920d63ece3cc95a",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e453c474b4f02e2d0f3d88",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de364920d63ece3cc95a",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "10500c4dda77a8127daa0df316b816b373eb5627"
+    }
+  ]
+}

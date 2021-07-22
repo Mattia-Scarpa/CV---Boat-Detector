@@ -1,0 +1,98 @@
+{
+  "id": "60e2dddccdec2e0d1fa94005",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:28.000Z",
+  "dir": "/",
+  "filename": "/gondolier-venice-water-romantic-venezia--667566.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "gondolier-venice-water-romantic-venezia--667566.jpg",
+      "size": 459064,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dddcd471134f52a705e0": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 980,
+      "thumbnailAnnotationsId": "60e2ddddde859e540e3ef1af",
+      "thumbnailId": "60e2dddd44a226f12f56b02a",
+      "width": 1280
+    }
+  },
+  "name": "gondolier-venice-water-romantic-venezia--667566.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dddccdec2e0d1fa94005",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dddccdec2e0d1fa94005/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dddccdec2e0d1fa94005/thumbnail",
+  "annotations": [
+    {
+      "id": "60e436b1cd76b095f6953f6b",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 56.61,
+          "y": 202.07,
+          "z": 0
+        },
+        {
+          "x": 1203.7199999999998,
+          "y": 786.3699999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "cfa756dd-b4ee-413e-b2dd-9f0e5e74241e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:55:45.235Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:55:45.235Z",
+      "itemId": "60e2dddccdec2e0d1fa94005",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e436b1cd76b095f6953f6b",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dddccdec2e0d1fa94005",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d34513274d2e526d64610b5d2da219c11bba4a75"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dda7c734a8785fb760b3",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:23:35.000Z",
+  "dir": "/",
+  "filename": "/jetty-pier-fog-foggy-morning-2767167.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "jetty-pier-fog-foggy-morning-2767167.jpg",
+      "size": 126463,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dda7985079988d79bf1e": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dda7fc561678f28d721b",
+      "thumbnailId": "60e2dda733e5adfef038f2ef",
+      "width": 1280
+    }
+  },
+  "name": "jetty-pier-fog-foggy-morning-2767167.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dda7c734a8785fb760b3",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dda7c734a8785fb760b3/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dda7c734a8785fb760b3/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42fe7e05eba7bb9750d7a",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 691.37,
+          "y": 647.12,
+          "z": 0
+        },
+        {
+          "x": 829.5,
+          "y": 726.98,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "0f324385-fcdf-49a1-9aab-0aed2e67d58f",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:26:47.391Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:26:47.391Z",
+      "itemId": "60e2dda7c734a8785fb760b3",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42fe7e05eba7bb9750d7a",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dda7c734a8785fb760b3",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "5595a4b4531a53dd4cb7b8fdc3be1153b42ae2c5"
+    }
+  ]
+}

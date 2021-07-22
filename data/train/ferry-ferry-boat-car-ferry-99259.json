@@ -1,0 +1,68 @@
+{
+  "id": "60e2de2344a2263f0e56b058",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:39.000Z",
+  "dir": "/",
+  "filename": "/ferry-ferry-boat-car-ferry-99259.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ferry-ferry-boat-car-ferry-99259.jpg",
+      "size": 84418,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de2319e9331b149f5770": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2de26e80402f2caac45c5",
+      "thumbnailId": "60e2de26cdec2e9c98a9403f",
+      "width": 1280
+    }
+  },
+  "name": "ferry-ferry-boat-car-ferry-99259.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de2344a2263f0e56b058",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de2344a2263f0e56b058/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de2344a2263f0e56b058/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc565e4b7427354345",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.821Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.821Z",
+      "itemId": "60e2de2344a2263f0e56b058",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc565e4b7427354345",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de2344a2263f0e56b058",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "adcb3db78e78ea1d2f67f061cf13480c318b55dd"
+    }
+  ]
+}

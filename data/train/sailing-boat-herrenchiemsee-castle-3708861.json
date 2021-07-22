@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc82fc56161fa48d7105",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:18:42.000Z",
+  "dir": "/",
+  "filename": "/sailing-boat-herrenchiemsee-castle-3708861.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sailing-boat-herrenchiemsee-castle-3708861.jpg",
+      "size": 349500,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc823a148c7973715320": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dc8344a2266dba56aeba",
+      "thumbnailId": "60e2dc837c0d6ff39b1ac2d5",
+      "width": 1280
+    }
+  },
+  "name": "sailing-boat-herrenchiemsee-castle-3708861.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc82fc56161fa48d7105",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc82fc56161fa48d7105/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc82fc56161fa48d7105/thumbnail",
+  "annotations": [
+    {
+      "id": "60e41c96e7d83a26661cbc3f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 187.05,
+          "y": 146.4,
+          "z": 0
+        },
+        {
+          "x": 479.86,
+          "y": 639.21,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "7abf924c-fc57-431c-8e80-fc812d2b1151",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:04:22.018Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:04:22.018Z",
+      "itemId": "60e2dc82fc56161fa48d7105",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e41c96e7d83a26661cbc3f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc82fc56161fa48d7105",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "f062eea43962df5fcb9781e9b4e3028ace0c3db4"
+    }
+  ]
+}

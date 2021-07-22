@@ -1,0 +1,98 @@
+{
+  "id": "60e2df4144a226678956b17c",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:30:25.000Z",
+  "dir": "/",
+  "filename": "/adventure-water-boat-canoeing-call-2674523.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "adventure-water-boat-canoeing-call-2674523.jpg",
+      "size": 368689,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df41bae255c65dcf19a2": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2df417c0d6f78301ac579",
+      "thumbnailId": "60e2df4144a22661e256b180",
+      "width": 1280
+    }
+  },
+  "name": "adventure-water-boat-canoeing-call-2674523.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df4144a226678956b17c",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df4144a226678956b17c/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df4144a226678956b17c/thumbnail",
+  "annotations": [
+    {
+      "id": "60e461992ac54fa655eb62e7",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 620.73,
+          "y": 410.57,
+          "z": 0
+        },
+        {
+          "x": 697.97,
+          "y": 432.52,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "48a0c631-804c-4187-909b-453b1e7c044d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:58:49.099Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:58:49.099Z",
+      "itemId": "60e2df4144a226678956b17c",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e461992ac54fa655eb62e7",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df4144a226678956b17c",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "f5d64ffcf0016c9cbcc67652879969f7d2dfb6cc"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2de092ac472ad03a0f903",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:13.000Z",
+  "dir": "/",
+  "filename": "/frog-photographer-giant-funny-1158815.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "frog-photographer-giant-funny-1158815.jpg",
+      "size": 351868,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de09d47113a835a70612": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 728,
+      "thumbnailAnnotationsId": "60e2de0ae80402734dac45b3",
+      "thumbnailId": "60e2de0a2ac47269bfa0f905",
+      "width": 1280
+    }
+  },
+  "name": "frog-photographer-giant-funny-1158815.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de092ac472ad03a0f903",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de092ac472ad03a0f903/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de092ac472ad03a0f903/thumbnail",
+  "annotations": [
+    {
+      "id": "60e44578cd76b0088a954aaf",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 283.86000000000007,
+          "y": 405.69620294905826,
+          "z": 0
+        },
+        {
+          "x": 1227.53,
+          "y": 622.1500000000001,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "02350dbf-5255-451a-8103-4d5ea05dba4a",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T11:58:48.695Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T11:58:48.695Z",
+      "itemId": "60e2de092ac472ad03a0f903",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e44578cd76b0088a954aaf",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de092ac472ad03a0f903",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "b76e13525f960d1e26f145f4b6fe37985b747af1"
+    }
+  ]
+}

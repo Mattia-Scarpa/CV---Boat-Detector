@@ -1,0 +1,68 @@
+{
+  "id": "60e2dd03c734a8504db76011",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:51.000Z",
+  "dir": "/",
+  "filename": "/ocean-kayak-kayaking-summer-water-2673555.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ocean-kayak-kayaking-summer-water-2673555.jpg",
+      "size": 249741,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd03bae255fd1acf16c2": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dd04fc561645458d7185",
+      "thumbnailId": "60e2dd044920d661e13cc84a",
+      "width": 1280
+    }
+  },
+  "name": "ocean-kayak-kayaking-summer-water-2673555.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd03c734a8504db76011",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd03c734a8504db76011/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd03c734a8504db76011/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b417ad7021067911f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.161Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.161Z",
+      "itemId": "60e2dd03c734a8504db76011",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b417ad7021067911f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd03c734a8504db76011",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "c80b785c05f1529e26b5ea5252932e2189033d10"
+    }
+  ]
+}

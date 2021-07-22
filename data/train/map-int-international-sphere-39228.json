@@ -1,0 +1,68 @@
+{
+  "id": "60e2dd1ccdec2e65f7a93f5b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:16.000Z",
+  "dir": "/",
+  "filename": "/map-int-international-sphere-39228.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "map-int-international-sphere-39228.jpg",
+      "size": 42984,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd1cbae255192acf16e5": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2dd1dde859ef5a83ef0ef",
+      "thumbnailId": "60e2dd1dc734a8335fb7602b",
+      "width": 855
+    }
+  },
+  "name": "map-int-international-sphere-39228.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd1ccdec2e65f7a93f5b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd1ccdec2e65f7a93f5b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd1ccdec2e65f7a93f5b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628ba33564960606e51d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.145Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.145Z",
+      "itemId": "60e2dd1ccdec2e65f7a93f5b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628ba33564960606e51d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd1ccdec2e65f7a93f5b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "962586eeca687a460a279673ebf1407a5e8ae8df"
+    }
+  ]
+}

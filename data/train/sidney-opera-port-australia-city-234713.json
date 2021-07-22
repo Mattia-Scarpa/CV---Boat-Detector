@@ -1,0 +1,200 @@
+{
+  "id": "60e2dbedde859e04f93eefcf",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:16:13.000Z",
+  "dir": "/",
+  "filename": "/sidney-opera-port-australia-city-234713.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sidney-opera-port-australia-city-234713.jpg",
+      "size": 322604,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dbedd4711315cea70307": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dbedfc5616bf7e8d705b",
+      "thumbnailId": "60e2dbed7c0d6f2b791ac211",
+      "width": 1280
+    }
+  },
+  "name": "sidney-opera-port-australia-city-234713.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 3,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf/thumbnail",
+  "annotations": [
+    {
+      "id": "60e33f4303ec76233fbb2d55",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 4.47,
+          "y": 132.52,
+          "z": 0
+        },
+        {
+          "x": 1056.5,
+          "y": 740.65,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "bce15a64-2f46-4f81-ac8e-0917de7f4f8e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:20:03.935Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:20:03.935Z",
+      "itemId": "60e2dbedde859e04f93eefcf",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33f4303ec76233fbb2d55",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "510d0cabecd449735aa3d5041c548e88b60fe651"
+    },
+    {
+      "id": "60e33f4303ec76f9fcbb2d57",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 830.49,
+          "y": 668.29,
+          "z": 0
+        },
+        {
+          "x": 938.62,
+          "y": 713.01,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "0c96e0c8-daee-4a43-9ac1-7db048d2364b",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:20:03.982Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:20:03.982Z",
+      "itemId": "60e2dbedde859e04f93eefcf",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33f4303ec76f9fcbb2d57",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "81ebe4a0b39fe305d37dc355f9c6a0033f59922b"
+    },
+    {
+      "id": "60e33f4403ec764373bb2d59",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 848.37,
+          "y": 633.33,
+          "z": 0
+        },
+        {
+          "x": 909.35,
+          "y": 654.47,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "ed4504c7-e71b-4ece-90ba-33f3434c13f4",
+          "automated": false,
+          "objectId": "3",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:20:04.024Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:20:04.024Z",
+      "itemId": "60e2dbedde859e04f93eefcf",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33f4403ec764373bb2d59",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbedde859e04f93eefcf",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d2e74526536a86131f68b21966536a4f0ef6617b"
+    }
+  ]
+}

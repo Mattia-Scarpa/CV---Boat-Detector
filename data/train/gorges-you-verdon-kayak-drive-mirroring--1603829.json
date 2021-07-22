@@ -1,0 +1,98 @@
+{
+  "id": "60e2dddb7c0d6f35fd1ac431",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:24:27.000Z",
+  "dir": "/",
+  "filename": "/gorges-you-verdon-kayak-drive-mirroring--1603829.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "gorges-you-verdon-kayak-drive-mirroring--1603829.jpg",
+      "size": 402706,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dddb98507914e479bf64": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dddc2ac472dea9a0f8e7",
+      "thumbnailId": "60e2dddce80402ebb8ac4591",
+      "width": 1280
+    }
+  },
+  "name": "gorges-you-verdon-kayak-drive-mirroring--1603829.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dddb7c0d6f35fd1ac431",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dddb7c0d6f35fd1ac431/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dddb7c0d6f35fd1ac431/thumbnail",
+  "annotations": [
+    {
+      "id": "60e436abcf2468487699e158",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 481.71,
+          "y": 366.67,
+          "z": 0
+        },
+        {
+          "x": 799.5999999999999,
+          "y": 583.74,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "fb21b32f-d9e3-4836-8c93-8df6bc74721c",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:55:39.004Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:55:39.004Z",
+      "itemId": "60e2dddb7c0d6f35fd1ac431",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e436abcf2468487699e158",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dddb7c0d6f35fd1ac431",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "9daa3364beed70ca41383c064bb817006bf08310"
+    }
+  ]
+}

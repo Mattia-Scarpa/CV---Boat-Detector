@@ -1,0 +1,98 @@
+{
+  "id": "60e2de4944a226128a56b082",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:26:17.000Z",
+  "dir": "/",
+  "filename": "/cruise-ship-sydney-harbour-bridge-cruise-1029721.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "cruise-ship-sydney-harbour-bridge-cruise-1029721.jpg",
+      "size": 324638,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de4a985079ee3579bfdf": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 719,
+      "thumbnailAnnotationsId": "60e2de4ac734a874e6b76139",
+      "thumbnailId": "60e2de4a33e5ad8f6b38f379",
+      "width": 1280
+    }
+  },
+  "name": "cruise-ship-sydney-harbour-bridge-cruise-1029721.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de4944a226128a56b082",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de4944a226128a56b082/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de4944a226128a56b082/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4552036a9546b024090b0",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 693.99,
+          "y": 0.63,
+          "z": 0
+        },
+        {
+          "x": 1208.55,
+          "y": 644.93,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "79bb17ac-78e6-470a-980b-18c41363495d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:05:36.439Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:05:36.439Z",
+      "itemId": "60e2de4944a226128a56b082",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4552036a9546b024090b0",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de4944a226128a56b082",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "cbfd900a83da980b728072a740cbc21c42c255f1"
+    }
+  ]
+}

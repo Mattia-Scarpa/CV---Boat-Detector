@@ -1,0 +1,68 @@
+{
+  "id": "60e2df417c0d6f4f881ac577",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:30:25.000Z",
+  "dir": "/",
+  "filename": "/africa-river-botswana-water-landscape-na-172697.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "africa-river-botswana-water-landscape-na-172697.jpg",
+      "size": 322478,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df41985079ee7379c147": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2df4144a226297a56b17e",
+      "thumbnailId": "60e2df412ac47220fda0f9ff",
+      "width": 1280
+    }
+  },
+  "name": "africa-river-botswana-water-landscape-na-172697.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df417c0d6f4f881ac577",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df417c0d6f4f881ac577/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df417c0d6f4f881ac577/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dcff02eb912a07cf80",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.861Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.861Z",
+      "itemId": "60e2df417c0d6f4f881ac577",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dcff02eb912a07cf80",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df417c0d6f4f881ac577",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "2ba194dcb6f28439d867c263b545c84e1beaa623"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd4f44a2267d0856afae",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:07.000Z",
+  "dir": "/",
+  "filename": "/kayak-white-water-water-sports-798016.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-white-water-water-sports-798016.jpg",
+      "size": 338225,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd4f3a148c844271542f": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dd50de859e2eaf3ef125",
+      "thumbnailId": "60e2dd507c0d6f665e1ac3a5",
+      "width": 1280
+    }
+  },
+  "name": "kayak-white-water-water-sports-798016.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd4f44a2267d0856afae",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd4f44a2267d0856afae/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd4f44a2267d0856afae/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42c97e05ebafa39750b16",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 505.76,
+          "y": 277.34,
+          "z": 0
+        },
+        {
+          "x": 888.49,
+          "y": 696.76,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "0d36fc19-e23c-40c9-92c1-2dea2800bd80",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:12:39.144Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:12:39.144Z",
+      "itemId": "60e2dd4f44a2267d0856afae",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42c97e05ebafa39750b16",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd4f44a2267d0856afae",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "0577e98ffeded0e6ef388e82a0c09cdf55b8e581"
+    }
+  ]
+}

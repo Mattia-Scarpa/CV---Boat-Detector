@@ -1,0 +1,68 @@
+{
+  "id": "60e2dcc1c734a8732cb75fc3",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:19:45.000Z",
+  "dir": "/",
+  "filename": "/sailboat-boat-blue-yacht-sky-3668503.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "sailboat-boat-blue-yacht-sky-3668503.jpg",
+      "size": 315393,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcc13a148c65e8715378": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dcc133e5ad1cd238f219",
+      "thumbnailId": "60e2dcc12ac47231c6a0f7ed",
+      "width": 1280
+    }
+  },
+  "name": "sailboat-boat-blue-yacht-sky-3668503.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcc1c734a8732cb75fc3",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcc1c734a8732cb75fc3/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcc1c734a8732cb75fc3/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b4b0214044d8728ca",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.165Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.165Z",
+      "itemId": "60e2dcc1c734a8732cb75fc3",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b4b0214044d8728ca",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcc1c734a8732cb75fc3",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e5a5b383b88f58a8dda92df53040d65597896320"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd4633e5ad637f38f29d",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:58.000Z",
+  "dir": "/",
+  "filename": "/kurort-rathen-saxon-switzerland-3529658.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kurort-rathen-saxon-switzerland-3529658.jpg",
+      "size": 535533,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd46d471133fe1a70521": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 841,
+      "thumbnailAnnotationsId": "60e2dd4944a2261b2856afa8",
+      "thumbnailId": "60e2dd4944a226bf1c56afa6",
+      "width": 1280
+    }
+  },
+  "name": "kurort-rathen-saxon-switzerland-3529658.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd4633e5ad637f38f29d",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd4633e5ad637f38f29d/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd4633e5ad637f38f29d/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42c582ac54fecc3eb3ef4",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 684.04,
+          "y": 680.5,
+          "z": 0
+        },
+        {
+          "x": 765.5999999999999,
+          "y": 709.58,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "00b703bc-ddf8-4d6d-9a4e-76e33a2f1b0c",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:11:36.481Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:11:36.481Z",
+      "itemId": "60e2dd4633e5ad637f38f29d",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42c582ac54fecc3eb3ef4",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd4633e5ad637f38f29d",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "2878fceb6a583490848bfeae9f42f6533ec7e2f6"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dec9c734a84f95b761a5",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:25.000Z",
+  "dir": "/",
+  "filename": "/cadiz-andalusia-spain-travel-sky-3197928.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "cadiz-andalusia-spain-travel-sky-3197928.jpg",
+      "size": 219398,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dec919e9337be89f5842": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2decc4920d622873cc9e6",
+      "thumbnailId": "60e2deccfc5616e58e8d7344",
+      "width": 1280
+    }
+  },
+  "name": "cadiz-andalusia-spain-travel-sky-3197928.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dec9c734a84f95b761a5",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dec9c734a84f95b761a5/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dec9c734a84f95b761a5/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45bcce05eba2f79752d7e",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 14.39,
+          "y": 426.98,
+          "z": 0
+        },
+        {
+          "x": 1230.94,
+          "y": 723.38,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "37f7dcd3-63ed-4857-a5da-98879349daa2",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:34:04.856Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:34:04.856Z",
+      "itemId": "60e2dec9c734a84f95b761a5",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45bcce05eba2f79752d7e",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dec9c734a84f95b761a5",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "890a3d29c547f9bd93519df819034cdbd45a4ad0"
+    }
+  ]
+}

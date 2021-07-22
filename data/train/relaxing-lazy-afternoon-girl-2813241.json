@@ -1,0 +1,98 @@
+{
+  "id": "60e2dcd2cdec2e5f4aa93ef5",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:02.000Z",
+  "dir": "/",
+  "filename": "/relaxing-lazy-afternoon-girl-2813241.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "relaxing-lazy-afternoon-girl-2813241.jpg",
+      "size": 402770,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcd2985079366179bded": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 648,
+      "thumbnailAnnotationsId": "60e2dcd3c734a87ed8b75fd7",
+      "thumbnailId": "60e2dcd3cdec2eaa9fa93ef7",
+      "width": 1280
+    }
+  },
+  "name": "relaxing-lazy-afternoon-girl-2813241.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcd2cdec2e5f4aa93ef5",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcd2cdec2e5f4aa93ef5/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcd2cdec2e5f4aa93ef5/thumbnail",
+  "annotations": [
+    {
+      "id": "60e421f5e05eba572775012b",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 773.73,
+          "y": 59.81,
+          "z": 0
+        },
+        {
+          "x": 1121.2,
+          "y": 194.62,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "d0630594-562d-423b-afca-d71630ecddef",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:27:17.572Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:27:17.572Z",
+      "itemId": "60e2dcd2cdec2e5f4aa93ef5",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e421f5e05eba572775012b",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcd2cdec2e5f4aa93ef5",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "b4d1c2a31922460e0d90ea23abc51a1dbdfaf6e6"
+    }
+  ]
+}

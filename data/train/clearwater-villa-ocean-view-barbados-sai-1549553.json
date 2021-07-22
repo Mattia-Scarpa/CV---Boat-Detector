@@ -1,0 +1,98 @@
+{
+  "id": "60e2de94fc561603308d731a",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:32.000Z",
+  "dir": "/",
+  "filename": "/clearwater-villa-ocean-view-barbados-sai-1549553.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "clearwater-villa-ocean-view-barbados-sai-1549553.jpg",
+      "size": 426587,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de94bae2556b6ccf18a9": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2de95fc56169d058d731d",
+      "thumbnailId": "60e2de9544a226fc0f56b0d4",
+      "width": 1280
+    }
+  },
+  "name": "clearwater-villa-ocean-view-barbados-sai-1549553.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de94fc561603308d731a",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de94fc561603308d731a/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de94fc561603308d731a/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4594874b4f0985f0f4045",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 561.87,
+          "y": 218.35,
+          "z": 0
+        },
+        {
+          "x": 730.22,
+          "y": 457.91999999999996,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "5c17fef0-fe1b-4ed3-abf6-8d88d36a1b35",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:23:20.931Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:23:20.931Z",
+      "itemId": "60e2de94fc561603308d731a",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4594874b4f0985f0f4045",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de94fc561603308d731a",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "1eaa487c38154677e8b0a98fc69bad16a1ccd952"
+    }
+  ]
+}

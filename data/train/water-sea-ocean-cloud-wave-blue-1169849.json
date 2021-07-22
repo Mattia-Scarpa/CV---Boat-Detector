@@ -1,0 +1,98 @@
+{
+  "id": "60e2db06e804023041ac4315",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:12:22.000Z",
+  "dir": "/",
+  "filename": "/water-sea-ocean-cloud-wave-blue-1169849.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "water-sea-ocean-cloud-wave-blue-1169849.jpg",
+      "size": 363570,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db06bae2551b07cf1428": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2db0644a226168e56ad60",
+      "thumbnailId": "60e2db06cdec2ea136a93d69",
+      "width": 853
+    }
+  },
+  "name": "water-sea-ocean-cloud-wave-blue-1169849.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db06e804023041ac4315",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db06e804023041ac4315/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db06e804023041ac4315/thumbnail",
+  "annotations": [
+    {
+      "id": "60e32e2e33876b5f1e99b733",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 37.5,
+          "y": 160.33,
+          "z": 0
+        },
+        {
+          "x": 695.11,
+          "y": 1069.03,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "5ed9c179-59c9-4a9d-84c1-603bdf366d4c",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T16:07:10.841Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T16:07:10.841Z",
+      "itemId": "60e2db06e804023041ac4315",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e32e2e33876b5f1e99b733",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db06e804023041ac4315",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "3588aa8ca1fbfafd96517d8078b9d06b2cc51945"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2df18cdec2e179fa94137",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:44.000Z",
+  "dir": "/",
+  "filename": "/boat-ferry-logo-ship-transport-157680.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "boat-ferry-logo-ship-transport-157680.jpg",
+      "size": 77461,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df18985079cd1b79c104": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 784,
+      "thumbnailAnnotationsId": "60e2df19cdec2eebe1a94139",
+      "thumbnailId": "60e2df194920d662493cca2c",
+      "width": 1280
+    }
+  },
+  "name": "boat-ferry-logo-ship-transport-157680.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df18cdec2e179fa94137",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df18cdec2e179fa94137/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df18cdec2e179fa94137/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45fc72d6a23637996cc95",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 167.88,
+          "y": 118.87,
+          "z": 0
+        },
+        {
+          "x": 1280,
+          "y": 592.38,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "bc7fc6df-9be4-4f6e-87ef-64df029a2e49",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:51:03.613Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:51:03.613Z",
+      "itemId": "60e2df18cdec2e179fa94137",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45fc72d6a23637996cc95",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df18cdec2e179fa94137",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "9f3cf10a5162a7e079e207615378fba153e8f04a"
+    }
+  ]
+}

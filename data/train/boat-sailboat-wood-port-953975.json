@@ -1,0 +1,68 @@
+{
+  "id": "60e2df037c0d6fc7401ac53b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:23.000Z",
+  "dir": "/",
+  "filename": "/boat-sailboat-wood-port-953975.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "boat-sailboat-wood-port-953975.jpg",
+      "size": 348712,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df03bae2551273cf1946": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2df042ac4722d03a0f9d3",
+      "thumbnailId": "60e2df0433e5ad728a38f431",
+      "width": 1280
+    }
+  },
+  "name": "boat-sailboat-wood-port-953975.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df037c0d6fc7401ac53b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df037c0d6fc7401ac53b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df037c0d6fc7401ac53b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc3237b13db704fd48",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.784Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.784Z",
+      "itemId": "60e2df037c0d6fc7401ac53b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc3237b13db704fd48",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df037c0d6fc7401ac53b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e32d8aace86d23e0e42aff7c012fac811a974da8"
+    }
+  ]
+}

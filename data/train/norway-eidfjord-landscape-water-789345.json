@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd08de859ede953ef0d9",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:56.000Z",
+  "dir": "/",
+  "filename": "/norway-eidfjord-landscape-water-789345.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "norway-eidfjord-landscape-water-789345.jpg",
+      "size": 317405,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd083a148c437f7153d4": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 720,
+      "thumbnailAnnotationsId": "60e2dd08fc5616cd098d718b",
+      "thumbnailId": "60e2dd0844a226376b56af60",
+      "width": 1280
+    }
+  },
+  "name": "norway-eidfjord-landscape-water-789345.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd08de859ede953ef0d9",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd08de859ede953ef0d9/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd08de859ede953ef0d9/thumbnail",
+  "annotations": [
+    {
+      "id": "60e425ff0e4fb626f02bf98e",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 407.28,
+          "y": 310.44,
+          "z": 0
+        },
+        {
+          "x": 1123.1,
+          "y": 530.69,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "f04b20b3-d421-4ef5-990c-0c8921d7fce2",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:44:31.604Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:44:31.604Z",
+      "itemId": "60e2dd08de859ede953ef0d9",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e425ff0e4fb626f02bf98e",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd08de859ede953ef0d9",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e065cb918f044438bc719484825c777ed2fbc280"
+    }
+  ]
+}

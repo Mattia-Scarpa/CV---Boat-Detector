@@ -1,0 +1,98 @@
+{
+  "id": "60e2dbdccdec2e8610a93e11",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:15:56.000Z",
+  "dir": "/",
+  "filename": "/storm-pirate-sea-marine-boat-sky-3254676.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "storm-pirate-sea-marine-boat-sky-3254676.jpg",
+      "size": 175369,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dbdc19e933b8129f5486": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 720,
+      "thumbnailAnnotationsId": "60e2dbdde80402ab6aac43bd",
+      "thumbnailId": "60e2dbdd7c0d6f32401ac1ff",
+      "width": 1280
+    }
+  },
+  "name": "storm-pirate-sea-marine-boat-sky-3254676.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dbdccdec2e8610a93e11",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dbdccdec2e8610a93e11/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dbdccdec2e8610a93e11/thumbnail",
+  "annotations": [
+    {
+      "id": "60e33e8903ec763e5fbb2ab7",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 435.76,
+          "y": 4.75,
+          "z": 0
+        },
+        {
+          "x": 982.6,
+          "y": 489.56,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "18945116-8832-4321-bf14-dbe8f0ac95b1",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:16:57.816Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:16:57.816Z",
+      "itemId": "60e2dbdccdec2e8610a93e11",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e33e8903ec763e5fbb2ab7",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dbdccdec2e8610a93e11",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "b133c149d44bd5cc2b5b81a1663d8a05a8baf834"
+    }
+  ]
+}

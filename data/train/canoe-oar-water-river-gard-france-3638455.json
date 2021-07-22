@@ -1,0 +1,98 @@
+{
+  "id": "60e2deaac734a8388fb76183",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:27:54.000Z",
+  "dir": "/",
+  "filename": "/canoe-oar-water-river-gard-france-3638455.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "canoe-oar-water-river-gard-france-3638455.jpg",
+      "size": 306196,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2deaabae25542a0cf18c7": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2deabfc5616a4958d7334",
+      "thumbnailId": "60e2deabc734a81c8cb76185",
+      "width": 1280
+    }
+  },
+  "name": "canoe-oar-water-river-gard-france-3638455.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2deaac734a8388fb76183",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2deaac734a8388fb76183/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2deaac734a8388fb76183/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45a9936a9542a764093a9",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 587.05,
+          "y": 467.99,
+          "z": 0
+        },
+        {
+          "x": 816.55,
+          "y": 623.39,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "6ead2a08-7a26-4de6-aa9f-877378aa5fe3",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:28:57.970Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:28:57.970Z",
+      "itemId": "60e2deaac734a8388fb76183",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45a9936a9542a764093a9",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2deaac734a8388fb76183",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "8c59fedf8bfcc3e984ec8797ce03f41be1198609"
+    }
+  ]
+}

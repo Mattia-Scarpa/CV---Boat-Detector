@@ -1,0 +1,70 @@
+{
+  "id": "60e2ded1de859e05f33ef28b",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:33.000Z",
+  "dir": "/",
+  "filename": "/buoys-river-boats-stein-am-rhein-113406.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "buoys-river-boats-stein-am-rhein-113406.jpg",
+      "size": 133928,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2ded13a148c14b871561c": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {
+        "Orientation": 1
+      },
+      "height": 601,
+      "thumbnailAnnotationsId": "60e2ded1fc561669f78d734a",
+      "thumbnailId": "60e2ded133e5adf1d238f403",
+      "width": 1280
+    }
+  },
+  "name": "buoys-river-boats-stein-am-rhein-113406.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2ded1de859e05f33ef28b",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2ded1de859e05f33ef28b/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2ded1de859e05f33ef28b/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dca33564a04f06e52f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.799Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.799Z",
+      "itemId": "60e2ded1de859e05f33ef28b",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dca33564a04f06e52f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2ded1de859e05f33ef28b",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "c72b71e17c2a14514e7dd7a164caf2b96137c489"
+    }
+  ]
+}

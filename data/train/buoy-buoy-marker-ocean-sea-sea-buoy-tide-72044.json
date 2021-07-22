@@ -1,0 +1,68 @@
+{
+  "id": "60e2dedede859ef8273ef295",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:46.000Z",
+  "dir": "/",
+  "filename": "/buoy-buoy-marker-ocean-sea-sea-buoy-tide-72044.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "buoy-buoy-marker-ocean-sea-sea-buoy-tide-72044.jpg",
+      "size": 538122,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dedebae2551f42cf18ff": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dedffc56163d5c8d7358",
+      "thumbnailId": "60e2dedf7c0d6f73461ac519",
+      "width": 1280
+    }
+  },
+  "name": "buoy-buoy-marker-ocean-sea-sea-buoy-tide-72044.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dedede859ef8273ef295",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dedede859ef8273ef295/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dedede859ef8273ef295/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc63a7ba95ef6a8c66",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.779Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.779Z",
+      "itemId": "60e2dedede859ef8273ef295",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc63a7ba95ef6a8c66",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dedede859ef8273ef295",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "7bc6dd02a6eb52dccfa1e146da89948bc481021d"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": "60e2dd28de859e40303ef0f7",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:28.000Z",
+  "dir": "/",
+  "filename": "/landing-cruise-ship-mediterranean-nice-s-1441457.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "landing-cruise-ship-mediterranean-nice-s-1441457.jpg",
+      "size": 137804,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd2898507955ed79be66": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 752,
+      "thumbnailAnnotationsId": "60e2dd287c0d6fedc31ac383",
+      "thumbnailId": "60e2dd28c734a8a60bb7603b",
+      "width": 1280
+    }
+  },
+  "name": "landing-cruise-ship-mediterranean-nice-s-1441457.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd28de859e40303ef0f7",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 2,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd28de859e40303ef0f7/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd28de859e40303ef0f7/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42a6f0a21b0219f9a5e2d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 804.11,
+          "y": 481.01,
+          "z": 0
+        },
+        {
+          "x": 1164.24,
+          "y": 572.15,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "667b9421-ceca-4c84-aa36-28d82d3f913e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:03:27.071Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:03:27.071Z",
+      "itemId": "60e2dd28de859e40303ef0f7",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42a6f0a21b0219f9a5e2d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd28de859e40303ef0f7",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "ce2e16c6cd058b3a41e44cca0a15c7c4d4ce249e"
+    },
+    {
+      "id": "60e42a6f0a21b0338e9a5e2f",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 448.42,
+          "y": 450.63,
+          "z": 0
+        },
+        {
+          "x": 523.74,
+          "y": 480.38,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "6a1c2dba-2bcb-4159-8557-d9d02053b2a1",
+          "automated": false,
+          "objectId": "2",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:03:27.112Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:03:27.112Z",
+      "itemId": "60e2dd28de859e40303ef0f7",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42a6f0a21b0338e9a5e2f",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd28de859e40303ef0f7",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "f69834149d7214575a2a3d40ff1e6ac3f40782e6"
+    }
+  ]
+}

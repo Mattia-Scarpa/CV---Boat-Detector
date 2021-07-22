@@ -1,0 +1,68 @@
+{
+  "id": "60e2df22fc561610c28d7396",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:54.000Z",
+  "dir": "/",
+  "filename": "/beacon-lighthouse-coast-navigation-39232.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "beacon-lighthouse-coast-navigation-39232.jpg",
+      "size": 28838,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df223a148c36ab71568d": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2df2444a2262d1656b160",
+      "thumbnailId": "60e2df242ac472750ba0f9e9",
+      "width": 649
+    }
+  },
+  "name": "beacon-lighthouse-coast-navigation-39232.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df22fc561610c28d7396",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df22fc561610c28d7396/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df22fc561610c28d7396/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc619f0f8e72585a69",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.791Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.791Z",
+      "itemId": "60e2df22fc561610c28d7396",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc619f0f8e72585a69",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df22fc561610c28d7396",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "d3eeb49ad1365559775f6590c28b68b22ad8f9ec"
+    }
+  ]
+}

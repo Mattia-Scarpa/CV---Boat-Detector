@@ -1,0 +1,68 @@
+{
+  "id": "60e2dcee4920d6c9be3cc828",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:20:30.000Z",
+  "dir": "/",
+  "filename": "/para-senior-people-male-sailboat-3337426.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "para-senior-people-male-sailboat-3337426.jpg",
+      "size": 355715,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dcee3a148c428d7153ae": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2dcf27c0d6f19331ac345",
+      "thumbnailId": "60e2dcf17c0d6fc4b81ac343",
+      "width": 1280
+    }
+  },
+  "name": "para-senior-people-male-sailboat-3337426.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dcee4920d6c9be3cc828",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dcee4920d6c9be3cc828/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dcee4920d6c9be3cc828/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b4b02147ace8728c1",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.154Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.154Z",
+      "itemId": "60e2dcee4920d6c9be3cc828",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b4b02147ace8728c1",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dcee4920d6c9be3cc828",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "8fe020e60fef63a407a196d6706400ec2fa02ab6"
+    }
+  ]
+}

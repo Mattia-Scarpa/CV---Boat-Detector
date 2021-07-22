@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd14cdec2e1ebda93f4f",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:08.000Z",
+  "dir": "/",
+  "filename": "/minion-giant-funny-cruise-ship-1156867.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "minion-giant-funny-cruise-ship-1156867.jpg",
+      "size": 348596,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd14985079437179be44": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 728,
+      "thumbnailAnnotationsId": "60e2dd154920d6317a3cc85a",
+      "thumbnailId": "60e2dd14de859e048a3ef0e3",
+      "width": 1280
+    }
+  },
+  "name": "minion-giant-funny-cruise-ship-1156867.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd14cdec2e1ebda93f4f",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd14cdec2e1ebda93f4f/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd14cdec2e1ebda93f4f/thumbnail",
+  "annotations": [
+    {
+      "id": "60e427296075d315df3fdece",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 281.9599999999999,
+          "y": 404.43037932466353,
+          "z": 0
+        },
+        {
+          "x": 1224.3699999999997,
+          "y": 620.26,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "269540b4-9134-4cdc-8bb8-00fee7ae7d3b",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T09:49:29.612Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T09:49:29.612Z",
+      "itemId": "60e2dd14cdec2e1ebda93f4f",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e427296075d315df3fdece",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd14cdec2e1ebda93f4f",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "c722292861f3a5d570718737679e06826fb288ee"
+    }
+  ]
+}

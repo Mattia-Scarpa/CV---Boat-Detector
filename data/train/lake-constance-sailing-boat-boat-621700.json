@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd3ac734a85ab1b76057",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:21:46.000Z",
+  "dir": "/",
+  "filename": "/lake-constance-sailing-boat-boat-621700.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "lake-constance-sailing-boat-boat-621700.jpg",
+      "size": 320505,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd3a9850795bb079be89": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 854,
+      "thumbnailAnnotationsId": "60e2dd3bfc5616a8848d71bf",
+      "thumbnailId": "60e2dd3a44a226a51956af98",
+      "width": 1280
+    }
+  },
+  "name": "lake-constance-sailing-boat-boat-621700.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd3ac734a85ab1b76057",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd3ac734a85ab1b76057/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd3ac734a85ab1b76057/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42bdbe05eba757c750a9c",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 824.46,
+          "y": 398.2,
+          "z": 0
+        },
+        {
+          "x": 884.89,
+          "y": 579.49,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "b2a907f6-f9bc-4de0-abea-0ab21c346c23",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:09:31.130Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:09:31.130Z",
+      "itemId": "60e2dd3ac734a85ab1b76057",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42bdbe05eba757c750a9c",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd3ac734a85ab1b76057",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "1445710466f26ad24d5802008852b28033a5f6f8"
+    }
+  ]
+}

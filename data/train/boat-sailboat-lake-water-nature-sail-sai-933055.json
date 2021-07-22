@@ -1,0 +1,98 @@
+{
+  "id": "60e2df0844a226b1d756b138",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:29:28.000Z",
+  "dir": "/",
+  "filename": "/boat-sailboat-lake-water-nature-sail-sai-933055.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "boat-sailboat-lake-water-nature-sail-sai-933055.jpg",
+      "size": 128489,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2df083a148c6196715672": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 853,
+      "thumbnailAnnotationsId": "60e2df097c0d6f36b81ac545",
+      "thumbnailId": "60e2df09cdec2e0466a9411d",
+      "width": 1280
+    }
+  },
+  "name": "boat-sailboat-lake-water-nature-sail-sai-933055.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2df0844a226b1d756b138",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2df0844a226b1d756b138/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2df0844a226b1d756b138/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45ee874b4f0c89d0f4367",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 196.4,
+          "y": 4.68,
+          "z": 0
+        },
+        {
+          "x": 820.86,
+          "y": 680.9399999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "4dddc390-4815-45c8-bc7b-4e87bd6d3585",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:47:20.644Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:47:20.644Z",
+      "itemId": "60e2df0844a226b1d756b138",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45ee874b4f0c89d0f4367",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2df0844a226b1d756b138",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "ce461e2ce358fa47a0b62836c455a4130e6411fd"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "60e2dc4fcdec2e0b15a93e79",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:51.000Z",
+  "dir": "/",
+  "filename": "/scheepvaartmarkering-marking-2715012.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "scheepvaartmarkering-marking-2715012.jpg",
+      "size": 204988,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc4fbae2558a8bcf15bd": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 675,
+      "thumbnailAnnotationsId": "60e2dc504920d6cc6d3cc770",
+      "thumbnailId": "60e2dc504920d685053cc76e",
+      "width": 1280
+    }
+  },
+  "name": "scheepvaartmarkering-marking-2715012.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc4fcdec2e0b15a93e79",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc4fcdec2e0b15a93e79/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc4fcdec2e0b15a93e79/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b565e4b9f563542ed",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.153Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.153Z",
+      "itemId": "60e2dc4fcdec2e0b15a93e79",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b565e4b9f563542ed",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc4fcdec2e0b15a93e79",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "68d156b84db96ef80d8f1ae815f14934cce8dd10"
+    }
+  ]
+}

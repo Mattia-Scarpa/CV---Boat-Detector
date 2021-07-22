@@ -1,0 +1,98 @@
+{
+  "id": "60e2dc227c0d6f529d1ac257",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:17:06.000Z",
+  "dir": "/",
+  "filename": "/ship-cruise-cruise-ship-water-2462241.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "ship-cruise-cruise-ship-water-2462241.jpg",
+      "size": 311766,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dc2219e93338159f54e4": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 749,
+      "thumbnailAnnotationsId": "60e2dc2244a22678a756ae52",
+      "thumbnailId": "60e2dc22fc561651d88d7097",
+      "width": 1280
+    }
+  },
+  "name": "ship-cruise-cruise-ship-water-2462241.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dc227c0d6f529d1ac257",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dc227c0d6f529d1ac257/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dc227c0d6f529d1ac257/thumbnail",
+  "annotations": [
+    {
+      "id": "60e3459203ec7622d3bb2ec8",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 67.41,
+          "y": 173.73,
+          "z": 0
+        },
+        {
+          "x": 1209.18,
+          "y": 509.80999999999995,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "67b7cf96-555b-4303-888f-1e2bf7a8328e",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T17:46:58.715Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T17:46:58.715Z",
+      "itemId": "60e2dc227c0d6f529d1ac257",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e3459203ec7622d3bb2ec8",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dc227c0d6f529d1ac257",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "86e6256aec73a74cfc49484dee943805c638aed8"
+    }
+  ]
+}

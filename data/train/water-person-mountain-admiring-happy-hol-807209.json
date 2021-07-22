@@ -1,0 +1,98 @@
+{
+  "id": "60e2db1233e5ad1beb38f075",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:12:34.000Z",
+  "dir": "/",
+  "filename": "/water-person-mountain-admiring-happy-hol-807209.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "water-person-mountain-admiring-happy-hol-807209.jpg",
+      "size": 447339,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db1319e93360d09f5381": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2db16de859e84813eef25",
+      "thumbnailId": "60e2db1533e5adfaf038f077",
+      "width": 1280
+    }
+  },
+  "name": "water-person-mountain-admiring-happy-hol-807209.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db1233e5ad1beb38f075",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db1233e5ad1beb38f075/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db1233e5ad1beb38f075/thumbnail",
+  "annotations": [
+    {
+      "id": "60e32fd124ea245edf7ea082",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 789.02,
+          "y": 652.03,
+          "z": 0
+        },
+        {
+          "x": 1093.09,
+          "y": 820.3199999999999,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "90f95dad-9ad1-48ee-9c40-6353f53d325a",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-05T16:14:09.778Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-05T16:14:09.778Z",
+      "itemId": "60e2db1233e5ad1beb38f075",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e32fd124ea245edf7ea082",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db1233e5ad1beb38f075",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "e3c63f5079d3c7b0eccc869025353393853bde55"
+    }
+  ]
+}

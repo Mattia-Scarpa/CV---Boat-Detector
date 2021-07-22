@@ -1,0 +1,68 @@
+{
+  "id": "60e2db7b44a2261fcc56adaa",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:14:19.000Z",
+  "dir": "/",
+  "filename": "/venice-gondolier-gondola-italian-2467369.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "venice-gondolier-gondola-italian-2467369.jpg",
+      "size": 254169,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2db7bd471132af5a70286": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 1280,
+      "thumbnailAnnotationsId": "60e2db7cfc5616fc628d6fe5",
+      "thumbnailId": "60e2db7cde859eeb103eef75",
+      "width": 853
+    }
+  },
+  "name": "venice-gondolier-gondola-italian-2467369.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2db7b44a2261fcc56adaa",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2db7b44a2261fcc56adaa/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2db7b44a2261fcc56adaa/thumbnail",
+  "annotations": [
+    {
+      "id": "60e4628b3237b1733704fd33",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:02:51.187Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:02:51.187Z",
+      "itemId": "60e2db7b44a2261fcc56adaa",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e4628b3237b1733704fd33",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2db7b44a2261fcc56adaa",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "74ca429510cba54e964efd81d80b942bebdf7756"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2dee0c734a80da0b761b5",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:28:48.000Z",
+  "dir": "/",
+  "filename": "/budapest-hungary-parliament-building-pal-632851.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "budapest-hungary-parliament-building-pal-632851.jpg",
+      "size": 334608,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dee03a148cb4db715637": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 865,
+      "thumbnailAnnotationsId": "60e2dee2c734a8d68cb761bd",
+      "thumbnailId": "60e2dee233e5add0d738f40d",
+      "width": 1280
+    }
+  },
+  "name": "budapest-hungary-parliament-building-pal-632851.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dee0c734a80da0b761b5",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dee0c734a80da0b761b5/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dee0c734a80da0b761b5/thumbnail",
+  "annotations": [
+    {
+      "id": "60e45c1774b4f037bf0f4158",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 354.74,
+          "y": 651.46,
+          "z": 0
+        },
+        {
+          "x": 728.46,
+          "y": 712.0400000000001,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "10c474c9-754d-4ceb-b218-5eff735e8a9d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T13:35:19.582Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T13:35:19.582Z",
+      "itemId": "60e2dee0c734a80da0b761b5",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e45c1774b4f037bf0f4158",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dee0c734a80da0b761b5",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "169395ec101cbc2f52296550063009f807e03233"
+    }
+  ]
+}

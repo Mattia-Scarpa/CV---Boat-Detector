@@ -1,0 +1,68 @@
+{
+  "id": "60e2dda04920d6f8f33cc8d8",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:23:28.000Z",
+  "dir": "/",
+  "filename": "/kayak-boat-lake-kayaking-water-2483029.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-boat-lake-kayaking-water-2483029.jpg",
+      "size": 236690,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dda0d47113f4a3a70595": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2dda1fc561647c18d7215",
+      "thumbnailId": "60e2dda144a226534556afee",
+      "width": 1280
+    }
+  },
+  "name": "kayak-boat-lake-kayaking-water-2483029.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dda04920d6f8f33cc8d8",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dda04920d6f8f33cc8d8/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dda04920d6f8f33cc8d8/thumbnail",
+  "annotations": [
+    {
+      "id": "60e462dc3237b17ac104fd5e",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "class",
+      "label": "water",
+      "attributes": [],
+      "coordinates": null,
+      "metadata": {
+        "system": {},
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T14:04:12.839Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T14:04:12.839Z",
+      "itemId": "60e2dda04920d6f8f33cc8d8",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e462dc3237b17ac104fd5e",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dda04920d6f8f33cc8d8",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "807260ac13c41c049495e8431b3243df58af9d01"
+    }
+  ]
+}

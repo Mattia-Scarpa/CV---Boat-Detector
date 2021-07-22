@@ -1,0 +1,98 @@
+{
+  "id": "60e2dd724920d61ee43cc8b0",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:22:42.000Z",
+  "dir": "/",
+  "filename": "/kayak-observation-tower-river-mangrove-n-1523731.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "kayak-observation-tower-river-mangrove-n-1523731.jpg",
+      "size": 434385,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2dd72bae255cbd1cf1756": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 814,
+      "thumbnailAnnotationsId": "60e2dd72fc56164b0c8d71f7",
+      "thumbnailId": "60e2dd727c0d6f64ff1ac3c5",
+      "width": 1280
+    }
+  },
+  "name": "kayak-observation-tower-river-mangrove-n-1523731.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2dd724920d61ee43cc8b0",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2dd724920d61ee43cc8b0/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2dd724920d61ee43cc8b0/thumbnail",
+  "annotations": [
+    {
+      "id": "60e42e5551434464af34f91c",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 342.12,
+          "y": 597.95,
+          "z": 0
+        },
+        {
+          "x": 510.61,
+          "y": 648.63,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "28c4812a-3629-4e86-92b6-9766f0f17a0f",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T10:20:05.159Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T10:20:05.159Z",
+      "itemId": "60e2dd724920d61ee43cc8b0",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e42e5551434464af34f91c",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2dd724920d61ee43cc8b0",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "608b25fb39143a3b921ff571df7e7d24af9e7dd5"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "60e2de0d4920d6bf313cc928",
+  "datasetId": "60e2dab1c09a7cbd614ec5bb",
+  "createdAt": "2021-07-05T10:25:17.000Z",
+  "dir": "/",
+  "filename": "/fold-paper-boat-water-abstract-2463747.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "fold-paper-boat-water-abstract-2463747.jpg",
+      "size": 158906,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e2de0d3a148c4ca7715524": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 960,
+      "thumbnailAnnotationsId": "60e2de10de859e508d3ef1df",
+      "thumbnailId": "60e2de10cdec2e61b0a94029",
+      "width": 1280
+    }
+  },
+  "name": "fold-paper-boat-water-abstract-2463747.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e2de0d4920d6bf313cc928",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e2de0d4920d6bf313cc928/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e2de0d4920d6bf313cc928/thumbnail",
+  "annotations": [
+    {
+      "id": "60e445ae5143447490350a0d",
+      "datasetId": "60e2dab1c09a7cbd614ec5bb",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 67.89,
+          "y": 226.83,
+          "z": 0
+        },
+        {
+          "x": 1104.48,
+          "y": 822.76,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "78391441-cdad-4e92-99e0-b0955c8269dc",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e2dab1de34bdb301f92f11"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-06T11:59:42.969Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-06T11:59:42.969Z",
+      "itemId": "60e2de0d4920d6bf313cc928",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e445ae5143447490350a0d",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e2de0d4920d6bf313cc928",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e2dab1c09a7cbd614ec5bb",
+      "hash": "1674791379ea9abbd9c6234b9c74680bc0f8d849"
+    }
+  ]
+}
