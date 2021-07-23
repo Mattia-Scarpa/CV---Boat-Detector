@@ -106,7 +106,7 @@ The network was trained for YOLOv4, using an RTX3090, modifying the configuratio
 
 ## Result
 All the three trainings went well, as shown in Figure 1, but unfortunately, due to a CUDA 11.3 bug it was not possible to see also the mean Average Precision. For this reason, the source code has been modified to keep track of the progress every 1000 iterations and then manually evaluate the metrics on the validation set.
-| ![](chart/chart_naive.png) | ![](chart/chart_augmented.png) | ![](chart/chart_gradient.png)
+| ![](chart/chart_naive.png) | ![](chart/chart_augmented.png) | ![](chart/chart_gradient.png) |
 |:--:| 
 | *Training loss: a) Naive approach; b) Data Augmentation approach; c) Gradient approach* |
 
