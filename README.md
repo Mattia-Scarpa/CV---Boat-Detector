@@ -10,8 +10,8 @@ All the images have been manually annotated and from the annotation json files o
 ## Data Annotation
 
 In the kaggle dataset all the images was divided in class depending on the specific boat (e.g., sail boat, ferry boat etc.) but, for the purpose of the project, every boats has been grouped in a single class. In each image a bounding box , defined by the coordinates <img src="https://render.githubusercontent.com/render/math?math=\color{white}(x_{min}, y_{min}), (x_{max}, y_{max})">, has been used to highlight each boat present on the scene.
-The images has been annotated using the website https://dataloop.ai/ which return the annotations on a dataset of JSON files, one for each image, containing all the labels information. To parse all the necessary information contained in the JSON files a dedicated class in C++, which makes use of the library json.hpp _https://github.com/nlohmann/json_, named `labeltxt.cpp` & `labeltxt.h`, has been created to convert the annotations provided in a txt files in the format `classNumber x y width height` where the `classNumber` is nothing but the object class mapped to an integer, therefore for the current project specification it will be just <img src="https://render.githubusercontent.com/render/math?math=\color{white}0">, while `x y width height` are the coordinates of the box center, its width and its height, normalized from <img src="https://render.githubusercontent.com/render/math?math=\color{white}0"> to <img src="https://render.githubusercontent.com/render/math?math=\color{white}1"> with respect to the image size.\newline
-This process is mainly performed by two functions in the class, specifically 
+The images has been annotated using the website https://dataloop.ai/ which return the annotations on a dataset of JSON files, one for each image, containing all the labels information. To parse all the necessary information contained in the JSON files a dedicated class in C++, which makes use of the library json.hpp _https://github.com/nlohmann/json_, named `labeltxt.cpp` & `labeltxt.h`, has been created to convert the annotations provided in a txt files in the format `classNumber x y width height` where the `classNumber` is nothing but the object class mapped to an integer, therefore for the current project specification it will be just <img src="https://render.githubusercontent.com/render/math?math=\color{white}0">, while `x y width height` are the coordinates of the box center, its width and its height, normalized from <img src="https://render.githubusercontent.com/render/math?math=\color{white}0"> to <img src="https://render.githubusercontent.com/render/math?math=\color{white}1"> with respect to the image size.
+This process is mainly performed by two functions in the class, specifically: 
 ```c++
 void setJsonPath(std::string path); // Specify the path of the JSON annotation file
 ```
@@ -27,3 +27,26 @@ that firstly checks if there are annotations in the image, or if the images has 
 
 As previously mentioned, different processes have been performed on the images that have been used to train the network.
 Firstly, in all the case, the image set has been split in a train and validation set with a, default, ratio of <img src="https://render.githubusercontent.com/render/math?math=\color{white}3:1">.
+
+### Naive Approach
+
+A first attempt is done by training the darknet leaving the images as they are in the original dataset, which consists of a total of 1449 images of different boats, taken in an high variety scenarios from many different point of view. Thanks to this characteristics, the result was considered as a good baseline to evaluate the performance change based on the next approaches adopted.
+
+### Data Augmentation Approach
+
+The neural network used is already configured to do some data augmentation on the training dataset by changing randomly the image, according to the configuration specific given, for instance rotating it of a random angle or changing the hue of the image. In this situation however it has been decided to increase images changes resorting to illumination change, contrast change, equalization of the images histograms (in the RGB color space) and blurring the images with a fixed size Gaussian filter. In addition it has been also performed perspective transformation\footnote{\url{https://www.researchgate.net/publication/338184137_Perspective_Transformation_Data_Augmentation_for_Object_Detection}} in order to enrich the data augmentation.
+The class `dataugmentation.cpp` & `dataugmentation.h` allows to easily perform the steps previously introduced. 
+The functions, one for each transformation, are
+```c++
+  void equalize(cv::Mat& dst, int count = 0);
+  void changeContrast(cv::Mat& dst, int count = 0);
+  void changeBrightness(cv::Mat& dst, int count = 0);
+  void gaussianSmooth(cv::Mat& dst, double sigma = 3, int count = 0);
+  void changePerspective(cv::Mat& dst, float sigma = 0.5, int count = 0);
+```
+These functions return the edited images, starting from the original provided by the function
+```c++
+  void allignAnnotation(std::vector<std::vector<cv::Point2f>>& boxCorners);
+```
+For saving the annotations automatically in the new images it is also required to specify the bounding box coordinates and the classes in the image, corresponding to the object in the specified boxes. The variable {\fontfamily{qcr}\selectfont
+save} is used to determine whether to generate the text annotations file or not. For this approach a particular emphasis has been given to the perspective transformation. Its mechanism is divided into two part, firstly, new images with different viewpoints were created resorting to the perspective transformation, then, annotation alignment is used to generate corresponding annotation files.
