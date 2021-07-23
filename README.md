@@ -104,6 +104,10 @@ Gradient often plays a key role in Computer Vision for object detection or patte
 The Neural Network used is the [Alexey's darknet](https://github.com/AlexeyAB/darknet/) which is constantly maintained and contains many improvement with respect the official [Darknet repo](https://github.com/pjreddie/darknet), where the last commit was in September 2018.
 The network was trained for YOLOv4, using an RTX3090, modifying the configuration file according to the instruction provided by the creator and the task requirements. For all the three approaches the same resolution and the same number of iteration (always greater than the minimum recommended quantity) have been used. Also, the pre-trained files provided in the instruction have been used as starting [weights](https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp).
 
+## Result
+All the three trainings went well, as shown in Figure 1, but unfortunately, due to a CUDA 11.3 bug it was not possible to see also the mean Average Precision. For this reason, the source code has been modified to keep track of the progress every 1000 iterations and then manually evaluate the metrics on the validation set.
+![Training loss: a) Naive approach; b) Data Augmentation approach; c) Gradient approach](chart/chart_naive.png)
+
 
 
 
