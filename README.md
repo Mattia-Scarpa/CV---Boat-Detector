@@ -113,8 +113,23 @@ All the three trainings went well, as shown in Figure 1, but unfortunately, due 
 According to the results shown in the Table 1, it has been chosen for the naive approach the weights at 10000 iterations, while for the training performed with gradient and data augmentation in both cases the best choice was the weights at 15000 iterations.
 Defined the best weights for every approach they have been tested, with the C++ script `yoloDetector.cpp` created using the YOLO implementation of OpenCV, which has great performance also resorting only on the CPU, without being forced to have a powerful GPU.
 
-|num. iteration|test 	|naive			|test	|augmented		|test	|gradient		|test	|
-|test		|test	|average IoU		|mAP	|average IoU		|mAP	|average IoU		|mAP	|
+|# iteration	|--- 	|naive			|---	|augmented		|---	|gradient		|---	|
+|---		|---	|---			|---	|---			|---	|---			|---	|
+|---		|---	|average IoU		|mAP	|average IoU		|mAP	|average IoU		|mAP	|
+|1000		|---	|47.90%		|68.54%|62.26%			|75.93%|47.42%			|71.14%|
+|2000		|---	|55.90%		|78.96%|66.67%			|91.67%|63.78%			|89.18%|
+|3000		|---	|61.12%		|77.37%|70.82%			|94.39%|74.13%			|88.78%|
+|4000		|---	|60.88%		|74.46%|78.35%			|94.82%|79.91%			|89.49%|
+|5000		|---	|67.20%		|73.03%|77.66%			|95.39%|79.77%			|90.62%|
+|6000		|---	|66.99%		|75.47%|81.66%			|93.79%|81.19%			|88.85%|
+|7000		|---	|67.35%		|74.30%|80.05%			|94.21%|81.58%			|89.57%|
+|9000		|---	|69.23%		|73.89%|79.14%			|94.32%|79.53%			|89.11%|
+|10000		|---	|69.07%		|75.68%|83.02%			|93.99%|82.64%			|89.40%|
+|11000		|---	|70.25%		|72.95%|77.91%			|94.81%|82.63%			|88.52%|
+|12000		|---	|68.28%		|74.72%|82.01%			|94.69%|84.00%			|88.59%|
+|13000		|---	|69.39%		|75.35%|85.09%			|94.91%|86.13%			|88.62%|
+|14000		|---	|70.32%		|74.87%|84.92%			|95.07%|86.51%			|88.65%|
+|15000		|---	|70.73%		|73.67%|86.09%			|94.75%|86.64%			|88.65%|
 
 
 
