@@ -59,10 +59,10 @@ These functions return the edited images, starting from the original provided by
 For saving the annotations automatically in the new images it is also required to specify the bounding box coordinates and the classes in the image, corresponding to the object in the specified boxes. The variable `save` is used to determine whether to generate the text annotations file or not. 
 For this approach a particular emphasis has been given to the perspective transformation. Its mechanism is divided into two part, firstly, new images with different viewpoints were created resorting to the perspective transformation, then, annotation alignment is used to generate corresponding annotation files.
 The perspective transformation itself is
-<img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bpmatrix%7Dx_s%20%5C%5C%20y_s%20%5C%5C%20w_s%5Cend%7Bpmatrix%7D%20%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20p_%7B11%7D%20%26%20p_%7B12%7D%20%26%20p_%7B13%7D%20%20%5C%5C%20%20p_%7B21%7D%20%26%20p_%7B22%7D%20%26%20p_%7B23%7D%20%20%5C%5C%20%20p_%7B31%7D%20%26%20p_%7B32%7D%20%26%201%5Cend%7Bbmatrix%7D%5Cbegin%7Bpmatrix%7Dx_t%20%20%5C%5C%20y_t%20%5C%5C%201%20%5Cend%7Bpmatrix%7D%20%3D%20P_%7B%5Ctheta%7D%5Cbegin%7Bpmatrix%7Dx_t%20%5C%5C%20y_t%20%5C%5C%201%5Cend%7Bpmatrix%7D">
+<img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bpmatrix%7Dx_s%20%5C%5C%20y_s%20%5C%5C%20w_s%5Cend%7Bpmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}="><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bbmatrix%7D%20p_%7B11%7D%20%26%20p_%7B12%7D%20%26%20p_%7B13%7D%20%20%5C%5C%20%20p_%7B21%7D%20%26%20p_%7B22%7D%20%26%20p_%7B23%7D%20%20%5C%5C%20%20p_%7B31%7D%20%26%20p_%7B32%7D%20%26%201%5Cend%7Bbmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bpmatrix%7Dx_t%5C%5Cy_t%5C%5C1%5Cend%7Bpmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}="><img src="https://render.githubusercontent.com/render/math?math=\color{white}P_%7B%5Ctheta%7D%5Cbegin%7Bpmatrix%7Dx_t%20%5C%5C%20y_t%20%5C%5C%201%5Cend%7Bpmatrix%7D">
 
 
-
+\begin{pmatrix}x_s \\ y_s \\ w_s\end{pmatrix}  =  \begin{bmatrix} p_{11} & p_{12} & p_{13}  \\  p_{21} & p_{22} & p_{23}  \\  p_{31} & p_{32} & 1\end{bmatrix}\begin{pmatrix}x_t\\y_t\\1\end{pmatrix} = P_{\theta}\begin{pmatrix}x_t \\ y_t \\ 1\end{pmatrix}
 
 
 
