@@ -143,7 +143,8 @@ In both the test sets it is clear how the pre-processing positively influence th
 
 ### Intersection over Union (IoU)
 
-To calculate the intersection over union the OpenCV the operator <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5C%26"> has been used. This operator returns the intersection of two given rectangular.\newline
+To calculate the intersection over union the OpenCV the operator <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5C%26"> has been used. This operator returns the intersection of two given rectangular.
+
 The lines of code
 ```c++
     for (size_t i = 0; i < predBoxes.size(); i++) {
@@ -169,9 +170,33 @@ Once this matrix is created, the dedicated function
       bbox maxBox = findMaxIoU(boxInfo);
 ```
 looks for the box intersection with the highest IoU and extracts it, removing also the row and the column from the matrix guaranteeing other "weaker" intersection with that boxes to be discarded.
-This process is repeated iteratively until the matrix has elements. \newline
+This process is repeated iteratively until the matrix has elements.
+
 From this matrix of IoU it is also possible to calculate the false negative and false positive prediction counting the zero rows and columns (once performed a suppression of all non maxima IoU).
 For all matching bounding boxes a rectangle is displayed in the image and in the terminal it will be indicated the center of each rectangular with the respective Intersection over Union.
+
+## How the code works
+
+The boat detector solution has been divided into two parts, each with a dedicated executable.
+
+#### Preprocess
+
+The first part consists in the data pre-processing where all the transformation previously described is performed according to the approach chosen and the text annotation files is created from the JSON annotations. The change in illumination and contrast, the equalization of the RGB colorspace and the smoothing are always performed if the data augmentation is set true, while for the perspective transformation it is left the freedom to choose how many variation generate, with increasing magnitude intervals at each transformation.
+
+The gradient transformation can be performed both on the original dataset and the augmented dataset.
+
+#### Detection
+
+The second executable is the yolo predictor itself. As a first step it loads the darknet configuration and the weights files. Next, for every images, based on the adopted preprocessing, it can be chosen to run the detection on the original image or on its gradient magnitude. Then it creates a 4D blob that is used to perform the detection. Once done that the labels names are obtained from the configuration files and used in the detection. Finally the obtained result of the detection are passed through to a postprocess step that extract all the boxes higher than a confidence threshold and moreover it performs non maxima suppression to merge all the overlapping boxes.
+The the result are displayed in an image where all the bounding boxes remained are drawn with their confidence, as shown in Figure 2.
+
+To conclude, in the terminal, for each box is indicated its center and its IoU, according to the manually annotated ground truth.
+
+| ![](test_result/kaggle/result/aida-ship-driving-cruise-ship-sea-144796_augmented_prediction.jpg) |
+|:--:|
+| *Detection result with augmented dataset example* |
+
+**Note**: All the detected images are saved in a subfolder of the test images directories named *result*. The corresponding test images paths are *test_result/google/* and *test_result/kaggle/*.
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}">
 
