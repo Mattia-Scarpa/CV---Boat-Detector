@@ -52,7 +52,7 @@ private:
   void allignAnnotation(std::vector<std::vector<cv::Point2f>>& boxCorners);
 
   void saveAndWritetxt(
-    Mat img, std::string imgPath, std::vector<int> classNumber,
+    cv::Mat img, std::string imgPath, std::vector<int> classNumber,
     std::vector<std::vector<cv::Point2f>> boxCorners,
     std::string augType, int count);
 
