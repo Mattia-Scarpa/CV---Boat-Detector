@@ -73,7 +73,6 @@ where <img src="https://render.githubusercontent.com/render/math?math=\color{whi
 with
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}x_%7Btl%7D%2Cx_%7Bbl%7D%2Cx_%7Bbr%7D%2Cx_%7Btr%7D%20%5Cin%20%5Cleft(0%2C%20W(%5Clambda%5Ctheta)%5Cright)">
-
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}y_%7Btl%7D%2Cy_%7Bbl%7D%2Cy_%7Bbr%7D%2Cy_%7Btr%7D%20%5Cin%20%5Cleft(0%2C%20H(%5Clambda%5Ctheta)%5Cright)">
 
 The choice of the four points taken in this way ensure that any three points in <img src="https://render.githubusercontent.com/render/math?math=\color{white}A_%7B%5Ctheta%7D%2C%20B_%7B%5Ctheta%7D%2C%20C_%7B%5Ctheta%7D"> and <img src="https://render.githubusercontent.com/render/math?math=\color{white}D_%7B%5Ctheta%7D"> are non-collinear. The hyperparameter <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Ctheta"> is the perspective parameter; the grater of value <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Ctheta">, the more obvious the perspective transformation.
@@ -82,15 +81,19 @@ In the new image also the corresponding bounding box is modified becoming, usual
 In particular, assuming <img src="https://render.githubusercontent.com/render/math?math=\color{white}a%5E*%3D(x_1%2Cy_1)%2C%20b%5E*%3D(x_2%2Cy_2)%2C%20c%5E*%3D(x_3%2Cy_3)%2C%20d%5E*%3D(x_4%2Cy_4)"> as the four vertex of the transformed bounding box, the new coordinates are chosen as follows:
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}x%5E*_%7Bmin%7D%3Dmin%5Cleft(x_1%2C%20x_2%2C%20x_3%2C%20x_4%5Cright)%2C">
-
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}y%5E*_%7Bmin%7D%3Dmin%5Cleft(y_1%2C%20y_2%2C%20y_3%2C%20y_4%5Cright)%2C">
-
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}x%5E*_%7Bmax%7D%3Dmax%5Cleft(x_1%2C%20x_2%2C%20x_3%2C%20x_4%5Cright)%2C">
-
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}y%5E*_%7Bmax%7D%3Dmax%5Cleft(y_1%2C%20y_2%2C%20y_3%2C%20y_4%5Cright).">
 
 This method allows to automatically generate trainable annotated images, without additional manual labeling.
-
+Finally, if the variable `save` is set to `true`, for all the transformation the private function 
+```c++
+  void saveAndWritetxt(
+    Mat img, std::string imgPath, std::vector<int> classNumber,
+    std::vector<std::vector<cv::Point2f>> boxCorners,
+    std::string augType, int count);
+```
+will generate the txt file with the corresponding bounding boxes annotations.
 
 
 
