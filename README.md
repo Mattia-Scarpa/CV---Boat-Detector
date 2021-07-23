@@ -113,8 +113,8 @@ All the three trainings went well, as shown in Figure 1, but unfortunately, due 
 According to the results shown in the Table 1, it has been chosen for the naive approach the weights at 10000 iterations, while for the training performed with gradient and data augmentation in both cases the best choice was the weights at 15000 iterations.
 Defined the best weights for every approach they have been tested, with the C++ script `yoloDetector.cpp` created using the YOLO implementation of OpenCV, which has great performance also resorting only on the CPU, without being forced to have a powerful GPU.
 
-|# iteration	|:--: 	|naive			|:--:	|augmented	|:--:	|gradient	|:--:	|
-|:--:		|:--:	|average IoU		|mAP	|average IoU		|mAP	|average IoU		|mAP	|
+|# iteration	|test 	|naive			|test	|augmented		|test	|gradient		|test	|
+|test		|test	|average IoU		|mAP	|average IoU		|mAP	|average IoU		|mAP	|
 
 
 
