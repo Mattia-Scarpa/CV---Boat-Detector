@@ -56,6 +56,64 @@ These functions return the edited images, starting from the original provided by
 ```c++
   void allignAnnotation(std::vector<std::vector<cv::Point2f>>& boxCorners);
 ```
-For saving the annotations automatically in the new images it is also required to specify the bounding box coordinates and the classes in the image, corresponding to the object in the specified boxes. The variable {\fontfamily{qcr}\selectfont
-save} is used to determine whether to generate the text annotations file or not. 
+For saving the annotations automatically in the new images it is also required to specify the bounding box coordinates and the classes in the image, corresponding to the object in the specified boxes. The variable `save` is used to determine whether to generate the text annotations file or not. 
 For this approach a particular emphasis has been given to the perspective transformation. Its mechanism is divided into two part, firstly, new images with different viewpoints were created resorting to the perspective transformation, then, annotation alignment is used to generate corresponding annotation files.
+The perspective transformation itself is
+<img src="https://render.githubusercontent.com/render/math?math=\color{white}0"> to <img src="https://render.githubusercontent.com/render/math?math=\color{white}\begin{pmatrix}
+x_s \\ y_s \\ w_s
+\end{pmatrix} = \begin{bmatrix}
+p_{11} & p_{12} & p_{13} \\ p_{21} & p_{22} & p_{23} \\ p_{31} & p_{32} & 1
+\end{bmatrix}\begin{pmatrix}
+x_t \\ y_t \\ 1
+\end{pmatrix} = P_{\theta}\begin{pmatrix}
+x_t \\ y_t \\ 1
+\end{pmatrix}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
