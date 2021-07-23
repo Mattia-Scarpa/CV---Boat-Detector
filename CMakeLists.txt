@@ -20,6 +20,5 @@ add_executable ("yoloPrediction" "src/yoloPredictor.cpp")
 add_subdirectory(include)
 
 
-target_link_libraries("datasetPreprocessing" ${OpenCV_LIBS} include) 
-target_link_libraries("yoloPrediction" ${OpenCV_LIBS} include) 
-
+target_link_libraries("datasetPreprocessing" ${OpenCV_LIBS} include)
+target_link_libraries("yoloPrediction" ${OpenCV_LIBS} include)
