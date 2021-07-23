@@ -34,14 +34,22 @@ A first attempt is done by training the darknet leaving the images as they are i
 
 ### Data Augmentation Approach
 
-The neural network used is already configured to do some data augmentation on the training dataset by changing randomly the image, according to the configuration specific given, for instance rotating it of a random angle or changing the hue of the image. In this situation however it has been decided to increase images changes resorting to illumination change, contrast change, equalization of the images histograms (in the RGB color space) and blurring the images with a fixed size Gaussian filter. In addition it has been also performed perspective transformation\footnote{\url{https://www.researchgate.net/publication/338184137_Perspective_Transformation_Data_Augmentation_for_Object_Detection}} in order to enrich the data augmentation.
+The neural network used is already configured to do some data augmentation on the training dataset by changing randomly the image, according to the configuration specific given, for instance rotating it of a random angle or changing the hue of the image. In this situation however it has been decided to increase images changes resorting to illumination change, contrast change, equalization of the images histograms (in the RGB color space) and blurring the images with a fixed size Gaussian filter. In addition it has been also performed perspective transformation (https://www.researchgate.net/publication/338184137_Perspective_Transformation_Data_Augmentation_for_Object_Detection) in order to enrich the data augmentation.
 The class `dataugmentation.cpp` & `dataugmentation.h` allows to easily perform the steps previously introduced. 
 The functions, one for each transformation, are
 ```c++
   void equalize(cv::Mat& dst, int count = 0);
+```
+```c++
   void changeContrast(cv::Mat& dst, int count = 0);
+```
+```c++
   void changeBrightness(cv::Mat& dst, int count = 0);
+```
+```c++
   void gaussianSmooth(cv::Mat& dst, double sigma = 3, int count = 0);
+```
+```c++
   void changePerspective(cv::Mat& dst, float sigma = 0.5, int count = 0);
 ```
 These functions return the edited images, starting from the original provided by the function
@@ -49,4 +57,5 @@ These functions return the edited images, starting from the original provided by
   void allignAnnotation(std::vector<std::vector<cv::Point2f>>& boxCorners);
 ```
 For saving the annotations automatically in the new images it is also required to specify the bounding box coordinates and the classes in the image, corresponding to the object in the specified boxes. The variable {\fontfamily{qcr}\selectfont
-save} is used to determine whether to generate the text annotations file or not. For this approach a particular emphasis has been given to the perspective transformation. Its mechanism is divided into two part, firstly, new images with different viewpoints were created resorting to the perspective transformation, then, annotation alignment is used to generate corresponding annotation files.
+save} is used to determine whether to generate the text annotations file or not. 
+For this approach a particular emphasis has been given to the perspective transformation. Its mechanism is divided into two part, firstly, new images with different viewpoints were created resorting to the perspective transformation, then, annotation alignment is used to generate corresponding annotation files.
