@@ -62,8 +62,7 @@ The perspective transformation itself is
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bpmatrix%7Dx_s%20%5C%5C%20y_s%20%5C%5C%20w_s%5Cend%7Bpmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bmatrix%7D%20%20%3D%20%20%5C%5C%20.%5C%5C%20%5Cend%7Bmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bbmatrix%7D%20p_%7B11%7D%20%26%20p_%7B12%7D%20%26%20p_%7B13%7D%20%20%5C%5C%20%20p_%7B21%7D%20%26%20p_%7B22%7D%20%26%20p_%7B23%7D%20%20%5C%5C%20%20p_%7B31%7D%20%26%20p_%7B32%7D%20%26%201%5Cend%7Bbmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bpmatrix%7Dx_t%5C%5Cy_t%5C%5C1%5Cend%7Bpmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cbegin%7Bmatrix%7D%20%20%3D%20%20%5C%5C%20.%5C%5C%20%5Cend%7Bmatrix%7D"><img src="https://render.githubusercontent.com/render/math?math=\color{white}P_%7B%5Ctheta%7D%5Cbegin%7Bpmatrix%7Dx_t%20%5C%5C%20y_t%20%5C%5C%201%5Cend%7Bpmatrix%7D">
 
-
-\begin{pmatrix}x_s \\ y_s \\ w_s\end{pmatrix}  =  \begin{bmatrix} p_{11} & p_{12} & p_{13}  \\  p_{21} & p_{22} & p_{23}  \\  p_{31} & p_{32} & 1\end{bmatrix}\begin{pmatrix}x_t\\y_t\\1\end{pmatrix} = P_{\theta}\begin{pmatrix}x_t \\ y_t \\ 1\end{pmatrix}
+where <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cleft(%5Cfrac%7Bx_s%7D%7Bw_s%7D%2C%20%5Cfrac%7By_s%7D%7Bw_s%7D%5Cright)%5ET"> is the source coordinates of the input pixel and <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5Cleft(x_t%2C%20y_t%5Cright)%5ET"> is the coordinates of the pixel in the output image. The perspective transformation matrix, which can be considered as a planar homography, is found starting from the four vertices of the image 
 
 
 
