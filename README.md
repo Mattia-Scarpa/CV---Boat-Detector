@@ -131,12 +131,47 @@ Defined the best weights for every approach they have been tested, with the C++ 
 |14000		|---	|70.32%		|74.87%|84.92%			|95.07%|86.51%			|88.65%|
 |15000		|---	|70.73%		|73.67%|86.09%			|94.75%|86.64%			|88.65%|
 
-|---		|---	|10k iteration		|---	|15k iteration		|---	|15k iteration		|--- 	|
-|---		|---	|---			|---	|---			|---	|---			|---	|
-|---		|---	|IoU on test:		|79.30%|IoU on test:		|85.78%|IoU on test:		|87.60% |
-|---		|---	|FP:0 - FN:0		|---|FP:0 - FN:0		|---|FP:0 - FN:0		|---	|
-|---		|---	|IoU on test:		|78.14%|IoU on test:		|84.51%|IoU on test:		|83.09% |
-|---		|---	|FP:2 - FN:0		|---|FP:0 - FN:1		|---|FP:1 - FN:2		|---	|
+|10k iteration		|---	|15k iteration		|---	|15k iteration		|--- 	|
+|---			|---	|---			|---	|---			|---	|
+|IoU on test:		|79.30%|IoU on test:		|85.78%|IoU on test:		|87.60% |
+|FP:0 - FN:0		|---|FP:0 - FN:0		|---|FP:0 - FN:0		|---	|
+|IoU on test:		|78.14%|IoU on test:		|84.51%|IoU on test:		|83.09% |
+|FP:2 - FN:0		|---|FP:0 - FN:1		|---|FP:1 - FN:2		|---	|
+
+In the tables it is showed the performance of the network using the average Intersection over Union (IoU) metric over all the correct boats found on two test set, the one provided in the project specification, and a test set made of a few images selected from Google Images.
+In both the test sets it is clear how the pre-processing positively influence the final result with a good increments of the bounding boxes precision.
+
+### Intersection over Union (IoU)
+
+To calculate the intersection over union the OpenCV the operator <img src="https://render.githubusercontent.com/render/math?math=\color{white}%5C%26"> has been used. This operator returns the intersection of two given rectangular.\newline
+The lines of code
+```c++
+    for (size_t i = 0; i < predBoxes.size(); i++) {
+      boxInfoTemp.clear();
+      bbox boxIoU;
+      for (size_t j = 0; j < trueBoxes.size(); j++) {
+        // calculating Intersection between true and predicted boxes
+        Rect intersect = predBoxes[i] & trueBoxes[j];
+        float intersectArea = intersect.width * intersect.height;
+        float unionArea = (predBoxes[i].width * predBoxes[i].height)
+         + (trueBoxes[j].width * trueBoxes[j].height) - intersectArea;
+        float IoU = intersectArea / unionArea;
+        setBox(boxIoU, Point(predBoxes[i].x+(predBoxes[i].width/2),
+         predBoxes[i].y+(predBoxes[i].height/2)), IoU);
+        boxInfoTemp.push_back(boxIoU);
+      }
+      boxInfo.push_back(boxInfoTemp);
+    }
+```
+create a <img src="https://render.githubusercontent.com/render/math?math=\color{white}n%20%5Ctimes%20m"> matrix (with <img src="https://render.githubusercontent.com/render/math?math=\color{white}n"> predicted boats and <img src="https://render.githubusercontent.com/render/math?math=\color{white}m"> true bounding boxes) storing all the IoU between all the predicted-true boxes.
+Once this matrix is created, the dedicated function 
+```c++
+      bbox maxBox = findMaxIoU(boxInfo);
+```
+looks for the box intersection with the highest IoU and extracts it, removing also the row and the column from the matrix guaranteeing other "weaker" intersection with that boxes to be discarded.
+This process is repeated iteratively until the matrix has elements. \newline
+From this matrix of IoU it is also possible to calculate the false negative and false positive prediction counting the zero rows and columns (once performed a suppression of all non maxima IoU).
+For all matching bounding boxes a rectangle is displayed in the image and in the terminal it will be indicated the center of each rectangular with the respective Intersection over Union.
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}">
 
