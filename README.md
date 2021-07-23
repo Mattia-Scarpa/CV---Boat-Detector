@@ -9,7 +9,7 @@ All the images have been manually annotated and from the annotation json files o
 
 ## Data Annotation
 
-In the kaggle dataset all the images was divided in class depending on the specific boat (e.g., sail boat, ferry boat etc.) but, for the purpose of the project, every boats has been grouped in a single class. In each image a bounding box , defined by the coordinates <img src="https://render.githubusercontent.com/render/math?math=(x_{min}, y_{min}), (x_{max}, y_{max})$\color{#ffffff}$">
+In the kaggle dataset all the images was divided in class depending on the specific boat (e.g., sail boat, ferry boat etc.) but, for the purpose of the project, every boats has been grouped in a single class. In each image a bounding box , defined by the coordinates <img src="https://render.githubusercontent.com/render/math?math=\color{white}(x_{min}, y_{min}), (x_{max}, y_{max})">
 ```math
 (x<sub>min</sub>, y<sub>min</sub>), (x<sub>max</sub>, y<sub>max</sub>)
 ```
