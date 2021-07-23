@@ -12,10 +12,13 @@ All the images have been manually annotated and from the annotation json files o
 In the kaggle dataset all the images was divided in class depending on the specific boat (e.g., sail boat, ferry boat etc.) but, for the purpose of the project, every boats has been grouped in a single class. In each image a bounding box , defined by the coordinates $(x_{min}, y_{min}), (x_{max}, y_{max})$, has been used to highlight each boat present on the scene.
 The images has been annotated using the website https://dataloop.ai/ which return the annotations on a dataset of JSON files, one for each image, containing all the labels information. To parse all the necessary information contained in the JSON files a dedicated class in C++, which makes use of the library json.hpp _https://github.com/nlohmann/json_, named `labeltxt.cpp` & `labeltxt.h`, has been created to convert the annotations provided in a txt files in the format `classNumber x y width height` where the `classNumber` is nothing but the object class mapped to an integer, therefore for the current project specification it will be just $0$, while `x y width height` are the coordinates of the box center, its width and its height, normalized from $0$ to $1$ with respect to the image size.\newline
 This process is mainly performed by two functions in the class, specifically 
-`void setJsonPath(std::string path);`
+```c++
+void setJsonPath(std::string path);
+```
 which load the JSON file, specified by the provided path, and 
 ```c++
   void extractLabelsCoordinates(      // Extract and convert annotation label and box
     std::string emptyClass = "water", bool wtxt = true,
-    bool classify = false, std::string obj = "boat");```
+    bool classify = false, std::string obj = "boat");
+```
 that firstly checks if there are annotations in the image, or if the images has no label or labeled as without boats, then for each annotation found extract the bounding box coordinates converting them in the correct format and, by default, write the {\fontfamily{qcr}\selectfont .txt} file with all the information required.
