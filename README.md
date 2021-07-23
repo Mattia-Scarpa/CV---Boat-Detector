@@ -89,11 +89,20 @@ This method allows to automatically generate trainable annotated images, without
 Finally, if the variable `save` is set to `true`, for all the transformation the private function 
 ```c++
   void saveAndWritetxt(
-    Mat img, std::string imgPath, std::vector<int> classNumber,
+    cv::Mat img, std::string imgPath, std::vector<int> classNumber,
     std::vector<std::vector<cv::Point2f>> boxCorners,
     std::string augType, int count);
 ```
 will generate the txt file with the corresponding bounding boxes annotations.
+
+### Gradient Approach
+
+Gradient often plays a key role in Computer Vision for object detection or pattern recognition based on the object appearance. A perfect example is the Histogram of Oriented Gradient (HOG) descriptor, used for image classification. The boats, despite the high variety with which they show, have some characteristic shape that might be exploited resorting to the gradient of the image. In particular it has been chosen to simply use the magnitude of the gradient in both the <img src="https://render.githubusercontent.com/render/math?math=\color{white}x"> and <img src="https://render.githubusercontent.com/render/math?math=\color{white}y"> directions. It has been decided to not filter the image (as for instance is done for the Canny edges) since also noise can be learned, and, moreover, the thickness of the edges might carry important information. This transformation can also be combined with data augmentation. However, the result did not bring any improvement, and therefore this approach has been discarded.
+
+## Darknet Training
+
+The Neural Network used is the [Alexey's darknet](url{https://github.com/AlexeyAB/darknet/) which is constantly maintained and contains many improvement with respect the official Darknet repo\footnote{\url{https://github.com/pjreddie/darknet}}, where the last commit was in September 2018.
+The network was trained for YOLOv4, using an RTX3090, modifying the configuration file according to the instruction provided by the creator and the task requirements. For all the three approaches the same resolution and the same number of iteration (always greater than the minimum recommended quantity) have been used. Also, the pre-trained files provided in the instruction have been used as starting [weights](https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp).
 
 
 
