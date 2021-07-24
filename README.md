@@ -108,8 +108,7 @@ The network was trained for YOLOv4, using an RTX3090, modifying the configuratio
 All the three trainings went well, as shown in Figure 1, but unfortunately, due to a CUDA 11.3 bug it was not possible to see also the mean Average Precision. For this reason, the source code has been modified to keep track of the progress every 1000 iterations and then manually evaluate the metrics on the validation set.
 | ![](chart/chart_naive.png) | ![](chart/chart_augmented.png) | ![](chart/chart_gradient.png) |
 |:--:|:--:|:--:|
-| *a) Naive approach loss* | *b) Data Augmentation approach loss* | *c) Gradient approach* |
-*Figure 1*
+| *Figure 1.a: Naive approach loss* | *Figure 1.b: Data Augmentation approach loss* | *Figure 1.c: Gradient approach* |
 
 According to the results shown in the following table, it has been chosen for the naive approach the weights at 10000 iterations, while for the training performed with gradient and data augmentation in both cases the best choice was the weights at 15000 iterations.
 Defined the best weights for every approach they have been tested, with the C++ script `yoloDetector.cpp` created using the YOLO implementation of OpenCV, which has great performance also resorting only on the CPU, without being forced to have a powerful GPU.
@@ -221,46 +220,3 @@ _**Example**_
 *The program, in the default cfg/ directory, looks for all the weights files present, and it will perform the detection on the images found in the path ~test_result/kaggle/. On the command line will be asked which of the found weights to use and if it is required to perform the detection on the gradient magnitude of the images.*
 
 **Note**: All the dataset and the configuration file used for this project can be downloaded at this [link](https://drive.google.com/drive/folders/1dldICEytYD90BTJIuEnnUtesmzdZ9Lex?usp=sharing).
-
-
-<img src="https://render.githubusercontent.com/render/math?math=\color{white}">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
