@@ -109,6 +109,7 @@ All the three trainings went well, as shown in Figure 1, but unfortunately, due 
 | ![](chart/chart_naive.png) | ![](chart/chart_augmented.png) | ![](chart/chart_gradient.png) |
 |:--:|:--:|:--:|
 | *a) Naive approach loss* | *b) Data Augmentation approach loss* | *c) Gradient approach* |
+*Figure 1*
 
 According to the results shown in the following table, it has been chosen for the naive approach the weights at 10000 iterations, while for the training performed with gradient and data augmentation in both cases the best choice was the weights at 15000 iterations.
 Defined the best weights for every approach they have been tested, with the C++ script `yoloDetector.cpp` created using the YOLO implementation of OpenCV, which has great performance also resorting only on the CPU, without being forced to have a powerful GPU.
@@ -194,9 +195,33 @@ To conclude, in the terminal, for each box is indicated its center and its IoU, 
 
 | ![](test_result/kaggle/result/aida-ship-driving-cruise-ship-sea-144796_augmented_prediction.jpg) |
 |:--:|
-| *Detection result with augmented dataset example* |
+| *Figure 2: Detection result with augmented dataset example* |
 
 **Note**: All the detected images are saved in a subfolder of the test images directories named *result*. The corresponding test images paths are *test_result/google/* and *test_result/kaggle/*.
+
+## How to run
+
+#### Preprocess
+
+The `commandLineParser` of OpencV has been implemented to allow the user to customize the preprocess. The only mandatory step is to place the images in the *data/* directory, with any subfolder path that can be specified from the command line (e.g., `./datasetPreprocessing -t=train/` if the images are in the path *data/train/*).
+
+It is also possible to chose to use a different validation set, or extract it directly from the images provided in the training set. Then it can be chosen to perform the data augmentation or the gradient transformation. Finally, other auxiliary options have been implemented. For any other necessity run `./datasetPreprocessing -h`.
+
+#### Detection
+
+Also in this case the `commandLineParser` of OpencV has been implemented, in particular to allow the specification of the configuration and the weights directories paths, set by default as *cfg/*, where all the necessary files for the Neural network are placed (`.cfg`, `.names`, `.weights`), it is, however, possible to indicates different values for those files.
+
+Another important information is the path of the test images folder which can be specified with the command `-i=path/to/images/`.
+Before running the program, the first step is to download the weights for the YOLO detector algorithm from the Google Drive [link](https://drive.google.com/drive/folders/1l9XJYxJBKEy6aWem1EERb68zj5qSdiZU?usp=sharing) and place them in the configuration directory.
+
+Finally, while running, it is possible to define which weights file to use and if the detection has to be done on the gradient magnitude of the image provided. For any other necessity run `./yoloPrediction -h`.
+
+_**Example**_
+`./yoloPrediction -i=test\_result/kaggle/`
+*The program, in the default cfg/ directory, looks for all the weights files present, and it will perform the detection on the images found in the path ~test_result/kaggle/. On the command line will be asked which of the found weights to use and if it is required to perform the detection on the gradient magnitude of the images.*
+
+**Note**: All the dataset and the configuration file used for this project can be downloaded at this [link](https://drive.google.com/drive/folders/1dldICEytYD90BTJIuEnnUtesmzdZ9Lex?usp=sharing).
+
 
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}">
 
