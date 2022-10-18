@@ -1,0 +1,7 @@
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles/rebuild_cache.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles/yoloPrediction.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles/edit_cache.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/CMakeFiles/datasetPreprocessing.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/include/CMakeFiles/rebuild_cache.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/include/CMakeFiles/edit_cache.dir
+/media/mattiascarpa/Archivio/Programming_Workspace/Computer_Vision_UniPD/00-ScarpaMattia_2005826_FinalProject/build/include/CMakeFiles/include.dir

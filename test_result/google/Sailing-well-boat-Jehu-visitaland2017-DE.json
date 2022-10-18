@@ -1,0 +1,98 @@
+{
+  "id": "60e810cb6f5f75186295decd",
+  "datasetId": "60e6e8710d0797194ff95541",
+  "createdAt": "2021-07-09T09:03:07.000Z",
+  "dir": "/test",
+  "filename": "/test/Sailing-well-boat-Jehu-visitaland2017-DE.jpg",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "originalname": "Sailing-well-boat-Jehu-visitaland2017-DE.jpg",
+      "size": 797485,
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "annotationStatus": [],
+      "refs": [],
+      "isBinary": true,
+      "executionLogs": {
+        "image-preprocess": {
+          "default_module": {
+            "on_create": {
+              "60e810cb3a561d2e9a15f5c2": {
+                "progress": 100,
+                "status": "success"
+              }
+            }
+          }
+        }
+      },
+      "channels": 3,
+      "exif": {},
+      "height": 2136,
+      "thumbnailAnnotationsId": "60e810cc0961d58283ef935c",
+      "thumbnailId": "60e810cc7748757afe4719e9",
+      "width": 3200
+    }
+  },
+  "name": "Sailing-well-boat-Jehu-visitaland2017-DE.jpg",
+  "url": "https://gate.dataloop.ai/api/v1/items/60e810cb6f5f75186295decd",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+  "annotationsCount": 1,
+  "annotated": true,
+  "stream": "https://gate.dataloop.ai/api/v1/items/60e810cb6f5f75186295decd/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/60e810cb6f5f75186295decd/thumbnail",
+  "annotations": [
+    {
+      "id": "60e8115b1c8e2306b4b8c1ab",
+      "datasetId": "60e6e8710d0797194ff95541",
+      "type": "box",
+      "label": "boat",
+      "attributes": [],
+      "coordinates": [
+        {
+          "x": 875,
+          "y": 123.75,
+          "z": 0
+        },
+        {
+          "x": 2077.5,
+          "y": 1323.75,
+          "z": 0
+        }
+      ],
+      "metadata": {
+        "system": {
+          "status": null,
+          "startTime": 0,
+          "endTime": 1,
+          "frame": 0,
+          "endFrame": 1,
+          "snapshots_": [],
+          "parentId": null,
+          "clientId": "58ed0c18-e311-4527-94a9-0980fb8bd16d",
+          "automated": false,
+          "objectId": "1",
+          "isOnlyLocal": false,
+          "attributes": {},
+          "clientParentId": null,
+          "system": false,
+          "description": null,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.5.3-rc.14",
+          "recipeId": "60e6e871a3e263829128c944"
+        },
+        "user": {}
+      },
+      "creator": "scarpa.mat25@gmail.com",
+      "createdAt": "2021-07-09T09:05:31.650Z",
+      "updatedBy": "scarpa.mat25@gmail.com",
+      "updatedAt": "2021-07-09T09:05:31.650Z",
+      "itemId": "60e810cb6f5f75186295decd",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/60e8115b1c8e2306b4b8c1ab",
+      "item": "https://gate.dataloop.ai/api/v1/items/60e810cb6f5f75186295decd",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/60e6e8710d0797194ff95541",
+      "hash": "30f331a415e91b43c0ab37e8b08d867188bed72b"
+    }
+  ]
+}
